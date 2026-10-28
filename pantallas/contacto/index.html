@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto. Porteña: cinco maneras de descubrir la cultura de Buenos Aires, a pie y con tiempo.">
+  <meta name="theme-color" content="#171714">
+  <title>Contacto · Porteña</title>
+  <link rel="icon" href="../../img/compartidas/logo.png" type="image/png">
+  <link rel="stylesheet" href="../../css/fuentes.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/sitio.js" defer></script>
+</head>
+<body class="">
+<a href="#contenido" class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only">Saltar al contenido</a>
+    <header class="border-b border-borde bg-papel">
+      <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
+        <a href="../../index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"><img src="../../img/compartidas/9b663.png" alt="" class="marca-logo" fetchpriority="high" decoding="async"><span class="font-serif text-2xl font-bold">PORTEÑA</span></a>
+        <nav aria-label="Navegación principal" class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10">
+          <a href="../../index.html#recorridos" class="py-3 hover:underline">Recorridos</a><a href="../mapa/index.html" class="py-3 hover:underline">Puntos de interés</a><a href="../sobre-la-guia/index.html" class="py-3 hover:underline">Sobre la guía</a>
+        </nav>
+        <button id="boton-menu" class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden" aria-expanded="true" aria-controls="menu" hidden>Menú <span aria-hidden="true">☰</span></button>
+        <nav id="menu" aria-label="Secciones" class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden">
+          <a href="../../index.html">Inicio</a><a href="../../index.html#recorridos">Recorridos</a><a href="../mapa/index.html">Mapa y puntos de interés</a><a href="../reserva/index.html">Planificá tu visita</a><a href="index.html">Contacto</a><a href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a><a href="../sobre-la-guia/index.html">Sobre la guía</a>
+        </nav>
+      </div>
+    </header>
+<main id="contenido"><section class="contenedor seccion"><div class="pagina-cabecera"><p class="etiqueta">Hablemos de la ciudad</p><h1>Contacto</h1><p class="text-lg text-[#59574e]">¿Tenés una consulta o querés compartir una mirada de Buenos Aires? Completá los campos para preparar tu mensaje.</p></div><div class="grid gap-10 md:grid-cols-[1.4fr_1fr]"><form id="formulario-contacto" action="#" method="post" class="space-y-6" aria-describedby="aviso-contacto"><p id="aviso-contacto" class="estado text-sm">Formulario de demostración. Se validan los datos y se muestra una confirmación; el mensaje no se envía ni se guarda. Todos los campos son obligatorios.</p><div><label class="font-bold" for="nombre">Nombre</label><input class="campo" id="nombre" name="nombre" autocomplete="name" required minlength="2" maxlength="80" pattern=".*\S.*" title="Escribí un nombre de al menos dos caracteres, no solo espacios."></div><div><label class="font-bold" for="correo">Correo electrónico</label><input class="campo" type="email" id="correo" name="correo" autocomplete="email" required maxlength="160" placeholder="nombre@ejemplo.com"></div><div><label class="font-bold" for="motivo">Motivo de la consulta</label><select class="campo" id="motivo" name="motivo" required><option value="">Elegí un motivo</option><option>Información sobre los recorridos</option><option>Planificación de una visita</option><option>Accesibilidad</option><option>Colaboraciones</option><option>Otra consulta</option></select></div><div><label class="font-bold" for="mensaje">Mensaje</label><textarea class="campo min-h-[160px]" id="mensaje" name="mensaje" required minlength="10" maxlength="2000" aria-describedby="ayuda-mensaje"></textarea><p id="ayuda-mensaje" class="ayuda">Escribí entre 10 y 2000 caracteres.</p></div><button data-requiere-js disabled type="submit" class="boton">Validar consulta →</button><noscript><p>Activá JavaScript para probar la confirmación de esta simulación.</p></noscript><p id="estado-contacto" class="estado" role="status" tabindex="-1" hidden></p></form><aside class="tarjeta self-start"><p class="etiqueta mb-5">Antes de escribirnos</p><h2 class="mb-6 text-[30px]">Una respuesta para cada esquina</h2><p class="mb-6">Encontrá información sobre los recorridos, los precios de práctica, los traslados y la accesibilidad.</p><a href="../preguntas-frecuentes/index.html" class="enlace">Ver preguntas frecuentes →</a></aside></div></section></main>
+<footer class="bg-tinta text-papel"><div class="contenedor seccion">
+      <div class="grid gap-10 pb-12 md:grid-cols-2"><div class="max-w-[400px]"><a href="../../index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a><p class="mt-5 text-base text-[#c7c5bd]">Guía cultural independiente para caminar, escuchar y entender Buenos Aires. Diseñada para locales y viajeros curiosos.</p></div>
+      <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16"><nav aria-label="Explorar"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="../../index.html#recorridos">Todos los recorridos</a></li><li><a class="hover:underline" href="../mapa/index.html">Mapa de la ciudad</a></li><li><a class="hover:underline" href="../reserva/index.html">Planificá tu visita</a></li></ul></nav>
+      <nav aria-label="Proyecto"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="../sobre-la-guia/index.html">Sobre nosotros</a></li><li><a class="hover:underline" href="index.html">Contacto</a></li><li><a class="hover:underline" href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a></li></ul></nav></div></div>
+      <div class="linea-pie" aria-hidden="true"><img src="../../img/compartidas/52b18.svg" alt="" class="" loading="lazy" decoding="async"></div>
+      <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row"><p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p><a class="hover:underline" href="https://www.figma.com/design/xHqN3NQfBRSYfUmpRroRao/Actividad-2-Grupo-5?node-id=0-1">PROTOTIPO Y DESIGN SYSTEM ↗</a></div>
+    </div></footer>
+</body>
+</html>

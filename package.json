@@ -1,0 +1,14 @@
+{
+  "name": "portena-actividad-3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recorridos culturales por Buenos Aires. HTML5, Tailwind CSS y JavaScript.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/entrada.css -o ./css/styles.css --minify",
+    "watch:css": "tailwindcss -i ./css/entrada.css -o ./css/styles.css --watch",
+    "start": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

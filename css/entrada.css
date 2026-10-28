@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componentes compartidos: las utilidades de Tailwind siguen en el HTML. */
+@layer base {
+  body { @apply bg-papel font-sans text-tinta; }
+  h1, h2, h3 { @apply font-serif font-medium; }
+  h1 { @apply text-[42px] leading-[1.05] md:text-[56px] xl:text-[72px]; }
+  h2 { @apply text-[32px] leading-[1.15] lg:text-[40px]; }
+  h3 { @apply text-2xl leading-tight; }
+  p { @apply leading-relaxed; }
+  a, button, input, select, textarea, summary { @apply focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-4 focus-visible:outline-[#2454bb]; }
+  button, summary { @apply cursor-pointer; }
+  [id] { scroll-margin-top: 24px; }
+  [hidden] { display: none !important; }
+}
+
+@layer components {
+  .contenedor { @apply mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-20; }
+  .seccion { @apply py-10 md:py-16 xl:py-20; }
+  .etiqueta { @apply text-xs font-bold uppercase tracking-wide; }
+  .boton { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-tinta px-7 py-4 text-center text-xs font-bold uppercase text-papel hover:underline; }
+  .boton-acento { background-color: var(--acento); @apply text-tinta; }
+  .tarjeta { @apply rounded-2xl bg-arena p-6 md:p-8; }
+  .campo { @apply mt-2 block min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-4 py-3 text-base; }
+  .ayuda { @apply mt-2 text-sm text-[#59574e]; }
+  .estado { @apply rounded-xl border border-borde bg-arena p-5; }
+  .hero { @apply bg-tinta text-papel; }
+  .hero-interior { @apply grid items-center gap-8 py-8 md:grid-cols-2 md:gap-12 md:py-16 xl:gap-16 xl:py-20; }
+  .hero-texto { @apply flex min-w-0 flex-col items-start gap-6; }
+  .foto-hero { @apply h-[220px] w-full rounded-3xl object-cover md:h-[350px] xl:h-[400px]; }
+  .barra-datos { background-color: var(--acento); @apply text-tinta; }
+  .datos { @apply flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between md:gap-8; }
+  .dato { @apply flex items-center gap-4; }
+  .dato strong { @apply font-serif text-[30px] md:text-[32px]; }
+  .dato span { @apply text-xs font-bold uppercase; }
+  .parada { @apply rounded-2xl border border-borde bg-arena; }
+  .parada summary { @apply relative list-none p-5 md:p-6; }
+  .parada summary::-webkit-details-marker { display: none; }
+  .parada[open] { border-color: #171714; }
+  .parada[open] .flecha-parada { transform: rotate(90deg); }
+  .numero-parada { @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-papel text-xs font-bold; }
+  .paradas-lista > li:first-child .numero-parada { background-color: var(--acento); }
+  .consejo { @apply flex flex-col items-start gap-5 rounded-2xl bg-arena p-6 md:p-8; }
+  .banda-cierre { background-color: var(--acento); }
+  .cierre-interior { @apply flex flex-col items-start gap-7 py-10 md:flex-row md:items-center md:justify-between md:py-16 xl:py-20; }
+  .linea-pie { @apply overflow-hidden; }
+  .marca-logo { width: 52px; height: 49px; transform: rotate(-179.83deg); object-fit: contain; }
+  .hero-inicio { @apply bg-arena; }
+  .hero-inicio .foto-hero { @apply xl:h-[440px]; }
+  .hero-gastronomia { @apply bg-papel text-tinta; }
+  .hero-gastronomia .foto-hero { @apply xl:h-[438px]; }
+  .gastronomia-editorial { @apply bg-arena; }
+  .gastronomia-datos { @apply bg-tinta text-papel; }
+  .gastronomia-datos .dato { @apply md:justify-center; }
+  .gastronomia-datos .dato strong:empty { display: none; }
+  .gastronomia-editorial .parada { @apply bg-papel; }
+  .gastronomia-editorial .numero-parada { @apply bg-arena; }
+  .foto-contexto { @apply mt-8 h-[300px] w-full rounded-2xl object-cover; }
+  .arte-hero { @apply md:mx-auto md:max-w-[454px]; border-radius: 0; }
+  .arte-contexto { @apply h-auto max-w-[444px] rounded-none; }
+  .arquitectura, .comuna-1, .cine, .arte-urbano { font-family: 'Manrope', Arial, sans-serif; }
+  .gastronomia-contexto { @apply h-[420px] xl:h-[536px]; object-position: 50% 45%; }
+  .pagina-cabecera { @apply max-w-3xl pb-10; }
+  .pagina-cabecera h1 { @apply my-5; }
+  .enlace { @apply font-bold underline underline-offset-4 hover:decoration-2; }
+  .faq summary { @apply min-h-12 p-5 font-bold; }
+  .faq details { @apply rounded-2xl border border-borde bg-arena; }
+  .faq details p { @apply px-5 pb-5; }
+}
+
+/* La portada móvil tiene la composición oscura del frame 14:614. */
+@media (max-width: 767px) {
+  .inicio .hero-inicio { margin: 20px 20px 0; border-radius: 20px; @apply bg-tinta text-papel; }
+  .inicio .hero-inicio .contenedor { padding: 20px; }
+  .inicio .barra-datos { margin: 20px; border-radius: 20px; }
+  .inicio .barra-datos .contenedor { padding: 20px; }
+  .inicio .hero-inicio .hero-texto { gap: 16px; }
+  .inicio .hero-inicio .foto-hero { height: 220px; border-radius: 16px; }
+}
+
+@media print {
+  header, footer, .no-imprimir, .banda-cierre, iframe { display: none !important; }
+  body, .hero { background: white !important; color: black !important; }
+  .seccion, .hero-interior { padding-top: 20px; padding-bottom: 20px; }
+  details { break-inside: avoid; }
+}

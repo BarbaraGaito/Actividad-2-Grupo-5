@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porteña - Próximamente</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Buenos Aires, a pie y con tiempo. Porteña: cinco maneras de descubrir la cultura de Buenos Aires, a pie y con tiempo.">
+  <meta name="theme-color" content="#171714">
+  <title>Buenos Aires, a pie y con tiempo · Porteña</title>
+  <link rel="icon" href="img/compartidas/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/sitio.js" defer></script>
 </head>
-<body>
-    <main class="contenedor">
-        <div class="presentacion">
-            <span class="grupo">N.º de grupo: 5</span>
-
-            <img class="logo" src="img/logo.png" alt="Logo de Porteña">
-
-            <p class="proximamente">Próximamente</p>
-            <h1>"Porteña"</h1>
-
-            <div class="construccion">
-                <span class="cinta"></span>
-                <p>Sitio en construcción</p>
-                <span class="cinta"></span>
-            </div>
-        </div>
-
-        <section class="integrantes">
-            <h2>Integrantes del grupo</h2>
-            <p class="subtitulo">Alumnos</p>
-            <ul>
-                <li>Aldana Nicolas</li>
-                <li>Alonso Lara Trinidad</li>
-                <li>Gaito Barbara Denise</li>
-                <li>Gonzalez Homero Ivan</li>
-                <li>Martinez Pilar</li>
-            </ul>
-        </section>
-    </main>
+<body class="inicio">
+<a href="#contenido" class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only">Saltar al contenido</a>
+    <header class="border-b border-borde bg-papel">
+      <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"><img src="img/compartidas/9b663.png" alt="" class="marca-logo" fetchpriority="high" decoding="async"><span class="font-serif text-2xl font-bold">PORTEÑA</span></a>
+        <nav aria-label="Navegación principal" class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10">
+          <a href="index.html#recorridos" class="py-3 hover:underline" aria-current="page">Recorridos</a><a href="pantallas/mapa/index.html" class="py-3 hover:underline">Puntos de interés</a><a href="pantallas/sobre-la-guia/index.html" class="py-3 hover:underline">Sobre la guía</a>
+        </nav>
+        <button id="boton-menu" class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden" aria-expanded="true" aria-controls="menu" hidden>Menú <span aria-hidden="true">☰</span></button>
+        <nav id="menu" aria-label="Secciones" class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden">
+          <a href="index.html">Inicio</a><a href="index.html#recorridos">Recorridos</a><a href="pantallas/mapa/index.html">Mapa y puntos de interés</a><a href="pantallas/reserva/index.html">Planificá tu visita</a><a href="pantallas/contacto/index.html">Contacto</a><a href="pantallas/preguntas-frecuentes/index.html">Preguntas frecuentes</a><a href="pantallas/sobre-la-guia/index.html">Sobre la guía</a>
+        </nav>
+      </div>
+    </header>
+<main id="contenido"><div style="--acento:#e9ff48"><section class="hero-inicio"><div class="contenedor hero-interior"><div class="hero-texto"><p class="etiqueta text-lima md:hidden">Guía cultural porteña · Temporada 2026</p><h1>Buenos Aires,<br>a pie y con<br class="hidden xl:block"> tiempo</h1><p class="max-w-xl text-base text-[#59574e] max-md:text-[#d2d0c7] md:text-lg">Cinco maneras de leer la ciudad de la furia. Elegí una pasión, seguí las señales y descubrí las historias secretas que viven entre una esquina emblemática y la siguiente.</p></div><picture><source media="(max-width: 767px)" srcset="img/inicio/348dd.png"><img src="img/inicio/0c4a1.png" alt="Calle de Buenos Aires con cafés, peatones y luces al atardecer" class="foto-hero" fetchpriority="high" decoding="async"></picture><a href="#recorridos" class="boton boton-acento justify-self-start md:hidden">Empezar a recorrer</a></div></section><div class="barra-datos "><div class="contenedor datos"><p class="dato"><strong>01</strong><span>5 recorridos culturales</span></p><p class="dato"><strong>02</strong><span>Paradas para descubrir</span></p><p class="dato"><strong>03</strong><span>Historias para caminar</span></p></div></div><section class="contenedor seccion" id="recorridos"><h2 class="mb-10">Puntos de interés</h2><div class="grid gap-5 md:grid-cols-6 xl:gap-8"><a href="pantallas/futbol/index.html" class="group rounded-2xl border border-borde bg-arena p-6 hover:border-tinta md:p-8 md:col-span-2"><div class="mb-8 flex items-center justify-between"><span class="text-xs font-bold">01</span><picture><source media="(max-width: 767px)" srcset="img/futbol/d54fe.svg"><img src="img/futbol/e404d.svg" alt="" class="" loading="lazy" decoding="async"></picture></div><h3 class="mb-3 text-[28px] group-hover:underline">Fútbol</h3><p class="mb-8 min-h-[48px] text-sm text-[#59574e]">Clubes de barrio, potreros sagrados y la pasión ritual que organiza la semana.</p><span class="etiqueta text-[11px]">Explorar recorrido →</span></a><a href="pantallas/arquitectura/index.html" class="group rounded-2xl border border-borde bg-arena p-6 hover:border-tinta md:p-8 md:col-span-2"><div class="mb-8 flex items-center justify-between"><span class="text-xs font-bold">02</span><picture><source media="(max-width: 767px)" srcset="img/arquitectura/3cc1b.svg"><img src="img/arquitectura/5ce61.svg" alt="" class="" loading="lazy" decoding="async"></picture></div><h3 class="mb-3 text-[28px] group-hover:underline">Arquitectura</h3><p class="mb-8 min-h-[48px] text-sm text-[#59574e]">Fachadas imponentes, palacios olvidados y cúpulas para descifrar un siglo de ambición.</p><span class="etiqueta text-[11px]">Explorar recorrido →</span></a><a href="pantallas/gastronomia/index.html" class="group rounded-2xl border border-borde bg-arena p-6 hover:border-tinta md:p-8 md:col-span-2"><div class="mb-8 flex items-center justify-between"><span class="text-xs font-bold">03</span><picture><source media="(max-width: 767px)" srcset="img/gastronomia/4b6de.svg"><img src="img/gastronomia/3b55d.svg" alt="" class="" loading="lazy" decoding="async"></picture></div><h3 class="mb-3 text-[28px] group-hover:underline">Gastronomía</h3><p class="mb-8 min-h-[48px] text-sm text-[#59574e]">Bodegones eternos, viejos mercados de abasto y fuegos modernos que cuentan migraciones.</p><span class="etiqueta text-[11px]">Explorar recorrido →</span></a><a href="pantallas/arte-urbano/index.html" class="group rounded-2xl border border-borde bg-arena p-6 hover:border-tinta md:p-8 md:col-span-3"><div class="mb-8 flex items-center justify-between"><span class="text-xs font-bold">04</span><picture><source media="(max-width: 767px)" srcset="img/arte-urbano/7305a.svg"><img src="img/arte-urbano/399d4.svg" alt="" class="" loading="lazy" decoding="async"></picture></div><h3 class="mb-3 text-[28px] group-hover:underline">Arte urbano</h3><p class="mb-8 min-h-[48px] text-sm text-[#59574e]">Murales inmensos y grafitis que guardan las voces vivas y rebeldes de la calle.</p><span class="etiqueta text-[11px]">Explorar recorrido →</span></a><a href="pantallas/cine/index.html" class="group rounded-2xl border border-borde bg-arena p-6 hover:border-tinta md:p-8 md:col-span-3"><div class="mb-8 flex items-center justify-between"><span class="text-xs font-bold">05</span><picture><source media="(max-width: 767px)" srcset="img/cine/e311d.svg"><img src="img/cine/09e01.svg" alt="" class="" loading="lazy" decoding="async"></picture></div><h3 class="mb-3 text-[28px] group-hover:underline">Cine</h3><p class="mb-8 min-h-[48px] text-sm text-[#59574e]">Salas históricas y locaciones míticas para volver a mirar Buenos Aires a través del lente.</p><span class="etiqueta text-[11px]">Explorar recorrido →</span></a></div></section><section class="contenedor seccion no-imprimir" aria-labelledby="mapa-inicio"><div class="grid items-start gap-8 md:grid-cols-[1fr_1.3fr]"><div><p class="etiqueta mb-4">Trazá tu propio camino</p><h2 id="mapa-inicio" class="mb-6">La ciudad, a tu ritmo</h2><p class="mb-6 text-[#59574e]">Ubicá los puntos de interés y combiná las paradas según tu tiempo. El orden de cada guía es una sugerencia: vos elegís por dónde empezar.</p><a href="pantallas/mapa/index.html" class="boton">Explorar el mapa →</a><a href="pantallas/reserva/index.html" class="enlace mt-5 block text-sm">Planificá una experiencia</a></div><iframe class="h-[330px] w-full rounded-2xl border border-borde" title="Mapa general de Buenos Aires" src="https://maps.google.com/maps?q=Buenos%20Aires%20Argentina&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section><section class="contenedor seccion"><h2 class="mb-10">Información útil para el camino</h2><div class="grid gap-5 md:grid-cols-3 xl:gap-8"><article class="consejo"><img src="img/inicio/ed375.svg" alt="" class="" loading="lazy" decoding="async"><h3>Cuándo ir</h3><p class="text-[15px] text-[#59574e]">Preferí las horas de luz para las caminatas. Antes de salir, consultá los horarios oficiales de cada espacio y la programación del día.</p></article><article class="consejo"><img src="img/inicio/ed375.svg" alt="" class="" loading="lazy" decoding="async"><h3>Cómo moverse</h3><p class="text-[15px] text-[#59574e]">Subte, colectivo y caminata. Combiná los tramos según tu ritmo y llevá tu tarjeta SUBE para los traslados.</p></article><article class="consejo"><img src="img/inicio/ed375.svg" alt="" class="" loading="lazy" decoding="async"><h3>Qué llevar</h3><p class="text-[15px] text-[#59574e]">Calzado cómodo, botella de agua y espacio para la sorpresa. Respetá las obras, los vecinos y los espacios que visites.</p></article></div></section><section class="banda-cierre"><div class="contenedor cierre-interior"><h2 class="max-w-[990px] text-[36px] leading-[1.08] lg:text-[48px]">La próxima esquina de Buenos Aires puede cambiarte el mapa por completo.</h2><a href="index.html#recorridos" class="boton shrink-0">Ver todos los recorridos →</a></div></section></div></main>
+<footer class="bg-tinta text-papel"><div class="contenedor seccion">
+      <div class="grid gap-10 pb-12 md:grid-cols-2"><div class="max-w-[400px]"><a href="index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a><p class="mt-5 text-base text-[#c7c5bd]">Guía cultural independiente para caminar, escuchar y entender Buenos Aires. Diseñada para locales y viajeros curiosos.</p></div>
+      <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16"><nav aria-label="Explorar"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="index.html#recorridos">Todos los recorridos</a></li><li><a class="hover:underline" href="pantallas/mapa/index.html">Mapa de la ciudad</a></li><li><a class="hover:underline" href="pantallas/reserva/index.html">Planificá tu visita</a></li></ul></nav>
+      <nav aria-label="Proyecto"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="pantallas/sobre-la-guia/index.html">Sobre nosotros</a></li><li><a class="hover:underline" href="pantallas/contacto/index.html">Contacto</a></li><li><a class="hover:underline" href="pantallas/preguntas-frecuentes/index.html">Preguntas frecuentes</a></li></ul></nav></div></div>
+      <div class="linea-pie" aria-hidden="true"><img src="img/compartidas/52b18.svg" alt="" class="" loading="lazy" decoding="async"></div>
+      <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row"><p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p><a class="hover:underline" href="https://www.figma.com/design/xHqN3NQfBRSYfUmpRroRao/Actividad-2-Grupo-5?node-id=0-1">PROTOTIPO Y DESIGN SYSTEM ↗</a></div>
+    </div></footer>
 </body>
 </html>

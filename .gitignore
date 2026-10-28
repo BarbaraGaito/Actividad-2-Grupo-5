@@ -1,0 +1,18 @@
+# Archivos locales y dependencias
+.DS_Store
+node_modules/
+
+# Carpetas de recursos de referencia en cualquier nivel
+documentacion/
+consigna/
+
+
+# Documentación y material de referencia
+*.[pP][dD][fF]
+*.tex
+*.md
+
+# Archivos temporales de LaTeX
+*.aux
+*.log
+*.out
