@@ -1,6 +1,6 @@
 # Recursos y fuentes · Porteña
 
-Revisión: 02/11/2026. Fotografías propias del grupo según confirmación recibida. Las once imágenes de arte urbano son de Lara Trinidad Alonso; se copiaron del repositorio original sin sustituir su contenido.
+Fecha de entrega: 03/11/2026. Fotografías propias del grupo según confirmación recibida. Las once imágenes de arte urbano son de Lara Trinidad Alonso; se copiaron del repositorio original sin sustituir su contenido. Las tres fotografías de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1.
 
 ## Arte urbano: fotografías originales
 
@@ -17,6 +17,14 @@ Revisión: 02/11/2026. Fotografías propias del grupo según confirmación recib
 | Mural de Messi | `img/arte-urbano/actividad-1/mural-futbolero.jpeg` | [Registro de Lara](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/mural-futbolero.html) |
 | Retrato sobre persiana | `img/arte-urbano/actividad-1/retrato-persiana.jpeg` | [Registro de Lara](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/retrato-persiana.html) |
 | Líneas urbanas | `img/arte-urbano/actividad-1/lineas-urbanas.jpeg` | [Registro de Lara](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/lineas-urbanas.html) |
+
+## Gastronomía: fotografías de la Tarea 1
+
+| Parada | Archivo local | Fuente original |
+| --- | --- | --- |
+| Petricor Café Bistró | `img/gastronomia/Gastronomia-1.jpeg` | [Registro de Bárbara](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-7.html) |
+| Enitma Café Reserva Gourmet | `img/gastronomia/Gastronomia-2.jpeg` | [Registro de Bárbara](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-3.html) |
+| Magari Caffè | `img/gastronomia/Gastronomia-3.jpeg` | [Registro de Bárbara](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/merienda-6.html) |
 
 ## Fotografías y recursos compartidos
 
@@ -74,22 +82,14 @@ Las descripciones de arte urbano reproducen los textos de la autora. Las demás 
 | Temática | Punto | Fuente |
 | --- | --- | --- |
 | Fútbol | La Bombonera | [Consultar](https://www.bocajuniors.com.ar/) |
-| Fútbol | Museo de la Pasión Boquense | [Consultar](https://museoboquense.com/inicio/) |
-| Fútbol | Estadio de Barracas Central | [Consultar](https://www.ligaprofesional.ar/clubes/barracas-central) |
 | Fútbol | Estadio Tomás A. Ducó | [Consultar](https://cahuracan.com/) |
 | Fútbol | Café El Banderín | [Consultar](https://turismo.buenosaires.gob.ar/es/gastronomico/caf%C3%A9-el-bander%C3%ADn) |
 | Arquitectura | Palacio Barolo | [Consultar](https://palaciobarolotours.com.ar/informacion-relevante-para-los-visitantes/) |
-| Arquitectura | Pasaje Roverano | [Consultar](https://turismo.buenosaires.gob.ar/es/otros-establecimientos/pasaje-roverano) |
-| Arquitectura | Teatro Colón | [Consultar](https://teatrocolon.org.ar/) |
 | Arquitectura | Cementerio de la Recoleta | [Consultar](https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta) |
-| Arquitectura | Biblioteca Nacional Mariano Moreno | [Consultar](https://turismo.buenosaires.gob.ar/es/otros-establecimientos/biblioteca-nacional-mariano-moreno) |
 | Arquitectura | Palacio de Aguas Corrientes | [Consultar](https://www.aysa.com.ar/media-library/programa_cultural_educativo/gigantes_del_agua/Serie_Monumentos_01-Palacio.pdf) |
-| Arquitectura | Antiguo Mercado de Abasto | [Consultar](https://turismo.buenosaires.gob.ar/es/circuito-ruta-tanguera) |
-| Gastronomía | Mercado de San Telmo | [Consultar](https://turismo.buenosaires.gob.ar/es/otros-establecimientos/mercado-san-telmo) |
-| Gastronomía | Bar El Federal | [Consultar](https://turismo.buenosaires.gob.ar/es/article/turismoculturalba-14-bares-notables-bar-sedd%C3%B3n-y-bar-el-federal) |
-| Gastronomía | Café La Poesía | [Consultar](https://turismo.buenosaires.gob.ar/es/circuito-ruta-tanguera) |
-| Gastronomía | Café Tortoni | [Consultar](https://www.cafetortoni.com.ar/?lang=es) |
-| Gastronomía | Las Violetas | [Consultar](https://linktr.ee/confiterialasvioletas) |
+| Gastronomía | Petricor Café Bistró | [Consultar](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-7.html) |
+| Gastronomía | Enitma Café Reserva Gourmet | [Consultar](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-3.html) |
+| Gastronomía | Magari Caffè | [Consultar](https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/merienda-6.html) |
 | Arte urbano | Arte en la facultad | [Consultar](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/facultad.html) |
 | Arte urbano | La Scaloneta | [Consultar](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/scaloneta.html) |
 | Arte urbano | Expresión colectiva | [Consultar](https://github.com/Larialonso/Disenoydesarrolloweb/blob/main/Paredes-que-hablan/niunamenos.html) |

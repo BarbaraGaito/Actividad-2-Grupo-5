@@ -1,6 +1,6 @@
 # Revisión de la consigna · Actividad 3
 
-Revisión del 02/11/2026. Se distingue la implementación de la verificación visual que todavía requiere navegador.
+Fecha de entrega: 03/11/2026. Se distingue la implementación de la verificación visual que todavía requiere navegador.
 
 | Requisito | Evidencia y estado |
 | --- | --- |
@@ -13,13 +13,13 @@ Revisión del 02/11/2026. Se distingue la implementación de la verificación vi
 | Inicio: accesos | Cinco tarjetas temáticas, navegación, mapa, planificación, contacto y ayuda. |
 | Inicio: mapa general | Marcadores simultáneos y filtro por temática. Sin JavaScript se conserva el mapa de respaldo. |
 | Página de cada integrante | Arquitectura/Homero, Arte urbano/Lara, Gastronomía/Bárbara, Fútbol/Pilar y Cine/Nicolás. |
-| Puntos: nombre y descripción | 31 fichas individuales, con títulos y contenido. |
+| Puntos: nombre y descripción | 23 fichas individuales, con títulos y contenido: tres paradas por temática y once obras de arte urbano. |
 | Puntos: imágenes y alt | Fotografías temáticas del grupo; las once obras de Lara tienen su imagen original completa y alt original. No se atribuye una foto temática a un edificio que no representa. |
 | Puntos: actividades y datos prácticos | Actividad, duración orientativa, acceso, horarios o consulta al establecimiento, recomendaciones y fuentes. |
 | Puntos: ubicación | Lugar, barrio o establecimiento de cada fotografía, con mapa. Plaza del Congreso e Hospitales se incorporaron según indicación de la autora. |
 | Puntos: navegación coherente | Inicio, temática, ficha anterior/siguiente y planificación; componentes comunes. |
-| Mapa del recorrido | 31 fichas con coordenadas y marcadores: veinte paradas culturales y once fotos de arte urbano. Filtros por temática, vista inicial en CABA y opción para incluir todos los puntos. |
-| Mapa: orden | Numeración por temática/comuna; itinerarios externos para consultar el trayecto real. El mapa no presenta una línea recta como si fuera un camino peatonal. |
+| Mapa del recorrido | 23 fichas con coordenadas y marcadores: doce paradas culturales y once fotos de arte urbano. Filtros por temática, vista inicial en CABA y opción para incluir todos los puntos. |
+| Mapa: orden | Numeración por temática; itinerarios externos para consultar el trayecto real. El mapa no presenta una línea recta como si fuera un camino peatonal. |
 | Contacto: cuatro campos | Nombre, correo, motivo y mensaje con etiquetas asociadas. |
 | Contacto: validación | Obligatorios, correo válido y límites de longitud; errores textuales asociados y foco en el primero. |
 | Contacto: resultado funcional | Confirmación simulada explícita, sin transmisión ni almacenamiento. |

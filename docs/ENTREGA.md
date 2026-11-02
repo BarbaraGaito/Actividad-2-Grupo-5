@@ -1,14 +1,14 @@
 # Control de entrega · Actividad 3
 
-Versión local preparada el 02/11/2026. Este control distingue implementación de comprobaciones que requieren al grupo y al navegador.
+Fecha de entrega: 03/11/2026. Este control distingue implementación de comprobaciones que requieren al grupo y al navegador.
 
 | Consigna | Implementación o evidencia |
 | --- | --- |
 | HTML5, Tailwind, JavaScript | HTML semántico, CLI de Tailwind y `js/sitio.js`, sin frameworks frontend. |
 | Inicio | Identidad, cinco temáticas, propuesta, mapa y recomendaciones. |
-| Puntos de interés | 31 fichas individuales; cada integrante tiene su página temática. |
+| Puntos de interés | 23 fichas individuales; cada integrante tiene su página temática. |
 | Arte urbano original | Once fotos y textos de Lara. Fotografías y descripciones conservadas, con ubicaciones actualizadas en esta revisión. |
-| Mapa | 31 ubicaciones, marcadores con filtros y selección de fichas; itinerarios por tema y comuna. |
+| Mapa | 23 ubicaciones, marcadores con filtros y selección de fichas; itinerarios por temática. |
 | Contacto | Cuatro campos, errores asociados, validación y confirmación simulada. |
 | Reserva | Cinco precios, 1-20 personas, fecha válida, adicional, total ARS, resumen, edición y confirmación simulada. |
 | Conversión | No aplica: precios expresados en ARS. |

@@ -137,11 +137,20 @@ test('Menú: aria-expanded correcto, Escape y foco de regreso', () => {
   t.d.dispatchEvent(new t.dom.window.KeyboardEvent('keydown',{key:'Escape'}));
   assert.equal(t.d.getElementById('menu').hidden,true); assert.equal(t.d.activeElement,b); t.dom.window.close();
 });
-test('Mapa: 31 ubicaciones y selección anunciada', () => {
+test('Mapa: 23 ubicaciones y selección anunciada', () => {
   const t=abrir('pantallas/mapa/index.html'); const enlaces=t.d.querySelectorAll('[data-mapa]');
-  assert.equal(enlaces.length,31); enlaces[0].dispatchEvent(new t.dom.window.Event('click'));
+  assert.equal(enlaces.length,23); enlaces[0].dispatchEvent(new t.dom.window.Event('click'));
   assert.equal(enlaces[0].getAttribute('aria-current'),'location');
   assert.match(t.d.getElementById('estado-mapa').textContent,/La Bombonera/); t.dom.window.close();
+});
+test('Tres paradas por temática y gastronomía con las fotos de la Tarea 1', () => {
+  for (const r of datos.recorridos) if (r.id!=='arte-urbano') assert.equal(r.puntos.length,3,r.id);
+  datos.recorridos.find(r=>r.id==='gastronomia').puntos.forEach((p,i) => {
+    assert.equal(p.imagen,'img/gastronomia/Gastronomia-'+(i+1)+'.jpeg');
+    const ficha=abrir('pantallas/puntos/'+p.id+'.html'); const figura=ficha.d.querySelector('main figure');
+    assert.equal(figura.querySelector('img').getAttribute('src'),'../../'+p.imagen);
+    assert.match(figura.textContent,/Bárbara Gaito/); ficha.dom.window.close();
+  });
 });
 test('Arte urbano conserva las once fotos, descripciones y ubicaciones originales', () => {
   const originales=require('../datos/arte-actividad-1.json').puntos;

@@ -20,28 +20,6 @@ window.PORTEÑA_AYUDA = {
           "fuente": "https://www.bocajuniors.com.ar/"
         },
         {
-          "id": "museo-boquense",
-          "nombre": "Museo de la Pasión Boquense",
-          "direccion": "Brandsen 805, La Boca",
-          "descripcion": "Una visita al patrimonio deportivo de Boca a través de objetos, camisetas y relatos de su historia. Comparte ubicación con el estadio y requiere una entrada independiente del paseo exterior.",
-          "actividad": "Visita al museo y lectura de sus exposiciones.",
-          "duracion": "60 minutos estimados",
-          "acceso": "Con entrada. Consultá disponibilidad y condiciones directamente al museo.",
-          "horario": "Consultar horarios y posibles cambios por eventos deportivos.",
-          "fuente": "https://museoboquense.com/inicio/"
-        },
-        {
-          "id": "barracas-central",
-          "nombre": "Estadio de Barracas Central",
-          "direccion": "Luna 1211, Barracas",
-          "descripcion": "El estadio permite acercarse a otro club del sur porteño y observar la relación entre la vida barrial y el fútbol profesional. La propuesta se realiza desde la vía pública.",
-          "actividad": "Paseo exterior y observación del entorno del club.",
-          "duracion": "25 minutos estimados",
-          "acceso": "Exterior libre; no se propone entrar al estadio ni a entrenamientos.",
-          "horario": "De día, evitando jornadas de partido y operativos de acceso.",
-          "fuente": "https://www.ligaprofesional.ar/clubes/barracas-central"
-        },
-        {
           "id": "duco",
           "nombre": "Estadio Tomás A. Ducó",
           "direccion": "Av. Amancio Alcorta 2570, Parque Patricios",
@@ -69,7 +47,7 @@ window.PORTEÑA_AYUDA = {
       "id": "arquitectura",
       "nombre": "Arquitectura",
       "precio": 10000,
-      "duracion": "Elegí una comuna por salida; 1 a 3 horas según las visitas",
+      "duracion": "Una parada por comuna; 1 a 3 horas según las visitas",
       "puntos": [
         {
           "id": "barolo",
@@ -84,30 +62,6 @@ window.PORTEÑA_AYUDA = {
           "fuente": "https://palaciobarolotours.com.ar/informacion-relevante-para-los-visitantes/"
         },
         {
-          "id": "roverano",
-          "nombre": "Pasaje Roverano",
-          "comuna": 1,
-          "direccion": "Av. de Mayo 560, Monserrat",
-          "descripcion": "El pasaje propone una transición entre la avenida y la escala más íntima de una galería comercial. Observá sus vidrieras, circulaciones y relación con el espacio público.",
-          "actividad": "Lectura de fachada y paseo por la galería si está abierta.",
-          "duracion": "20 minutos estimados",
-          "acceso": "Fachada desde la vía pública. Galería y locales según apertura.",
-          "horario": "Preferentemente horario comercial; verificar acceso en el lugar.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/pasaje-roverano"
-        },
-        {
-          "id": "colon",
-          "nombre": "Teatro Colón",
-          "comuna": 1,
-          "direccion": "Cerrito 628, San Nicolás",
-          "descripcion": "Un edificio dedicado a las artes escénicas que puede leerse desde sus fachadas y desde la plaza. Las visitas guiadas ofrecen otra perspectiva de sus espacios interiores.",
-          "actividad": "Paseo exterior o visita guiada oficial.",
-          "duracion": "30 minutos exterior; interior según programa",
-          "acceso": "Exterior libre. Interior con entrada; consultar accesibilidad al reservar.",
-          "horario": "Consultar programación y turnos en el sitio oficial.",
-          "fuente": "https://teatrocolon.org.ar/"
-        },
-        {
           "id": "recoleta",
           "nombre": "Cementerio de la Recoleta",
           "comuna": 2,
@@ -120,18 +74,6 @@ window.PORTEÑA_AYUDA = {
           "fuente": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta"
         },
         {
-          "id": "biblioteca",
-          "nombre": "Biblioteca Nacional Mariano Moreno",
-          "comuna": 2,
-          "direccion": "Agüero 2502, Recoleta",
-          "descripcion": "El volumen elevado y los apoyos de hormigón ofrecen una lectura de la arquitectura moderna. Observá el contraste entre la estructura, los jardines y las circulaciones.",
-          "actividad": "Paseo exterior; exposiciones o visitas según agenda institucional.",
-          "duracion": "40 minutos estimados",
-          "acceso": "Exterior libre; consultar condiciones para salas y visitas.",
-          "horario": "Consultar agenda institucional para entrar al edificio.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/biblioteca-nacional-mariano-moreno"
-        },
-        {
           "id": "aguas",
           "nombre": "Palacio de Aguas Corrientes",
           "comuna": 3,
@@ -142,18 +84,6 @@ window.PORTEÑA_AYUDA = {
           "acceso": "Exterior libre. Consultar visitas y condiciones del museo.",
           "horario": "Exterior durante el día; interior según programación oficial.",
           "fuente": "https://www.aysa.com.ar/media-library/programa_cultural_educativo/gigantes_del_agua/Serie_Monumentos_01-Palacio.pdf"
-        },
-        {
-          "id": "abasto",
-          "nombre": "Antiguo Mercado de Abasto",
-          "comuna": 3,
-          "direccion": "Av. Corrientes 3247, Balvanera",
-          "descripcion": "El antiguo mercado, hoy reutilizado como centro comercial, permite comparar su escala con las calles del barrio. Mirá la fachada y la continuidad de sus grandes volúmenes.",
-          "actividad": "Lectura exterior y recorrido de áreas públicas habilitadas.",
-          "duracion": "40 minutos estimados",
-          "acceso": "Exterior libre; acceso interior según condiciones del centro comercial.",
-          "horario": "Consultar horario comercial vigente.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/circuito-ruta-tanguera"
         }
       ]
     },
@@ -161,62 +91,47 @@ window.PORTEÑA_AYUDA = {
       "id": "gastronomia",
       "nombre": "Gastronomía",
       "precio": 15000,
-      "duracion": "Dos salidas sugeridas: San Telmo y centro / Almagro",
+      "duracion": "Una salida a pie: San Nicolás, Monserrat y Barracas",
       "puntos": [
         {
-          "id": "mercado-san-telmo",
-          "nombre": "Mercado de San Telmo",
-          "direccion": "Defensa y Carlos Calvo, San Telmo",
-          "descripcion": "Sus puestos y circulaciones invitan a combinar el paseo con una pausa gastronómica. Observá la estructura del mercado y elegí qué sabores explorar sin apurar la visita.",
-          "actividad": "Recorrido por puestos y degustación opcional.",
-          "duracion": "60 minutos estimados",
-          "acceso": "Paseo por sectores abiertos; consumos a cargo del visitante.",
-          "horario": "Los puestos pueden tener horarios diferentes; consultar antes de ir.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/mercado-san-telmo"
-        },
-        {
-          "id": "federal",
-          "nombre": "Bar El Federal",
-          "direccion": "Carlos Calvo 595, San Telmo",
-          "descripcion": "Una esquina para disfrutar la cultura del café y observar el mobiliario de un bar tradicional. La visita continúa el paseo por San Telmo con tiempo para conversar.",
-          "actividad": "Pausa de café o comida, según carta vigente.",
-          "duracion": "45 minutos estimados",
+          "id": "petricor",
+          "nombre": "Petricor Café Bistró",
+          "direccion": "San Martín 704, San Nicolás",
+          "descripcion": "Un brunch para empezar el recorrido en el centro: dos lattes, avocado toast y un budín de carrot cake. Recomendado en la galería Cafeterías en CABA.",
+          "actividad": "Brunch para 2 personas aprox.: lattes, avocado toast y budín de carrot cake.",
+          "duracion": "45 a 60 minutos estimados",
           "acceso": "Consumo a cargo del visitante; consultar disponibilidad de mesas.",
-          "horario": "Consultar atención y carta actual antes de salir.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/article/turismoculturalba-14-bares-notables-bar-sedd%C3%B3n-y-bar-el-federal"
+          "horario": "Consultar horarios de atención y carta vigente antes de salir.",
+          "fuente": "https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-7.html",
+          "imagen": "img/gastronomia/Gastronomia-1.jpeg",
+          "alt": "Avocado toast con tomate y semillas, dos lattes y una porción de budín de carrot cake sobre una mesa",
+          "consultaGeocodificacion": "SAN MARTIN 704, CABA"
         },
         {
-          "id": "poesia",
-          "nombre": "Café La Poesía",
-          "direccion": "Chile 502, San Telmo",
-          "descripcion": "El café propone un cruce entre literatura y vida barrial. Una parada para leer, conversar y descubrir otra forma de habitar una mesa porteña.",
-          "actividad": "Café y observación del espacio cultural.",
-          "duracion": "40 minutos estimados",
-          "acceso": "Consumos no incluidos; verificar disponibilidad y accesibilidad física.",
-          "horario": "Consultar horarios de atención y actividades.",
-          "fuente": "https://turismo.buenosaires.gob.ar/es/circuito-ruta-tanguera"
+          "id": "enitma",
+          "nombre": "Enitma Café Reserva Gourmet",
+          "direccion": "Av. Belgrano 502, Monserrat",
+          "descripcion": "Una mesa completa para compartir: té en hebras, tostado de jamón y queso, tostadas con mermelada y queso crema y un bowl de frutas. Recomendado en la galería Cafeterías en CABA.",
+          "actividad": "Brunch para 2 personas aprox.: té, tostados, tostadas y frutas.",
+          "duracion": "45 a 60 minutos estimados",
+          "acceso": "Consumo a cargo del visitante; consultar disponibilidad de mesas.",
+          "horario": "Consultar horarios de atención y carta vigente antes de salir.",
+          "fuente": "https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/brunch-3.html",
+          "imagen": "img/gastronomia/Gastronomia-2.jpeg",
+          "alt": "Mesa de brunch con tetera, taza de té, plato de frutas, tostadas con mermelada y queso crema y un tostado de jamón y queso"
         },
         {
-          "id": "tortoni",
-          "nombre": "Café Tortoni",
-          "direccion": "Av. de Mayo 825, Monserrat",
-          "descripcion": "Un café emblemático de la Avenida de Mayo. La propuesta se centra en observar su ambiente y disfrutar una pausa como parte del patrimonio cotidiano de la ciudad.",
-          "actividad": "Café, merienda y observación del interior si hay lugar.",
-          "duracion": "45 minutos estimados, sin contar espera",
-          "acceso": "Consumos y espectáculos se contratan al establecimiento.",
-          "horario": "Consultar atención, reservas y espectáculos en el sitio oficial.",
-          "fuente": "https://www.cafetortoni.com.ar/?lang=es"
-        },
-        {
-          "id": "violetas",
-          "nombre": "Las Violetas",
-          "direccion": "Av. Rivadavia 3899, Almagro",
-          "descripcion": "La confitería permite combinar una merienda con la observación de vitrales y detalles ornamentales. Se propone como una segunda salida para disfrutar Almagro sin prisas.",
-          "actividad": "Merienda y lectura de detalles del salón.",
-          "duracion": "60 minutos estimados",
-          "acceso": "Consumo a cargo del visitante; consultar reservas y necesidades alimentarias.",
-          "horario": "Consultar horarios y carta vigente del establecimiento.",
-          "fuente": "https://linktr.ee/confiterialasvioletas"
+          "id": "magari",
+          "nombre": "Magari Caffè",
+          "direccion": "Defensa 1661, Barracas",
+          "descripcion": "Una merienda para cerrar el recorrido: iced coffee, limonada con menta y jengibre, chocotorta y torta oreo. Recomendada en la galería Cafeterías en CABA.",
+          "actividad": "Merienda para 2 personas aprox.: bebidas frías, chocotorta y torta oreo.",
+          "duracion": "45 a 60 minutos estimados",
+          "acceso": "Consumo a cargo del visitante; consultar disponibilidad de mesas.",
+          "horario": "Consultar horarios de atención y carta vigente antes de salir.",
+          "fuente": "https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/merienda-6.html",
+          "imagen": "img/gastronomia/Gastronomia-3.jpeg",
+          "alt": "Porciones de chocotorta y torta oreo junto a un iced coffee y una limonada con menta y jengibre"
         }
       ]
     },
@@ -469,7 +384,7 @@ window.PORTEÑA_AYUDA = {
     },
     {
       "pregunta": "¿Cómo consulto el mapa y el orden de las paradas?",
-      "respuesta": "En Mapa de la ciudad elegí una parada numerada. Su ubicación se abre en el mapa incrustado. También hay un enlace para abrirla en otra pestaña. El orden es sugerido; también podés abrir el itinerario completo de una temática o comuna en Google Maps."
+      "respuesta": "En Mapa de la ciudad elegí una parada numerada. Su ubicación se abre en el mapa incrustado. También hay un enlace para abrirla en otra pestaña. El orden es sugerido; también podés abrir el itinerario completo de una temática en Google Maps."
     },
     {
       "pregunta": "¿Los recorridos son accesibles para todas las personas?",
@@ -485,7 +400,7 @@ window.PORTEÑA_AYUDA = {
     },
     {
       "pregunta": "¿Cuántas paradas puedo visitar y cómo elijo?",
-      "respuesta": "Hay 31 fichas: veinte paradas culturales y once obras de arte urbano con fotografías y ubicaciones. Podés elegir una temática o una comuna de arquitectura. Organizá las visitas según tus tiempos y combiná caminatas y transporte."
+      "respuesta": "Hay 23 fichas: doce paradas culturales y once obras de arte urbano con fotografías y ubicaciones. Podés elegir una temática o una comuna de arquitectura. Organizá las visitas según tus tiempos y combiná caminatas y transporte."
     },
     {
       "pregunta": "¿Necesito conexión a internet?",

@@ -26,13 +26,14 @@ Abrir <http://localhost:8000>. Solo requiere Node.js para el servidor local; no 
 ## Funcionalidades
 
 - Inicio con propuesta, logo, acceso a cinco temáticas, mapa general y recomendaciones.
-- Cinco recorridos y tres guías de arquitectura por comunas, con contenido completo.
-- 31 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes y navegación entre fichas. Todas tienen acceso a su ubicación.
+- Cinco recorridos con tres paradas cada uno (arte urbano conserva su galería de once obras) y tres guías de arquitectura por comunas, una parada por comuna.
+- 23 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes y navegación entre fichas. Todas tienen acceso a su ubicación.
+- Gastronomía: tres cafeterías de la galería Cafeterías en CABA, de la [Tarea 1 de Bárbara Gaito](https://github.com/BarbaraGaito/Tarea-1-Gaito), con sus fotografías originales (`img/gastronomia/Gastronomia-1.jpeg` a `Gastronomia-3.jpeg`).
 - Arte urbano: las once fotografías propias, descripciones y ubicaciones/contextos originales de Lara Trinidad Alonso, tomadas de [Paredes que Hablan, Actividad 1](https://github.com/Larialonso/Disenoydesarrolloweb/tree/main/Paredes-que-hablan). Cada fotografía se puede ver completa en su ficha. Se conservan las once fotos y sus descripciones, con las ubicaciones actualizadas durante la revisión del grupo.
-- Mapa general con marcadores de las 31 fichas, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Se inicia en Buenos Aires y la opción Todos los puntos incluye Santa Clara del Mar. Plaza del Congreso corresponde a las fotos de Ni Una Menos y Luche como una abuela; Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps; arquitectura se divide por comuna.
+- Mapa general con marcadores de las 23 fichas, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Se inicia en Buenos Aires y la opción Todos los puntos incluye Santa Clara del Mar. Plaza del Congreso corresponde a las fotos de Ni Una Menos y Luche como una abuela; Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps.
 - Contacto simulado con nombre, correo, motivo y mensaje; validación HTML y JavaScript, errores asociados a los campos y confirmación.
 - Planificación simulada con cinco opciones, nombre, correo, fecha, entre 1 y 20 personas, guía impresa opcional, cálculo automático, resumen, edición, limpieza y confirmación.
-- Chat de preguntas frecuentes en las 46 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
+- Chat de preguntas frecuentes en las 38 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
 - Menú móvil con Escape y foco de regreso, salto al contenido, foco visible, estados anunciados e impresión de guías con fichas desplegadas.
 
 Las reservas y el contacto son simulaciones explícitas. No se envían mensajes, no se guardan datos personales, no se cobran importes ni se reservan lugares reales. La planificación no incluye entradas, traslados ni consumos. No se implementa una pasarela de pago.
@@ -46,8 +47,6 @@ Las reservas y el contacto son simulaciones explícitas. No se envían mensajes,
 | Gastronomía | ARS $ 15.000 |
 | Arte urbano | ARS $ 9.000 |
 | Cine | ARS $ 11.000 |
-
-La guía impresa opcional agrega ARS $ 3.000 **por persona**. Son tarifas académicas de la simulación, no tarifas de los establecimientos.
 
 `total = (precio unitario + adicional por persona) × personas`
 
@@ -65,7 +64,7 @@ pantallas/
   futbol/, gastronomia/, cine/      Recorridos temáticos
   arte-urbano/                      Galería original de once obras
   arquitectura/                    Índice y comunas 1, 2 y 3
-  puntos/                          31 fichas individuales
+  puntos/                          23 fichas individuales
   mapa/, contacto/, reserva/       Ubicaciones y formularios
   preguntas-frecuentes/             Ayuda funcional con búsqueda
   sobre-la-guia/, design-system/    Equipo y reglas visuales
@@ -110,27 +109,21 @@ py scripts/generar-documentos.py
 
 Leaflet 1.9.4 dibuja los marcadores y permite filtrar las ubicaciones sobre cartografía de OpenStreetMap con atribución visible. Se sirve desde vendor/leaflet con su licencia BSD; sus estilos se limitan al mapa y no reemplazan Tailwind. Las coordenadas se guardan en datos/ubicaciones.json, con sus fuentes: API USIG, Georef y mapa institucional de FADU. Google Maps se conserva para itinerarios, fichas y como respaldo. El chat funciona localmente, sin credenciales, costes ni transmisión de consultas.
 
-Los encabezados, etiquetas, textos alternativos, enlaces descriptivos, foco visible, mensajes `role="status"`, errores textuales y navegación de teclado se explican en los PDF. Los bloques usan una base móvil y variantes `md`, `lg` y `xl`. No se afirma una certificación WCAG ni una auditoría con lector de pantalla.
-
-Fotografías propias del grupo, según confirmación de sus integrantes para esta revisión. Las once fotos de arte urbano son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. El resto proviene de los recursos ya incluidos en el prototipo grupal; no se asigna autoría individual sin confirmación. Lora, DM Sans y Manrope incluyen sus licencias SIL OFL en `img/fuentes/`. Consultar [fuentes e inventario](docs/RECURSOS.md).
+Fotografías propias del grupo. Las once fotos de arte urbano son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. Las tres fotos de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1. El resto proviene de los recursos ya incluidos en el prototipo grupal.
 
 ## Integrantes y responsabilidades
-
-Reparto confirmado por el grupo; no equivale a atribuir todos los cambios de esta revisión a esos integrantes.
-
 | Integrante | Legajo | Responsabilidad temática |
 | --- | --- | --- |
 | Aldana Nicolas | 1217752 | Cine: contenido y página temática. |
 | Alonso Lara Trinidad | 1155144 | Arte urbano: galería, once fotografías y textos de Paredes que Hablan. |
-| Gaito Barbara Denise | 1555822 | Gastronomía: contenido y página temática. |
+| Gaito Bárbara Denise | 1155822 | Gastronomía: contenido y página temática. |
 | Gonzalez Homero Ivan | 1153714 | Arquitectura: guía por comunas y fichas. |
 | Martinez Pilar | 1203885 | Fútbol: contenido y página temática. |
 
-El legajo de Bárbara se conserva como figura en el PDF de la Actividad 2. Cada integrante debe revisar su temática y aportar cambios relevantes con su propia cuenta. No se fabricó historial ni se generaron commits en nombre de terceros.
 
 ## Verificación y entrega
 
-Las 24 pruebas automatizadas comprueban los archivos HTML, enlaces/anclas, imágenes, etiquetas, once obras originales, validación y recuperación de errores, cinco tarifas con límites y adicionales, resumen, edición, limpieza, FAQ, menú, chat, mapa real de Leaflet en DOM, contraste matemático e impresión. `jsdom` valida el DOM y la lógica; no reproduce el diseño visual ni la carga real de Google Maps.
+Las 25 pruebas automatizadas comprueban los archivos HTML, enlaces/anclas, imágenes, etiquetas, tres paradas por temática con las fotos de gastronomía, once obras originales, validación y recuperación de errores, cinco tarifas con límites y adicionales, resumen, edición, limpieza, FAQ, menú, chat, mapa real de Leaflet en DOM, contraste matemático e impresión. `jsdom` valida el DOM y la lógica; no reproduce el diseño visual ni la carga real de Google Maps.
 
 **Pendiente antes de entregar:** comprobación visual en navegador a 320, 390, 768 y 1440 px, capturas reales de esa revisión, comprobación de iframes/servicios externos, revisión de cada integrante y publicación de los cambios aprobados. El acceso al navegador de pruebas no estuvo disponible en la sesión de preparación. No se presentan como realizadas esas pruebas. Ver [control de entrega](docs/ENTREGA.md).
 

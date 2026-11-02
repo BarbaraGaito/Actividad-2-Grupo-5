@@ -1,12 +1,12 @@
-# Evidencia de pruebas · 02/11/2026
+# Evidencia de pruebas
 
 Ejecución sobre la versión local preparada para revisión del Grupo 5.
 
 | Comprobación | Resultado |
 | --- | --- |
 | `npm run build` | Correcto: generación del contenido y compilación de Tailwind. |
-| `npm test` | 24 pruebas aprobadas, 0 fallos. |
-| HTML recorrido por la prueba estructural | 46 páginas. |
+| `npm test` | 25 pruebas aprobadas, 0 fallos. |
+| HTML recorrido por la prueba estructural | 38 páginas. |
 | Tarifas y adicionales | Cinco tarifas × dos límites de cantidad × dos estados del adicional: veinte combinaciones correctas. |
 | Arte urbano | Once fotos idénticas al original, verificadas contra sus hashes Git; once descripciones y alt conservados; ubicaciones actualizadas según la revisión del grupo. |
 | HTTP local | Respuesta 200 de inicio, arte urbano, contacto, reserva y ambos PDF. |

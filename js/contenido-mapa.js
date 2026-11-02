@@ -24,42 +24,10 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "museo-boquense",
-          "nombre": "Museo de la Pasión Boquense",
-          "direccion": "Brandsen 805, La Boca",
-          "numero": 2,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Brandsen 805",
-            "direccionNormalizada": "BRANDSEN 805, CABA",
-            "lat": -34.636469,
-            "lon": -58.36438,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Brandsen%20805&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
-          "id": "barracas-central",
-          "nombre": "Estadio de Barracas Central",
-          "direccion": "Luna 1211, Barracas",
-          "numero": 3,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Luna 1211",
-            "direccionNormalizada": "LUNA 1211, CABA",
-            "lat": -34.64709,
-            "lon": -58.396297,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Luna%201211&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
           "id": "duco",
           "nombre": "Estadio Tomás A. Ducó",
           "direccion": "Av. Amancio Alcorta 2570, Parque Patricios",
-          "numero": 4,
+          "numero": 2,
           "referencia": false,
           "nota": "",
           "posicion": {
@@ -75,7 +43,7 @@ window.PORTEÑA_MAPA = {
           "id": "banderin",
           "nombre": "Café El Banderín",
           "direccion": "Guardia Vieja 3601, Almagro",
-          "numero": 5,
+          "numero": 3,
           "referencia": false,
           "nota": "",
           "posicion": {
@@ -111,42 +79,10 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "roverano",
-          "nombre": "Pasaje Roverano",
-          "direccion": "Av. de Mayo 560, Monserrat",
-          "numero": 2,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Av. de Mayo 560",
-            "direccionNormalizada": "DE MAYO AV. 560, CABA",
-            "lat": -34.608645,
-            "lon": -58.374341,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=DE%20MAYO%20AV.%20560%2C%20CABA&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
-          "id": "colon",
-          "nombre": "Teatro Colón",
-          "direccion": "Cerrito 628, San Nicolás",
-          "numero": 3,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Cerrito 628",
-            "direccionNormalizada": "CERRITO 628, CABA",
-            "lat": -34.601054,
-            "lon": -58.382442,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Cerrito%20628&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
           "id": "recoleta",
           "nombre": "Cementerio de la Recoleta",
           "direccion": "Junín 1760, Recoleta",
-          "numero": 4,
+          "numero": 2,
           "referencia": false,
           "nota": "",
           "posicion": {
@@ -159,26 +95,10 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "biblioteca",
-          "nombre": "Biblioteca Nacional Mariano Moreno",
-          "direccion": "Agüero 2502, Recoleta",
-          "numero": 5,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Agüero 2502",
-            "direccionNormalizada": "AGUERO 2502, CABA",
-            "lat": -34.584762,
-            "lon": -58.397754,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Ag%C3%BCero%202502&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
           "id": "aguas",
           "nombre": "Palacio de Aguas Corrientes",
           "direccion": "Av. Córdoba 1950, Balvanera",
-          "numero": 6,
+          "numero": 3,
           "referencia": false,
           "nota": "",
           "posicion": {
@@ -187,22 +107,6 @@ window.PORTEÑA_MAPA = {
             "lat": -34.599765,
             "lon": -58.395029,
             "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20C%C3%B3rdoba%201950&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
-          "id": "abasto",
-          "nombre": "Antiguo Mercado de Abasto",
-          "direccion": "Av. Corrientes 3247, Balvanera",
-          "numero": 7,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Av. Corrientes 3247",
-            "direccionNormalizada": "CORRIENTES AV. 3247, CABA",
-            "lat": -34.603955,
-            "lon": -58.410672,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Corrientes%203247&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         }
@@ -214,82 +118,50 @@ window.PORTEÑA_MAPA = {
       "color": "#ff6b3d",
       "puntos": [
         {
-          "id": "mercado-san-telmo",
-          "nombre": "Mercado de San Telmo",
-          "direccion": "Defensa y Carlos Calvo, San Telmo",
+          "id": "petricor",
+          "nombre": "Petricor Café Bistró",
+          "direccion": "San Martín 704, San Nicolás",
           "numero": 1,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Defensa y Carlos Calvo",
-            "direccionNormalizada": "DEFENSA y CALVO, CARLOS, CABA",
-            "lat": -34.619505,
-            "lon": -58.371525,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Defensa%20y%20Carlos%20Calvo&geocodificar=TRUE",
+            "consulta": "SAN MARTIN 704, CABA",
+            "direccionNormalizada": "SAN MARTIN 704, CABA",
+            "lat": -34.599645,
+            "lon": -58.374138,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=SAN%20MARTIN%20704%2C%20CABA&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         },
         {
-          "id": "federal",
-          "nombre": "Bar El Federal",
-          "direccion": "Carlos Calvo 595, San Telmo",
+          "id": "enitma",
+          "nombre": "Enitma Café Reserva Gourmet",
+          "direccion": "Av. Belgrano 502, Monserrat",
           "numero": 2,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Carlos Calvo 595",
-            "direccionNormalizada": "CALVO, CARLOS 595, CABA",
-            "lat": -34.619619,
-            "lon": -58.374145,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Carlos%20Calvo%20595&geocodificar=TRUE",
+            "consulta": "Av. Belgrano 502",
+            "direccionNormalizada": "BELGRANO AV. 502, CABA",
+            "lat": -34.612648,
+            "lon": -58.373537,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Belgrano%20502&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         },
         {
-          "id": "poesia",
-          "nombre": "Café La Poesía",
-          "direccion": "Chile 502, San Telmo",
+          "id": "magari",
+          "nombre": "Magari Caffè",
+          "direccion": "Defensa 1661, Barracas",
           "numero": 3,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Chile 502",
-            "direccionNormalizada": "CHILE 502, CABA",
-            "lat": -34.616062,
-            "lon": -58.373267,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Chile%20502&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
-          "id": "tortoni",
-          "nombre": "Café Tortoni",
-          "direccion": "Av. de Mayo 825, Monserrat",
-          "numero": 4,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Av. de Mayo 825",
-            "direccionNormalizada": "DE MAYO AV. 825, CABA",
-            "lat": -34.608824,
-            "lon": -58.37813,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20de%20Mayo%20825&geocodificar=TRUE",
-            "tipo": "dirección de la ficha"
-          }
-        },
-        {
-          "id": "violetas",
-          "nombre": "Las Violetas",
-          "direccion": "Av. Rivadavia 3899, Almagro",
-          "numero": 5,
-          "referencia": false,
-          "nota": "",
-          "posicion": {
-            "consulta": "Av. Rivadavia 3899",
-            "direccionNormalizada": "RIVADAVIA AV. 3899, CABA",
-            "lat": -34.611314,
-            "lon": -58.420777,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Rivadavia%203899&geocodificar=TRUE",
+            "consulta": "Defensa 1661",
+            "direccionNormalizada": "DEFENSA 1661, CABA",
+            "lat": -34.627524,
+            "lon": -58.370949,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Defensa%201661&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         }

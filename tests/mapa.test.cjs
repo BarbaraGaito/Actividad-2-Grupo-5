@@ -12,7 +12,7 @@ function abrir(ruta='pantallas/mapa/index.html', biblioteca=true) {
 test('Mapa general crea marcadores de los datos públicos y controles accesibles', () => {
   const t=abrir();
   const ubicaciones=require('../datos/ubicaciones.json').puntos;
-  assert.equal(Object.keys(ubicaciones).length,31);
+  assert.equal(Object.keys(ubicaciones).length,23);
   const coordenadas=new Set(Object.values(ubicaciones).filter(p=>!p.fueraCABA).map(p=>p.lat+','+p.lon));
   assert.equal(t.d.querySelectorAll('.leaflet-marker-icon').length,coordenadas.size);
   assert.equal(t.d.querySelectorAll('#tema-mapa option').length,7);

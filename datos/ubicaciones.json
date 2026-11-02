@@ -11,22 +11,6 @@
       "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Brandsen%20805&geocodificar=TRUE",
       "tipo": "dirección de la ficha"
     },
-    "museo-boquense": {
-      "consulta": "Brandsen 805",
-      "direccionNormalizada": "BRANDSEN 805, CABA",
-      "lat": -34.636469,
-      "lon": -58.36438,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Brandsen%20805&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "barracas-central": {
-      "consulta": "Luna 1211",
-      "direccionNormalizada": "LUNA 1211, CABA",
-      "lat": -34.64709,
-      "lon": -58.396297,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Luna%201211&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
     "duco": {
       "consulta": "Av. Amancio Alcorta 2570",
       "direccionNormalizada": "ALCORTA, AMANCIO AV. 2570, CABA",
@@ -51,14 +35,6 @@
       "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20de%20Mayo%201370&geocodificar=TRUE",
       "tipo": "dirección de la ficha"
     },
-    "colon": {
-      "consulta": "Cerrito 628",
-      "direccionNormalizada": "CERRITO 628, CABA",
-      "lat": -34.601054,
-      "lon": -58.382442,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Cerrito%20628&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
     "recoleta": {
       "consulta": "Junín 1760",
       "direccionNormalizada": "JUNIN 1760, CABA",
@@ -67,60 +43,12 @@
       "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Jun%C3%ADn%201760&geocodificar=TRUE",
       "tipo": "dirección de la ficha"
     },
-    "biblioteca": {
-      "consulta": "Agüero 2502",
-      "direccionNormalizada": "AGUERO 2502, CABA",
-      "lat": -34.584762,
-      "lon": -58.397754,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Ag%C3%BCero%202502&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
     "aguas": {
       "consulta": "Av. Córdoba 1950",
       "direccionNormalizada": "CORDOBA AV. 1950, CABA",
       "lat": -34.599765,
       "lon": -58.395029,
       "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20C%C3%B3rdoba%201950&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "abasto": {
-      "consulta": "Av. Corrientes 3247",
-      "direccionNormalizada": "CORRIENTES AV. 3247, CABA",
-      "lat": -34.603955,
-      "lon": -58.410672,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Corrientes%203247&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "mercado-san-telmo": {
-      "consulta": "Defensa y Carlos Calvo",
-      "direccionNormalizada": "DEFENSA y CALVO, CARLOS, CABA",
-      "lat": -34.619505,
-      "lon": -58.371525,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Defensa%20y%20Carlos%20Calvo&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "federal": {
-      "consulta": "Carlos Calvo 595",
-      "direccionNormalizada": "CALVO, CARLOS 595, CABA",
-      "lat": -34.619619,
-      "lon": -58.374145,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Carlos%20Calvo%20595&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "poesia": {
-      "consulta": "Chile 502",
-      "direccionNormalizada": "CHILE 502, CABA",
-      "lat": -34.616062,
-      "lon": -58.373267,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Chile%20502&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "violetas": {
-      "consulta": "Av. Rivadavia 3899",
-      "direccionNormalizada": "RIVADAVIA AV. 3899, CABA",
-      "lat": -34.611314,
-      "lon": -58.420777,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Rivadavia%203899&geocodificar=TRUE",
       "tipo": "dirección de la ficha"
     },
     "gaumont": {
@@ -154,22 +82,6 @@
       "lon": -58.381226,
       "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Belgrano%20y%209%20de%20Julio&geocodificar=TRUE",
       "tipo": "referencia de intersección"
-    },
-    "tortoni": {
-      "consulta": "Av. de Mayo 825",
-      "direccionNormalizada": "DE MAYO AV. 825, CABA",
-      "lat": -34.608824,
-      "lon": -58.37813,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20de%20Mayo%20825&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
-    },
-    "roverano": {
-      "consulta": "Av. de Mayo 560",
-      "direccionNormalizada": "DE MAYO AV. 560, CABA",
-      "lat": -34.608645,
-      "lon": -58.374341,
-      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=DE%20MAYO%20AV.%20560%2C%20CABA&geocodificar=TRUE",
-      "tipo": "dirección de la ficha"
     },
     "scaloneta": {
       "consulta": "Santa Clara del Mar",
@@ -252,6 +164,30 @@
       "urlFuente": "https://www.fadu.uba.ar/contacto/",
       "tipo": "institución",
       "fuente": "Mapa publicado por FADU UBA"
+    },
+    "petricor": {
+      "consulta": "SAN MARTIN 704, CABA",
+      "direccionNormalizada": "SAN MARTIN 704, CABA",
+      "lat": -34.599645,
+      "lon": -58.374138,
+      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=SAN%20MARTIN%20704%2C%20CABA&geocodificar=TRUE",
+      "tipo": "dirección de la ficha"
+    },
+    "enitma": {
+      "consulta": "Av. Belgrano 502",
+      "direccionNormalizada": "BELGRANO AV. 502, CABA",
+      "lat": -34.612648,
+      "lon": -58.373537,
+      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Belgrano%20502&geocodificar=TRUE",
+      "tipo": "dirección de la ficha"
+    },
+    "magari": {
+      "consulta": "Defensa 1661",
+      "direccionNormalizada": "DEFENSA 1661, CABA",
+      "lat": -34.627524,
+      "lon": -58.370949,
+      "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Defensa%201661&geocodificar=TRUE",
+      "tipo": "dirección de la ficha"
     }
   }
 }
