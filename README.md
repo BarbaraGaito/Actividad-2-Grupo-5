@@ -1,125 +1,139 @@
 # Porteña · Buenos Aires, a pie y con tiempo
 
-Actividad 3 · Grupo 5 · Diseño y Desarrollo Web. Profesora: Patricia Carina Litovicius.
+Actividad 3 · Grupo 5 · Diseño y Desarrollo Web · Profesora Patricia Carina Litovicius.
 
-Guía cultural para turistas y residentes que quieran explorar Buenos Aires mediante cinco recorridos temáticos: fútbol, arquitectura, gastronomía, arte urbano y cine.
+Guía de recorridos culturales para turistas nacionales e internacionales y residentes curiosos. Reúne fútbol, arquitectura, gastronomía, arte urbano y cine. Su objetivo es acercar historias, imágenes e información práctica para explorar la ciudad al ritmo de cada visitante.
 
-## Enlaces
+## Ver el sitio
 
-- [Repositorio grupal](https://github.com/BarbaraGaito/Actividad-2-Grupo-5)
-- [Prototipo y Design System en Figma](https://www.figma.com/design/xHqN3NQfBRSYfUmpRroRao/Actividad-2-Grupo-5?node-id=0-1)
-- [Dirección existente de GitHub Pages](https://barbaragaito.github.io/Actividad-2-Grupo-5/). Esta versión se encuentra en el checkout local: debe subirse y desplegarse para que esa dirección refleje los cambios.
+- [Sitio publicado en GitHub Pages](https://barbaragaito.github.io/Actividad-2-Grupo-5/).
+- [Repositorio público grupal](https://github.com/BarbaraGaito/Actividad-2-Grupo-5).
+- [Prototipo original y diseño de la Actividad 2 en Figma](https://www.figma.com/design/xHqN3NQfBRSYfUmpRroRao/Actividad-2-Grupo-5?node-id=0-1).
+- [Design System de la versión implementada](pantallas/design-system/index.html).
+- [Documento 1: diseño y contenido](output/pdf/01-diseno-contenido.pdf).
+- [Documento 2: desarrollo e implementación](output/pdf/02-desarrollo-implementacion.pdf).
 
-## Ejecutar
+**Estado de esta revisión:** los cambios están locales para revisión del grupo. La URL pública muestra la versión que se haya subido a GitHub, no necesariamente estos archivos. No se realizaron commits ni un despliegue de esta revisión. Las diferencias respecto del Figma original están explicadas en los documentos.
 
-Abrir `index.html` directamente, o ejecutar desde esta carpeta:
-
-```sh
-python3 -m http.server 8000
-```
-
-Visitar <http://localhost:8000>. El CSS de Tailwind, las fuentes y las imágenes están incluidos. No hace falta instalar dependencias para visualizarlo. El mapa y los enlaces externos necesitan internet.
-
-Para modificar los estilos:
+Para verla en esta computadora:
 
 ```sh
-npm install
-npm run build:css
-# Durante la edición:
-npm run watch:css
+npm start
 ```
 
-Tailwind CSS 3.4.17 está fijado en `package-lock.json`. Editar las clases HTML, `tailwind.config.js` y `css/entrada.css`; `css/styles.css` es el resultado compilado. Se utiliza la [CLI oficial de Tailwind 3](https://v3.tailwindcss.com/docs/installation).
+Abrir <http://localhost:8000>. Solo requiere Node.js para el servidor local; no hace falta instalar dependencias para visualizar los archivos ya compilados. También se puede abrir `index.html` directamente. Google Maps y las fuentes de consulta externas requieren internet. Los datos de formularios permanecen únicamente en memoria durante su uso.
 
 ## Funcionalidades
 
-- Inicio, cinco recorridos temáticos y arquitectura por comunas.
-- Comuna 1: Palacio Barolo, Pasaje Roverano y Teatro Colón. Comunas 2 y 3 tienen una página que informa el estado del contenido pendiente.
-- Paradas desplegables con descripción e información práctica.
-- Mapa incrustado, lista numerada y enlaces para abrir las ubicaciones en otra pestaña. Las referencias de zona y las ubicaciones pendientes se identifican expresamente.
-- Contacto con validación nativa de HTML y confirmación simulada.
-- Planificación con cinco opciones, cantidad de personas, fecha, guía impresa opcional, total automático en ARS, resumen editable y confirmación simulada.
-- Preguntas frecuentes con búsqueda y respuestas desplegables: alternativa funcional elegida para el punto 3.6 de la consigna.
-- Menú móvil, navegación mediante teclado, salto al contenido, foco visible y mensajes de estado. Impresión de las guías desde el navegador.
+- Inicio con propuesta, logo, acceso a cinco temáticas, mapa general y recomendaciones.
+- Cinco recorridos y tres guías de arquitectura por comunas, con contenido completo.
+- 31 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes y navegación entre fichas. Todas tienen acceso a su ubicación.
+- Arte urbano: las once fotografías propias, descripciones y ubicaciones/contextos originales de Lara Trinidad Alonso, tomadas de [Paredes que Hablan, Actividad 1](https://github.com/Larialonso/Disenoydesarrolloweb/tree/main/Paredes-que-hablan). Cada fotografía se puede ver completa en su ficha. Se conservan las once fotos y sus descripciones, con las ubicaciones actualizadas durante la revisión del grupo.
+- Mapa general con marcadores de las 31 fichas, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Se inicia en Buenos Aires y la opción Todos los puntos incluye Santa Clara del Mar. Plaza del Congreso corresponde a las fotos de Ni Una Menos y Luche como una abuela; Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps; arquitectura se divide por comuna.
+- Contacto simulado con nombre, correo, motivo y mensaje; validación HTML y JavaScript, errores asociados a los campos y confirmación.
+- Planificación simulada con cinco opciones, nombre, correo, fecha, entre 1 y 20 personas, guía impresa opcional, cálculo automático, resumen, edición, limpieza y confirmación.
+- Chat de preguntas frecuentes en las 46 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
+- Menú móvil con Escape y foco de regreso, salto al contenido, foco visible, estados anunciados e impresión de guías con fichas desplegadas.
 
-Los formularios no envían ni almacenan datos. No hay pagos ni reservas reales. Los precios son de práctica, están expresados en pesos argentinos y no requieren conversión de moneda.
+Las reservas y el contacto son simulaciones explícitas. No se envían mensajes, no se guardan datos personales, no se cobran importes ni se reservan lugares reales. La planificación no incluye entradas, traslados ni consumos. No se implementa una pasarela de pago.
 
-## Tecnologías y fecha de corte
+## Precios y cálculo
 
-Se tomó el **27/10/2026**, de acuerdo con el cronograma de `consigna`.
+| Opción | Precio por persona |
+| --- | ---: |
+| Fútbol | ARS $ 12.000 |
+| Arquitectura | ARS $ 10.000 |
+| Gastronomía | ARS $ 15.000 |
+| Arte urbano | ARS $ 9.000 |
+| Cine | ARS $ 11.000 |
 
-Se utilizan HTML5 semántico y formularios; CSS, Flexbox, Grid y media queries; Tailwind CSS; variables, operadores, condicionales, funciones, DOM y eventos de JavaScript. La validación corresponde a atributos HTML: `required`, `type`, `min`, `max`, `step`, `minlength`, `maxlength` y `pattern`.
+La guía impresa opcional agrega ARS $ 3.000 **por persona**. Son tarifas académicas de la simulación, no tarifas de los establecimientos.
 
-Las validaciones JavaScript previstas para el **29/10**, y JSON/consumo de APIs de la semana del **02/11**, quedan fuera de esta versión. No se utilizan `fetch`, JSON en el navegador, frameworks frontend, backend, base de datos ni almacenamiento de datos personales. La compilación de Tailwind es una herramienta de desarrollo; el navegador solo recibe HTML, CSS y JavaScript.
+`total = (precio unitario + adicional por persona) × personas`
 
-## Estructura
+Ejemplo: fútbol, 2 personas y guía impresa: `(12.000 + 3.000) × 2 = ARS $ 30.000`. Todos los valores están en pesos argentinos; no corresponde conversión ni tipo de cambio. Las fechas pasadas se rechazan usando la fecha actual de Buenos Aires, incluso si la pantalla quedó abierta desde el día anterior.
+
+## Tecnologías
+
+HTML5 semántico, Tailwind CSS 3.4.17 y JavaScript del navegador. No se utilizan React, Angular, Vue, Bootstrap, backend ni base de datos. Tailwind se compila con su CLI; el CSS generado está incluido. Node.js se utiliza para desarrollo, generación estática y pruebas. jsdom es una dependencia de pruebas y no se carga en el sitio.
+
+## Organización
 
 ```text
-index.html                         Inicio y entrada del sitio
+index.html                         Inicio
 pantallas/
-  futbol/index.html                Fútbol
-  gastronomia/index.html           Gastronomía
-  arquitectura/
-    index.html                     Guía por comunas
-    comuna-1.html                  Fichas de arquitectura
-    comuna-2.html / comuna-3.html   Contenido pendiente
-  arte-urbano/index.html           Arte urbano
-  cine/index.html                  Cine
-  mapa/index.html                  Mapa y paradas
-  contacto/index.html              Contacto simulado
-  reserva/index.html               Planificación y precios
-  preguntas-frecuentes/index.html  Ayuda con búsqueda
-  sobre-la-guia/index.html         Proyecto y equipo
-css/entrada.css                    Entrada de Tailwind y componentes
-css/styles.css                     CSS compilado
+  futbol/, gastronomia/, cine/      Recorridos temáticos
+  arte-urbano/                      Galería original de once obras
+  arquitectura/                    Índice y comunas 1, 2 y 3
+  puntos/                          31 fichas individuales
+  mapa/, contacto/, reserva/       Ubicaciones y formularios
+  preguntas-frecuentes/             Ayuda funcional con búsqueda
+  sobre-la-guia/, design-system/    Equipo y reglas visuales
+css/entrada.css                    Tailwind y componentes compartidos
+css/styles.css                     Resultado compilado, incluido en Git
 css/fuentes.css                    Fuentes locales
-js/sitio.js                        DOM e interacciones
-img/inicio/                        Imágenes de la página principal
-img/futbol/                        Recursos de Fútbol
-img/gastronomia/                   Recursos de Gastronomía
-img/arquitectura/                  Recursos de Arquitectura y comunas
-img/arte-urbano/                   Recursos de Arte urbano
-img/cine/                          Recursos de Cine
-img/compartidas/                   Logos, flechas y separadores comunes
-img/fuentes/                       Tipografías y licencias SIL OFL
-tailwind.config.js                 Paleta y configuración
-documentacion/                     Documentos y capturas locales
+js/sitio.js                        Validaciones y comportamiento
+js/chat.js                         Chat local de preguntas frecuentes
+js/mapa.js                         Marcadores y filtros del mapa
+vendor/leaflet/                    Biblioteca de mapas y licencia BSD
+datos/recorridos.json              Contenido y fuentes de todas las fichas
+datos/arte-actividad-1.json         Registro fiel de la galería de Lara
+img/                              Fotografías, identidad y fuentes
+scripts/generar-contenido.cjs       Generación de HTML estático
+scripts/servidor.cjs                Servidor local
+scripts/generar-documentos.py       Generación de los dos PDF
+tests/                            Pruebas de contenido, interacciones, chat, mapa y contraste
+docs/                             Fuentes, entrega y pruebas
+output/pdf/                        Documentos de entrega
 ```
 
-Las páginas contienen su contenido completo en HTML. El script compartido añade las interacciones; no se requiere un router ni compilar JavaScript. Sin JavaScript se mantienen los contenidos, la navegación, el mapa por enlaces y los desplegables; se informa que las simulaciones requieren activarlo.
+Las páginas se entregan completas en HTML y usan rutas relativas, compatibles con el subdirectorio de GitHub Pages. El navegador no necesita un router ni descargar JSON para mostrar el contenido. Sin JavaScript se conservan las guías, imágenes, enlaces al mapa y desplegables nativos; las simulaciones solicitan activarlo.
 
-Las vistas están agrupadas por temática dentro de `pantallas/`. Sus enlaces y recursos utilizan rutas relativas, por lo que también se pueden abrir directamente desde sus subcarpetas. Tailwind incluye todas las vistas de `pantallas/` al compilar los estilos.
+Para editar las fichas comunes, modificar `datos/recorridos.json`. Para corregir arte urbano, modificar el registro original en `datos/arte-actividad-1.json`: el generador sincroniza esos once registros con el archivo general. No editar manualmente las fichas generadas porque se reemplazan al recompilar. Las descripciones originales de arte urbano tienen una prueba de fidelidad.
 
-## Servicios y recursos
+```sh
+npm ci
+npm run build
+npm test
+```
 
-- Google Maps mediante `iframe` y enlaces; sin API programada ni clave.
-- Preguntas frecuentes locales mediante HTML, DOM y eventos.
-- Pantallas y recursos obtenidos del MCP oficial de Figma. Todos los recursos visuales se sirven localmente, sin URLs temporales de assets.
-- Lora, DM Sans y Manrope locales, con las licencias SIL OFL incluidas en `img/fuentes/`.
-- Enlaces de consulta a [Palacio Barolo Tours](https://palaciobarolotours.com.ar/informacion-relevante-para-los-visitantes/) y al [Teatro Colón](https://teatrocolon.org.ar/). Los horarios de visita deben consultarse antes de salir.
+`npm run watch:css` recompila estilos durante la edición. `npm run build:content` regenera las fichas, mapa, comunas 2/3 y Design System. Las vistas principales conservan la composición heredada de la Actividad 2.
 
-La autoría y las licencias de publicación de las fotografías se deben confirmar con el grupo antes del despliegue público. El origen verificable de estos archivos es el prototipo compartido; no se atribuye una licencia que no fue proporcionada.
+Para regenerar los PDF después de añadir las capturas reales:
 
-## Review y entrega
+```sh
+py -m pip install -r scripts/requirements-documentos.txt
+py scripts/generar-documentos.py
+```
 
-Se verificaron las 14 páginas en Chrome a 320, 390, 768 y 1440 px, los enlaces internos, la carga de imágenes y fuentes, el menú móvil, los formularios, las cinco tarifas y sus adicionales, las fechas, la edición del resumen, la búsqueda de preguntas y la navegación sin JavaScript. La compilación de Tailwind y la revisión sintáctica del JavaScript finalizaron correctamente. También se comprobó la carga visual del mapa externo.
+## Servicios externos, accesibilidad y recursos
 
-Por indicación del usuario, se conservan “Lugar 1” a “Lugar 5” y las paradas sin dirección. No se inventaron nombres ni coordenadas. También quedan pendientes las fotografías originales, la autoría de las fichas y los contenidos de Comunas 2 y 3. Las diferencias entre el contenido móvil antiguo y el escritorio se resolvieron manteniendo el contenido de escritorio en todos los tamaños.
+Leaflet 1.9.4 dibuja los marcadores y permite filtrar las ubicaciones sobre cartografía de OpenStreetMap con atribución visible. Se sirve desde vendor/leaflet con su licencia BSD; sus estilos se limitan al mapa y no reemplazan Tailwind. Las coordenadas se guardan en datos/ubicaciones.json, con sus fuentes: API USIG, Georef y mapa institucional de FADU. Google Maps se conserva para itinerarios, fichas y como respaldo. El chat funciona localmente, sin credenciales, costes ni transmisión de consultas.
 
-Los contadores de inicio y cine se adaptaron al contenido disponible; no se anuncian audios que el proyecto todavía no incorpora. Se agregaron las páginas y los accesos necesarios para la Actividad 3.
+Los encabezados, etiquetas, textos alternativos, enlaces descriptivos, foco visible, mensajes `role="status"`, errores textuales y navegación de teclado se explican en los PDF. Los bloques usan una base móvil y variantes `md`, `lg` y `xl`. No se afirma una certificación WCAG ni una auditoría con lector de pantalla.
 
-Antes de entregar: revisar contenidos, confirmar derechos de recursos, completar aportes individuales, subir los cambios y comprobar GitHub Pages. En esta sesión no se crean commits ni se publica el sitio.
+Fotografías propias del grupo, según confirmación de sus integrantes para esta revisión. Las once fotos de arte urbano son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. El resto proviene de los recursos ya incluidos en el prototipo grupal; no se asigna autoría individual sin confirmación. Lora, DM Sans y Manrope incluyen sus licencias SIL OFL en `img/fuentes/`. Consultar [fuentes e inventario](docs/RECURSOS.md).
 
-Los PDF y las carpetas `assets/` están excluidos por `.gitignore`. Los archivos de `img/` son recursos del sitio y se incluyen para que funcione al clonar el repositorio. Se respetaron las reglas locales existentes para `*.md` y `*.tex`; este README ya estaba versionado.
+## Integrantes y responsabilidades
 
-## Integrantes
+Reparto confirmado por el grupo; no equivale a atribuir todos los cambios de esta revisión a esos integrantes.
 
-| Integrante | Legajo | Contribuciones |
+| Integrante | Legajo | Responsabilidad temática |
 | --- | --- | --- |
-| Aldana Nicolas | 1217752 | Completar con su aporte real. |
-| Alonso Lara Trinidad | 1155144 | Completar con su aporte real. |
-| Gaito Barbara Denise | 1155822 | Completar con su aporte real. |
-| Gonzalez Homero Ivan | 1153714 | Completar con su aporte real. |
-| Martinez Pilar | 1203885 | Completar con su aporte real. |
+| Aldana Nicolas | 1217752 | Cine: contenido y página temática. |
+| Alonso Lara Trinidad | 1155144 | Arte urbano: galería, once fotografías y textos de Paredes que Hablan. |
+| Gaito Barbara Denise | 1555822 | Gastronomía: contenido y página temática. |
+| Gonzalez Homero Ivan | 1153714 | Arquitectura: guía por comunas y fichas. |
+| Martinez Pilar | 1203885 | Fútbol: contenido y página temática. |
 
-No se atribuyeron tareas ni commits a integrantes sin evidencia de sus contribuciones.
+El legajo de Bárbara se conserva como figura en el PDF de la Actividad 2. Cada integrante debe revisar su temática y aportar cambios relevantes con su propia cuenta. No se fabricó historial ni se generaron commits en nombre de terceros.
+
+## Verificación y entrega
+
+Las 24 pruebas automatizadas comprueban los archivos HTML, enlaces/anclas, imágenes, etiquetas, once obras originales, validación y recuperación de errores, cinco tarifas con límites y adicionales, resumen, edición, limpieza, FAQ, menú, chat, mapa real de Leaflet en DOM, contraste matemático e impresión. `jsdom` valida el DOM y la lógica; no reproduce el diseño visual ni la carga real de Google Maps.
+
+**Pendiente antes de entregar:** comprobación visual en navegador a 320, 390, 768 y 1440 px, capturas reales de esa revisión, comprobación de iframes/servicios externos, revisión de cada integrante y publicación de los cambios aprobados. El acceso al navegador de pruebas no estuvo disponible en la sesión de preparación. No se presentan como realizadas esas pruebas. Ver [control de entrega](docs/ENTREGA.md).
+
+Para publicar los archivos aprobados, subirlos a la rama que GitHub Pages tenga configurada. Si se usa publicación desde rama, la configuración habitual para este proyecto es `main` / raíz. La carpeta incluye `.nojekyll` y CSS compilado. Revisar la URL pública y sus subpáginas después del despliegue. La configuración de Pages debe confirmarla alguien con acceso a Settings del repositorio.
+
+Los PDF y los Markdown de `docs/` se incluyen en Git mediante excepciones a `.gitignore`. `tmp/` y `node_modules/` quedan excluidos.

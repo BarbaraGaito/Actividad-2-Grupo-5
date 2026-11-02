@@ -26,6 +26,11 @@
   .campo { @apply mt-2 block min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-4 py-3 text-base; }
   .ayuda { @apply mt-2 text-sm text-[#59574e]; }
   .estado { @apply rounded-xl border border-borde bg-arena p-5; }
+  .error-campo { @apply mt-2 text-sm font-bold text-[#a11c16]; }
+  .campo[aria-invalid="true"] { @apply border-2 border-[#a11c16]; }
+  .hero :focus-visible, footer :focus-visible { outline-color: #e9ff48; }
+  .barra-datos :focus-visible, .banda-cierre :focus-visible { outline-color: #171714; }
+  .boton-acento:focus-visible { outline-color: #171714; outline-offset: -4px; }
   .hero { @apply bg-tinta text-papel; }
   .hero-interior { @apply grid items-center gap-8 py-8 md:grid-cols-2 md:gap-12 md:py-16 xl:gap-16 xl:py-20; }
   .hero-texto { @apply flex min-w-0 flex-col items-start gap-6; }
@@ -68,6 +73,45 @@
   .faq summary { @apply min-h-12 p-5 font-bold; }
   .faq details { @apply rounded-2xl border border-borde bg-arena; }
   .faq details p { @apply px-5 pb-5; }
+  .chat-portena { @apply font-sans text-tinta; }
+  .chat-lanzador { @apply fixed bottom-4 right-4 z-40 flex min-h-12 items-center gap-4 rounded-full border border-papel bg-tinta px-5 py-3 text-sm font-bold text-papel shadow-lg; }
+  .chat-lanzador:focus-visible { outline-color: #2454bb; }
+  .chat-panel { @apply fixed right-4 z-50 flex flex-col overflow-hidden rounded-2xl border border-borde bg-papel shadow-xl; bottom: 84px; width: min(420px, calc(100vw - 32px)); height: min(620px, calc(100dvh - 108px)); }
+  .chat-cabecera { @apply flex shrink-0 items-center justify-between gap-3 bg-tinta px-5 py-4 text-papel; }
+  .chat-cabecera h2 { @apply font-sans text-xl font-bold; }
+  .chat-cabecera p { @apply mt-1 text-xs; }
+  .chat-cabecera button { @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#6e6e64] text-xl; }
+  .chat-cabecera :focus-visible { outline-color: #e9ff48; }
+  .chat-conversacion { @apply flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto p-4; overscroll-behavior: contain; }
+  .chat-mensaje { @apply max-w-full rounded-xl bg-arena p-4 text-sm; overflow-wrap: anywhere; }
+  .chat-mensaje strong { @apply mb-1 block text-xs; }
+  .chat-mensaje a { @apply mt-3 block py-1 font-bold underline underline-offset-4; }
+  .chat-usuario { @apply ml-6 bg-tinta text-papel; }
+  .chat-usuario :focus-visible { outline-color: #e9ff48; }
+  .chat-sugerencias { @apply flex shrink-0 flex-wrap gap-2 border-t border-borde px-4 py-2; }
+  .chat-sugerencias button { @apply min-h-11 rounded-full border border-borde px-3 py-2 text-xs font-bold; }
+  .chat-formulario { @apply shrink-0 px-4 pb-3; }
+  .chat-formulario label { @apply mb-2 block text-sm font-bold; }
+  .chat-envio { @apply flex items-stretch gap-2; }
+  .chat-envio input { @apply min-h-12 min-w-0 flex-1 rounded-xl border border-[#8d897e] bg-papel px-3 py-2 text-base; }
+  .chat-envio input[aria-invalid="true"] { @apply border-2 border-[#a11c16]; }
+  .chat-envio button { @apply min-h-12 rounded-xl bg-tinta px-4 text-sm font-bold text-papel; }
+  .chat-pie { @apply flex shrink-0 flex-wrap items-center justify-between gap-2 border-t border-borde px-4 py-2 text-xs; }
+  .chat-pie a, .chat-pie button { @apply min-h-11 py-3 underline underline-offset-4; }
+  .mapa-vista { @apply min-w-0; }
+  .mapa-controles { @apply mb-4 flex flex-wrap items-end gap-3; }
+  .mapa-controles > div { @apply min-w-0 flex-1; }
+  .mapa-controles label { @apply mb-2 block text-sm font-bold; }
+  .mapa-controles select { @apply min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-3 py-2 text-base; }
+  .mapa-controles button { @apply min-h-12 rounded-full bg-tinta px-4 py-3 text-sm font-bold text-papel; }
+  .mapa-geografico { @apply z-0 h-[360px] w-full rounded-2xl border border-borde md:h-[min(50vh,480px)]; }
+  .mapa-geografico :focus-visible { outline-color: #171714; box-shadow: 0 0 0 6px #fffef8; }
+  .mapa-leyenda { @apply mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm; }
+  .mapa-leyenda li { @apply flex items-center gap-2; }
+  .mapa-leyenda span { @apply h-4 w-4 rounded-full border border-tinta; }
+  .mapa-numero { @apply flex h-[38px] min-w-[38px] items-center justify-center rounded-full border-2 border-tinta px-1 text-xs font-bold text-tinta shadow; }
+  .mapa-geografico .leaflet-popup-content { @apply font-sans text-sm leading-relaxed; }
+  .mapa-geografico .leaflet-popup-content a { @apply my-2 block min-h-11 py-2 font-bold underline; }
 }
 
 /* La portada móvil tiene la composición oscura del frame 14:614. */

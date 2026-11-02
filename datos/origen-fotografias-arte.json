@@ -1,0 +1,72 @@
+{
+  "repositorio": "https://github.com/Larialonso/Disenoydesarrolloweb",
+  "arbolGit": "4cfe2102b3e6192261568c56683aec0ace9ddcc2",
+  "fotografias": [
+    {
+      "archivo": "img/arte-urbano/actividad-1/facultad-arquitectura.jpeg",
+      "rutaOriginal": "img/facultad-arquitectura.jpeg",
+      "shaGit": "992df492478ac7f2aec1cd24ef12105b44b99849",
+      "bytes": 397289
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/scaloneta.jpeg",
+      "rutaOriginal": "img/scaloneta.jpeg",
+      "shaGit": "1dd6fb31a4ed5cb54a08bf3eba87449f6884aac1",
+      "bytes": 685143
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/niunamenos.jpeg",
+      "rutaOriginal": "img/niunamenos.jpeg",
+      "shaGit": "061005cf94695e4bf621dffffe005e8e0e79065e",
+      "bytes": 1025304
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/personaje-corazones.jpeg",
+      "rutaOriginal": "img/personaje-corazones.jpeg",
+      "shaGit": "916f3590d2b6cbe607d3ed76bf5b6ea847496a7c",
+      "bytes": 295743
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/luche-abuela.jpeg",
+      "rutaOriginal": "img/luche-abuela.jpeg",
+      "shaGit": "9b936a4f2a8e69b2396cb70efbbf0ec6826b8a83",
+      "bytes": 213145
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/bandoneonista.jpeg",
+      "rutaOriginal": "img/bandoneonista.jpeg",
+      "shaGit": "543516723af9f5e2ce3dd47a025af913ad833055",
+      "bytes": 940894
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/realidades.jpeg",
+      "rutaOriginal": "img/realidades.jpeg",
+      "shaGit": "55e8b20f0addc69ab3dd75b92d3b7ac80a318ff3",
+      "bytes": 905044
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/collage-grafico.jpeg",
+      "rutaOriginal": "img/collage-grafico.jpeg",
+      "shaGit": "8a9b45b95d8307c1d7f40c0629a9c3beafb048ee",
+      "bytes": 407258
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/mural-futbolero.jpeg",
+      "rutaOriginal": "img/mural-futbolero.jpeg",
+      "shaGit": "6d14ec727aa6a5ab5d9d6363452f260f1915c17c",
+      "bytes": 400234
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/retrato-persiana.jpeg",
+      "rutaOriginal": "img/retrato-persiana.jpeg",
+      "shaGit": "b171fe9550f63a44b6fab09a5336890601cc0948",
+      "bytes": 904040
+    },
+    {
+      "archivo": "img/arte-urbano/actividad-1/lineas-urbanas.jpeg",
+      "rutaOriginal": "img/lineas-urbanas.jpeg",
+      "shaGit": "58f34b82ec048e094f02b102c1676bebe94dd02a",
+      "bytes": 536906
+    }
+  ]
+}

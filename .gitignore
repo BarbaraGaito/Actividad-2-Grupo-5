@@ -3,7 +3,6 @@
 node_modules/
 
 # Carpetas de recursos de referencia en cualquier nivel
-documentacion/
 consigna/
 
 
@@ -11,6 +10,12 @@ consigna/
 *.[pP][dD][fF]
 *.tex
 *.md
+!README.md
+!docs/**/*.md
+!output/pdf/*.pdf
+!docs/capturas/*.png
+tmp/
+.openai/
 
 # Archivos temporales de LaTeX
 *.aux
