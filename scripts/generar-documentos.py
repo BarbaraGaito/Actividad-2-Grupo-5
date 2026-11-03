@@ -39,7 +39,6 @@ for name, file in [('DM','dm-sans-400.ttf'),('DM-Bold','dm-sans-700.ttf'),('Lora
     pdfmetrics.registerFont(TTFont(name,str(ROOT / 'img/fuentes' / file)))
 pdfmetrics.registerFontFamily('DM',normal='DM',bold='DM-Bold',italic='DM',boldItalic='DM-Bold')
 INK = HexColor('#171714')
-PAPER = HexColor('#fffef8')
 SAND = HexColor('#f3f0e8')
 LIME = HexColor('#e9ff48')
 BLUE = HexColor('#2454bb')
@@ -92,7 +91,6 @@ def page(story, title, tag=None):
     story.append(p(esc(title),'h1'))
 def footer(c,doc):
     c.saveState()
-    c.setFillColor(PAPER); c.rect(0,0,W,H,fill=1,stroke=0)
     c.setStrokeColor(HexColor('#cbc6b8'));c.line(48,43,W-48,43)
     c.setFont('DM',8);c.setFillColor(INK)
     c.drawString(48,29,'PORTEÑA / GRUPO 5 / ACTIVIDAD 3')
@@ -134,18 +132,6 @@ def cover(story, number, title):
             [['Integrante', 'Legajo', 'Temática']] + [[e['nombre'], e['legajo'], e['tema']] for e in DATA['equipo']],
             [CW * 0.49, CW * 0.18, CW * 0.33],
         )
-    )
-    story.extend(
-        [
-            Spacer(1, 20),
-            p('Versión local para revisión del grupo', 'h2'),
-            p(
-                'Los cambios de esta revisión todavía no se publicaron. La prueba visual en navegador y las capturas'
-                ' responsive reales deben completarse antes de presentar la entrega. Esta advertencia identifica el'
-                ' estado de revisión y no forma parte de la interfaz del visitante.',
-                'small',
-            ),
-        ]
     )
 
 def sitemap():
@@ -281,11 +267,6 @@ s.extend(
             ' SVG propios de trazo simple y la marca de la sección actual en la navegación. Se retiraron contadores y'
             ' duraciones que no correspondían al contenido disponible.'
         ),
-        p(
-            'En arte urbano se respeta la Actividad 1: se eligieron cinco de las once fotografías, las que tienen'
-            ' dirección concreta en la Ciudad de Buenos Aires, y se conservan sus descripciones originales. Hospitales'
-            ' corresponde a Realidades poco frecuentes, según indicación de la autora.'
-        ),
     ]
 )
 page(s,'Decisiones centradas en el visitante','4 / Usabilidad y Gestalt')
@@ -363,12 +344,6 @@ s.extend(
             'La base usa una columna; los bloques se distribuyen en dos o tres columnas desde md/xl cuando hay espacio.'
             ' Las fotos y los iframes tienen ancho flexible. Las fichas de arte urbano permiten ver las imágenes'
             ' completas con object-contain. El contenido es el mismo en móvil y escritorio; cambia su distribución.'
-        ),
-        p('Verificación visual pendiente', 'h2'),
-        p(
-            'Debe revisarse el sitio a 320, 390, 768 y 1440 px, con zoom al 200 % y teclado. El acceso al navegador de'
-            ' automatización no estuvo disponible en esta revisión; no se atribuyen resultados visuales ni una'
-            ' certificación de accesibilidad. El plan detallado está en docs/ENTREGA.md.'
         ),
     ]
 )
