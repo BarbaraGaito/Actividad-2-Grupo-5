@@ -1,6 +1,7 @@
 /* Coordenadas de direcciones públicas: API USIG. Ver datos/ubicaciones.json. */
 window.PORTEÑA_MAPA = {
   "teselas": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "flecha": "<svg class=\"icono\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M2 8h12M9 3l5 5-5 5\"/></svg>",
   "recorridos": [
     {
       "id": "futbol",
@@ -173,92 +174,10 @@ window.PORTEÑA_MAPA = {
       "color": "#d865ff",
       "puntos": [
         {
-          "id": "facultad",
-          "nombre": "Arte en la facultad",
-          "direccion": "FADU, Ciudad Universitaria, Buenos Aires",
-          "numero": 1,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "FADU, Ciudad Universitaria",
-            "direccionNormalizada": "FADU, Ciudad Universitaria, CABA",
-            "lat": -34.54289109324407,
-            "lon": -58.44311321108542,
-            "urlFuente": "https://www.fadu.uba.ar/contacto/",
-            "tipo": "institución",
-            "fuente": "Mapa publicado por FADU UBA"
-          }
-        },
-        {
-          "id": "scaloneta",
-          "nombre": "La Scaloneta",
-          "direccion": "Santa Clara del Mar, Buenos Aires",
-          "numero": 2,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "Santa Clara del Mar",
-            "direccionNormalizada": "Santa Clara del Mar, Mar Chiquita, Buenos Aires",
-            "lat": -37.8343801735405,
-            "lon": -57.5074902645676,
-            "urlFuente": "https://apis.datos.gob.ar/georef/api/localidades?nombre=Santa%20Clara%20del%20Mar&provincia=Buenos%20Aires&max=5",
-            "tipo": "localidad",
-            "fueraCABA": true
-          }
-        },
-        {
-          "id": "niunamenos",
-          "nombre": "Expresión colectiva",
-          "direccion": "Plaza del Congreso, Buenos Aires",
-          "numero": 3,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "Rivadavia y Entre Rios",
-            "direccionNormalizada": "RIVADAVIA AV. y ENTRE RIOS AV., CABA",
-            "lat": -34.609233,
-            "lon": -58.391962,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Rivadavia%20y%20Entre%20Rios&geocodificar=TRUE",
-            "tipo": "referencia de intersección"
-          }
-        },
-        {
-          "id": "personaje",
-          "nombre": "Pajarito",
-          "direccion": "Flores, Buenos Aires",
-          "numero": 4,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "Rivadavia y Fray Cayetano Rodriguez",
-            "direccionNormalizada": "RIVADAVIA AV. y FRAY CAYETANO RODRIGUEZ, CABA",
-            "lat": -34.628848,
-            "lon": -58.462712,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Rivadavia%20y%20Fray%20Cayetano%20Rodriguez&geocodificar=TRUE",
-            "tipo": "referencia de intersección"
-          }
-        },
-        {
-          "id": "abuela",
-          "nombre": "Luche como una abuela",
-          "direccion": "Plaza del Congreso, Buenos Aires",
-          "numero": 5,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "Rivadavia y Entre Rios",
-            "direccionNormalizada": "RIVADAVIA AV. y ENTRE RIOS AV., CABA",
-            "lat": -34.609233,
-            "lon": -58.391962,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Rivadavia%20y%20Entre%20Rios&geocodificar=TRUE",
-            "tipo": "referencia de intersección"
-          }
-        },
-        {
           "id": "bandoneonista",
           "nombre": "Astor Piazzolla",
           "direccion": "Microcentro, Buenos Aires",
-          "numero": 6,
+          "numero": 1,
           "referencia": true,
           "nota": "",
           "posicion": {
@@ -274,7 +193,7 @@ window.PORTEÑA_MAPA = {
           "id": "realidades",
           "nombre": "Realidades poco frecuentes",
           "direccion": "Plaza junto a la estación Hospitales, Parque Patricios",
-          "numero": 7,
+          "numero": 2,
           "referencia": true,
           "nota": "",
           "posicion": {
@@ -290,7 +209,7 @@ window.PORTEÑA_MAPA = {
           "id": "collage",
           "nombre": "Collage gráfico",
           "direccion": "Keke y Larry, Av. del Libertador 5670, Belgrano",
-          "numero": 8,
+          "numero": 3,
           "referencia": true,
           "nota": "",
           "posicion": {
@@ -306,7 +225,7 @@ window.PORTEÑA_MAPA = {
           "id": "mural-futbolero",
           "nombre": "Mural de Messi",
           "direccion": "Av. Belgrano y Av. 9 de Julio, Buenos Aires",
-          "numero": 9,
+          "numero": 4,
           "referencia": true,
           "nota": "",
           "posicion": {
@@ -319,26 +238,10 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "retrato-persiana",
-          "nombre": "Retrato sobre persiana",
-          "direccion": "Microcentro, Buenos Aires",
-          "numero": 10,
-          "referencia": true,
-          "nota": "",
-          "posicion": {
-            "consulta": "Florida y Corrientes",
-            "direccionNormalizada": "FLORIDA y CORRIENTES AV., CABA",
-            "lat": -34.603315,
-            "lon": -58.375224,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Florida%20y%20Corrientes&geocodificar=TRUE",
-            "tipo": "referencia de intersección"
-          }
-        },
-        {
           "id": "lineas-urbanas",
           "nombre": "Líneas urbanas",
           "direccion": "Aimé Lounge, Aimé Paine 1161, Puerto Madero",
-          "numero": 11,
+          "numero": 5,
           "referencia": true,
           "nota": "",
           "posicion": {

@@ -1,39 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Magari Caffè. Ubicación, actividades y recomendaciones de Porteña.">
   <meta name="theme-color" content="#171714">
   <title>Magari Caffè · Porteña</title>
-  <link rel="icon" href="../../img/compartidas/logo.png" type="image/png">
+  <link rel="icon" href="../../img/compartidas/Compartidas-1.png" type="image/png">
   <link rel="stylesheet" href="../../css/fuentes.css">
   <link rel="stylesheet" href="../../css/styles.css">
   <script src="../../js/sitio.js" defer></script>
   <script src="../../js/contenido-ayuda.js" defer></script>
   <script src="../../js/chat.js" defer></script>
 </head>
-<body class="">
-<a href="#contenido" class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only">Saltar al contenido</a>
-    <header class="border-b border-borde bg-papel">
-      <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
-        <a href="../../index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"><img src="../../img/compartidas/9b663.png" alt="" class="marca-logo" fetchpriority="high" decoding="async"><span class="font-serif text-2xl font-bold">PORTEÑA</span></a>
-        <nav aria-label="Navegación principal" class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10">
-          <a href="../../index.html#recorridos" class="py-3 hover:underline">Recorridos</a><a href="../mapa/index.html" class="py-3 hover:underline">Puntos de interés</a><a href="../sobre-la-guia/index.html" class="py-3 hover:underline">Sobre la guía</a>
-        </nav>
-        <button id="boton-menu" class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden" aria-expanded="true" aria-controls="menu" hidden>Menú <span aria-hidden="true">☰</span></button>
-        <nav id="menu" aria-label="Secciones" class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden">
-          <a href="../../index.html">Inicio</a><a href="../../index.html#recorridos">Recorridos</a><a href="../mapa/index.html">Mapa y puntos de interés</a><a href="../reserva/index.html">Planificá tu visita</a><a href="../contacto/index.html">Contacto</a><a href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a><a href="../sobre-la-guia/index.html">Sobre la guía</a>
-        </nav>
+
+<body>
+  <a href="#contenido" class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only">Saltar
+    al contenido</a>
+  <header class="border-b border-borde bg-papel">
+    <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
+      <a href="../../index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"><img
+          src="../../img/compartidas/Compartidas-2.png" alt="" class="marca-logo" fetchpriority="high"
+          decoding="async"><span class="font-serif text-2xl font-bold">PORTEÑA</span></a>
+      <nav aria-label="Navegación principal"
+        class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10">
+        <a href="../../index.html#recorridos" aria-current="page" class="py-3 hover:underline">Recorridos</a><a href="../mapa/index.html"
+          class="py-3 hover:underline">Puntos de interés</a><a href="../sobre-la-guia/index.html"
+          class="py-3 hover:underline">Sobre la guía</a>
+      </nav>
+      <button id="boton-menu"
+        class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden"
+        aria-expanded="true" aria-controls="menu" hidden>Menú <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
+      <nav id="menu" aria-label="Secciones"
+        class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden">
+        <a href="../../index.html">Inicio</a><a href="../../index.html#recorridos" aria-current="page">Recorridos</a><a
+          href="../mapa/index.html">Mapa y puntos de interés</a><a href="../reserva/index.html">Planificá tu
+          visita</a><a href="../contacto/index.html">Contacto</a><a
+          href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a><a href="../sobre-la-guia/index.html">Sobre
+          la guía</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <div style="--acento:#ff6b3d">
+      <section class="hero">
+        <div class="contenedor seccion">
+          <nav class="mb-8 text-sm" aria-label="Ruta de navegación"><a class="underline"
+              href="../../index.html">Inicio</a> / <a class="underline" href="../gastronomia/index.html">Gastronomía</a>
+            / Magari Caffè</nav>
+          <p class="etiqueta" style="color:#ff6b3d">Gastronomía · Parada 3 de 3</p>
+          <h1 class="my-6">Magari Caffè</h1>
+          <p class="max-w-3xl text-lg">Una merienda para cerrar el recorrido: iced coffee, limonada con menta y
+            jengibre, chocotorta y torta oreo. Recomendada en la galería Cafeterías en CABA.</p>
+        </div>
+      </section>
+      <section class="contenedor seccion">
+        <div class="grid items-start gap-8 md:grid-cols-2">
+          <article class="tarjeta">
+            <h2 class="mb-6">Prepará tu visita</h2>
+            <dl class="space-y-5">
+              <div>
+                <dt class="font-bold">Ubicación</dt>
+                <dd>Defensa 1661, Barracas</dd>
+              </div>
+              <div>
+                <dt class="font-bold">Actividades</dt>
+                <dd>Merienda para 2 personas aprox.: bebidas frías, chocotorta y torta oreo.</dd>
+              </div>
+              <div>
+                <dt class="font-bold">Duración orientativa</dt>
+                <dd>45 a 60 minutos estimados</dd>
+              </div>
+              <div>
+                <dt class="font-bold">Horarios</dt>
+                <dd>Consultar horarios de atención y carta vigente antes de salir.</dd>
+              </div>
+              <div>
+                <dt class="font-bold">Acceso</dt>
+                <dd>Consumo a cargo del visitante; consultar disponibilidad de mesas.</dd>
+              </div>
+            </dl>
+            <p class="mt-6">Llevá agua y calzado cómodo. Consultá condiciones de acceso, horarios y accesibilidad física
+              con el establecimiento antes de salir.</p>
+            <p class="ayuda">Las condiciones de acceso pueden cambiar.</p>
+          </article>
+          <div>
+            <figure><img class="max-h-[75vh] w-full rounded-2xl bg-arena object-contain md:h-[520px] md:max-h-none"
+                src="../../img/gastronomia/Gastronomia-3.jpeg"
+                alt="Porciones de chocotorta y torta oreo junto a un iced coffee y una limonada con menta y jengibre"
+                loading="lazy" decoding="async">
+              <figcaption class="ayuda">Fotografía: Bárbara Gaito. Registro original de la Tarea 1, Cafeterías en CABA.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="mt-8"><iframe class="h-[260px] md:h-[300px] w-full rounded-2xl" title="Mapa de Magari Caffè"
+            src="https://maps.google.com/maps?q=Magari%20Caff%C3%A8%2C%20Defensa%201661%2C%20Barracas%2C%20Buenos%20Aires%2C%20Argentina&amp;z=16&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p class="ayuda">Defensa 1661, Barracas</p><a class="enlace mt-4 inline-block"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Magari%20Caff%C3%A8%2C%20Defensa%201661%2C%20Barracas%2C%20Buenos%20Aires%2C%20Argentina"
+            target="_blank" rel="noopener noreferrer">Abrir Magari Caffè en Google Maps
+            <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+        </div>
+        <nav class="mt-8 flex flex-wrap gap-4" aria-label="Continuar recorrido"><a class="boton"
+            href="enitma.html"><svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8H2M7 3 2 8l5 5"/></svg>
+            Enitma Café Reserva Gourmet</a><a class="boton boton-acento" href="petricor.html">Petricor Café Bistró
+            <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a><a
+            class="enlace min-h-12 py-3" href="../gastronomia/index.html">Volver a Gastronomía</a><a
+            class="enlace min-h-12 py-3" href="../reserva/index.html?recorrido=gastronomia">Planificar esta
+            experiencia</a></nav>
+      </section>
+    </div>
+  </main>
+  <footer class="bg-tinta text-papel">
+    <div class="contenedor seccion">
+      <div class="grid gap-10 pb-12 md:grid-cols-2">
+        <div class="max-w-[400px]"><a href="../../index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a>
+          <p class="mt-5 text-base text-[#c7c5bd]">Guía cultural independiente para caminar, escuchar y entender Buenos
+            Aires. Diseñada para locales y viajeros curiosos.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16">
+          <nav aria-label="Explorar">
+            <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2>
+            <ul class="space-y-4 text-sm">
+              <li><a class="hover:underline" href="../../index.html#recorridos">Todos los recorridos</a></li>
+              <li><a class="hover:underline" href="../mapa/index.html">Mapa de la ciudad</a></li>
+              <li><a class="hover:underline" href="../reserva/index.html">Planificá tu visita</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Proyecto">
+            <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2>
+            <ul class="space-y-4 text-sm">
+              <li><a class="hover:underline" href="../sobre-la-guia/index.html">Sobre nosotros</a></li>
+              <li><a class="hover:underline" href="../contacto/index.html">Contacto</a></li>
+              <li><a class="hover:underline" href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header>
-<main id="contenido"><div style="--acento:#ff6b3d"><section class="hero"><div class="contenedor seccion"><nav class="mb-8 text-sm" aria-label="Ruta de navegación"><a class="underline" href="../../index.html">Inicio</a> / <a class="underline" href="../gastronomia/index.html">Gastronomía</a> / Magari Caffè</nav><p class="etiqueta" style="color:#ff6b3d">Gastronomía · Parada 3 de 3</p><h1 class="my-6">Magari Caffè</h1><p class="max-w-3xl text-lg">Una merienda para cerrar el recorrido: iced coffee, limonada con menta y jengibre, chocotorta y torta oreo. Recomendada en la galería Cafeterías en CABA.</p></div></section><section class="contenedor seccion"><div class="grid gap-8 md:grid-cols-2"><article class="tarjeta"><h2 class="mb-6">Prepará tu visita</h2><dl class="space-y-5"><div><dt class="font-bold">Ubicación</dt><dd>Defensa 1661, Barracas</dd></div><div><dt class="font-bold">Actividades</dt><dd>Merienda para 2 personas aprox.: bebidas frías, chocotorta y torta oreo.</dd></div><div><dt class="font-bold">Duración orientativa</dt><dd>45 a 60 minutos estimados</dd></div><div><dt class="font-bold">Horarios</dt><dd>Consultar horarios de atención y carta vigente antes de salir.</dd></div><div><dt class="font-bold">Acceso</dt><dd>Consumo a cargo del visitante; consultar disponibilidad de mesas.</dd></div></dl><p class="mt-6">Llevá agua y calzado cómodo. Consultá condiciones de acceso, horarios y accesibilidad física con el establecimiento antes de salir.</p><p class="ayuda">Las condiciones de acceso pueden cambiar.</p><a class="enlace mt-4 inline-block" href="https://github.com/BarbaraGaito/Tarea-1-Gaito/blob/main/merienda-6.html" target="_blank" rel="noopener noreferrer">Consultar registro original ↗</a></article><div><iframe class="h-[360px] w-full rounded-2xl border border-borde" title="Mapa de Magari Caffè" src="https://maps.google.com/maps?q=Magari%20Caff%C3%A8%2C%20Defensa%201661%2C%20Barracas%2C%20Buenos%20Aires%2C%20Argentina&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><p class="ayuda">Defensa 1661, Barracas</p><a class="enlace mt-4 inline-block" href="https://www.google.com/maps/search/?api=1&amp;query=Magari%20Caff%C3%A8%2C%20Defensa%201661%2C%20Barracas%2C%20Buenos%20Aires%2C%20Argentina" target="_blank" rel="noopener noreferrer">Abrir Magari Caffè en Google Maps ↗</a><figure class="mt-8"><img class="max-h-[75vh] w-full rounded-2xl object-contain" src="../../img/gastronomia/Gastronomia-3.jpeg" alt="Porciones de chocotorta y torta oreo junto a un iced coffee y una limonada con menta y jengibre" loading="lazy" decoding="async"><figcaption class="ayuda">Fotografía: Bárbara Gaito. Registro original de la Tarea 1, Cafeterías en CABA.</figcaption></figure></div></div><nav class="mt-10 flex flex-wrap gap-4" aria-label="Continuar recorrido"><a class="boton" href="enitma.html">← Enitma Café Reserva Gourmet</a><a class="boton boton-acento" href="petricor.html">Petricor Café Bistró →</a><a class="enlace min-h-12 py-3" href="../gastronomia/index.html">Volver a Gastronomía</a><a class="enlace min-h-12 py-3" href="../reserva/index.html?recorrido=gastronomia">Planificar esta experiencia</a></nav></section></div></main>
-<footer class="bg-tinta text-papel"><div class="contenedor seccion">
-      <div class="grid gap-10 pb-12 md:grid-cols-2"><div class="max-w-[400px]"><a href="../../index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a><p class="mt-5 text-base text-[#c7c5bd]">Guía cultural independiente para caminar, escuchar y entender Buenos Aires. Diseñada para locales y viajeros curiosos.</p></div>
-      <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16"><nav aria-label="Explorar"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="../../index.html#recorridos">Todos los recorridos</a></li><li><a class="hover:underline" href="../mapa/index.html">Mapa de la ciudad</a></li><li><a class="hover:underline" href="../reserva/index.html">Planificá tu visita</a></li></ul></nav>
-      <nav aria-label="Proyecto"><h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2><ul class="space-y-4 text-sm"><li><a class="hover:underline" href="../sobre-la-guia/index.html">Sobre nosotros</a></li><li><a class="hover:underline" href="../contacto/index.html">Contacto</a></li><li><a class="hover:underline" href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a></li></ul></nav></div></div>
-      <div class="linea-pie" aria-hidden="true"><img src="../../img/compartidas/52b18.svg" alt="" class="" loading="lazy" decoding="async"></div>
-      <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row"><p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p><a class="hover:underline" href="https://www.figma.com/design/xHqN3NQfBRSYfUmpRroRao/Actividad-2-Grupo-5?node-id=0-1">PROTOTIPO Y DESIGN SYSTEM ↗</a></div>
-    </div></footer>
+      <div class="linea-pie" aria-hidden="true"><img src="../../img/compartidas/Compartidas-3.svg" alt=""
+          loading="lazy" decoding="async"></div>
+      <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row">
+        <p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -18,21 +18,21 @@
 
 @layer components {
   .contenedor { @apply mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-20; }
-  .seccion { @apply py-10 md:py-16 xl:py-20; }
+  .seccion { @apply py-8 md:py-12 xl:py-14; }
   .etiqueta { @apply text-xs font-bold uppercase tracking-wide; }
   .boton { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-tinta px-7 py-4 text-center text-xs font-bold uppercase text-papel hover:underline; }
   .boton-acento { background-color: var(--acento); @apply text-tinta; }
   .tarjeta { @apply rounded-2xl bg-arena p-6 md:p-8; }
   .campo { @apply mt-2 block min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-4 py-3 text-base; }
   .ayuda { @apply mt-2 text-sm text-[#59574e]; }
-  .estado { @apply rounded-xl border border-borde bg-arena p-5; }
+  .estado { @apply rounded-xl bg-arena p-5; }
   .error-campo { @apply mt-2 text-sm font-bold text-[#a11c16]; }
   .campo[aria-invalid="true"] { @apply border-2 border-[#a11c16]; }
   .hero :focus-visible, footer :focus-visible { outline-color: #e9ff48; }
   .barra-datos :focus-visible, .banda-cierre :focus-visible { outline-color: #171714; }
   .boton-acento:focus-visible { outline-color: #171714; outline-offset: -4px; }
   .hero { @apply bg-tinta text-papel; }
-  .hero-interior { @apply grid items-center gap-8 py-8 md:grid-cols-2 md:gap-12 md:py-16 xl:gap-16 xl:py-20; }
+  .hero-interior { @apply grid items-center gap-8 py-8 md:grid-cols-2 md:gap-12 md:py-12 xl:gap-16 xl:py-14; }
   .hero-texto { @apply flex min-w-0 flex-col items-start gap-6; }
   .foto-hero { @apply h-[220px] w-full rounded-3xl object-cover md:h-[350px] xl:h-[400px]; }
   .barra-datos { background-color: var(--acento); @apply text-tinta; }
@@ -40,16 +40,20 @@
   .dato { @apply flex items-center gap-4; }
   .dato strong { @apply font-serif text-[30px] md:text-[32px]; }
   .dato span { @apply text-xs font-bold uppercase; }
-  .parada { @apply rounded-2xl border border-borde bg-arena; }
+  .parada { @apply rounded-2xl bg-arena; }
   .parada summary { @apply relative list-none p-5 md:p-6; }
   .parada summary::-webkit-details-marker { display: none; }
-  .parada[open] { border-color: #171714; }
   .parada[open] .flecha-parada { transform: rotate(90deg); }
   .numero-parada { @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-papel text-xs font-bold; }
   .paradas-lista > li:first-child .numero-parada { background-color: var(--acento); }
-  .consejo { @apply flex flex-col items-start gap-5 rounded-2xl bg-arena p-6 md:p-8; }
+  .consejo { @apply flex flex-col items-start gap-3 rounded-2xl bg-arena p-6 md:gap-4 md:p-8; }
+  /* SVG propios de trazo: toman el tamaño de la letra y el color del texto. */
+  .icono { @apply inline-block h-[1em] w-[1em] shrink-0 fill-none stroke-current stroke-[1.5] align-[-0.125em]; stroke-linecap: round; stroke-linejoin: round; }
+  .icono-circulo { @apply inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg text-tinta; }
+  /* Sección actual en la navegación: subrayado fijo, además de aria-current. */
+  header nav a[aria-current="page"] { @apply font-bold underline decoration-2 underline-offset-8; }
   .banda-cierre { background-color: var(--acento); }
-  .cierre-interior { @apply flex flex-col items-start gap-7 py-10 md:flex-row md:items-center md:justify-between md:py-16 xl:py-20; }
+  .cierre-interior { @apply flex flex-col items-start gap-6 py-8 md:flex-row md:items-center md:justify-between md:py-12 xl:py-14; }
   .linea-pie { @apply overflow-hidden; }
   .marca-logo { width: 52px; height: 49px; transform: rotate(-179.83deg); object-fit: contain; }
   .hero-inicio { @apply bg-arena; }
@@ -66,21 +70,21 @@
   .arte-hero { @apply md:mx-auto md:max-w-[454px]; border-radius: 0; }
   .arte-contexto { @apply h-auto max-w-[444px] rounded-none; }
   .arquitectura, .comuna-1, .cine, .arte-urbano { font-family: 'Manrope', Arial, sans-serif; }
-  .gastronomia-contexto { @apply h-[420px] xl:h-[536px]; object-position: 50% 45%; }
-  .pagina-cabecera { @apply max-w-3xl pb-10; }
+  .gastronomia-contexto { @apply h-[320px] md:h-[460px] xl:h-[400px]; object-position: 50% 45%; }
+  .pagina-cabecera { @apply max-w-3xl pb-8; }
   .pagina-cabecera h1 { @apply my-5; }
   .enlace { @apply font-bold underline underline-offset-4 hover:decoration-2; }
   .faq summary { @apply min-h-12 p-5 font-bold; }
-  .faq details { @apply rounded-2xl border border-borde bg-arena; }
+  .faq details { @apply rounded-2xl bg-arena; }
   .faq details p { @apply px-5 pb-5; }
   .chat-portena { @apply font-sans text-tinta; }
-  .chat-lanzador { @apply fixed bottom-4 right-4 z-40 flex min-h-12 items-center gap-4 rounded-full border border-papel bg-tinta px-5 py-3 text-sm font-bold text-papel shadow-lg; }
+  .chat-lanzador { @apply fixed bottom-4 right-4 z-40 flex min-h-12 items-center gap-4 rounded-full bg-tinta px-5 py-3 text-sm font-bold text-papel shadow-lg; }
   .chat-lanzador:focus-visible { outline-color: #2454bb; }
-  .chat-panel { @apply fixed right-4 z-50 flex flex-col overflow-hidden rounded-2xl border border-borde bg-papel shadow-xl; bottom: 84px; width: min(420px, calc(100vw - 32px)); height: min(620px, calc(100dvh - 108px)); }
+  .chat-panel { @apply fixed right-4 z-50 flex flex-col overflow-hidden rounded-2xl bg-papel shadow-xl; bottom: 84px; width: min(420px, calc(100vw - 32px)); height: min(620px, calc(100dvh - 108px)); }
   .chat-cabecera { @apply flex shrink-0 items-center justify-between gap-3 bg-tinta px-5 py-4 text-papel; }
   .chat-cabecera h2 { @apply font-sans text-xl font-bold; }
   .chat-cabecera p { @apply mt-1 text-xs; }
-  .chat-cabecera button { @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#6e6e64] text-xl; }
+  .chat-cabecera button { @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-xl; }
   .chat-cabecera :focus-visible { outline-color: #e9ff48; }
   .chat-conversacion { @apply flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto p-4; overscroll-behavior: contain; }
   .chat-mensaje { @apply max-w-full rounded-xl bg-arena p-4 text-sm; overflow-wrap: anywhere; }
@@ -88,15 +92,15 @@
   .chat-mensaje a { @apply mt-3 block py-1 font-bold underline underline-offset-4; }
   .chat-usuario { @apply ml-6 bg-tinta text-papel; }
   .chat-usuario :focus-visible { outline-color: #e9ff48; }
-  .chat-sugerencias { @apply flex shrink-0 flex-wrap gap-2 border-t border-borde px-4 py-2; }
-  .chat-sugerencias button { @apply min-h-11 rounded-full border border-borde px-3 py-2 text-xs font-bold; }
+  .chat-sugerencias { @apply flex shrink-0 flex-wrap gap-2 px-4 py-2; }
+  .chat-sugerencias button { @apply min-h-11 rounded-full bg-arena px-3 py-2 text-xs font-bold; }
   .chat-formulario { @apply shrink-0 px-4 pb-3; }
   .chat-formulario label { @apply mb-2 block text-sm font-bold; }
   .chat-envio { @apply flex items-stretch gap-2; }
   .chat-envio input { @apply min-h-12 min-w-0 flex-1 rounded-xl border border-[#8d897e] bg-papel px-3 py-2 text-base; }
   .chat-envio input[aria-invalid="true"] { @apply border-2 border-[#a11c16]; }
   .chat-envio button { @apply min-h-12 rounded-xl bg-tinta px-4 text-sm font-bold text-papel; }
-  .chat-pie { @apply flex shrink-0 flex-wrap items-center justify-between gap-2 border-t border-borde px-4 py-2 text-xs; }
+  .chat-pie { @apply flex shrink-0 flex-wrap items-center justify-between gap-2 px-4 py-2 text-xs; }
   .chat-pie a, .chat-pie button { @apply min-h-11 py-3 underline underline-offset-4; }
   .mapa-vista { @apply min-w-0; }
   .mapa-controles { @apply mb-4 flex flex-wrap items-end gap-3; }
@@ -104,12 +108,12 @@
   .mapa-controles label { @apply mb-2 block text-sm font-bold; }
   .mapa-controles select { @apply min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-3 py-2 text-base; }
   .mapa-controles button { @apply min-h-12 rounded-full bg-tinta px-4 py-3 text-sm font-bold text-papel; }
-  .mapa-geografico { @apply z-0 h-[360px] w-full rounded-2xl border border-borde md:h-[min(50vh,480px)]; }
+  .mapa-geografico { @apply z-0 h-[360px] w-full rounded-2xl md:h-[min(50vh,480px)]; }
   .mapa-geografico :focus-visible { outline-color: #171714; box-shadow: 0 0 0 6px #fffef8; }
   .mapa-leyenda { @apply mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm; }
   .mapa-leyenda li { @apply flex items-center gap-2; }
-  .mapa-leyenda span { @apply h-4 w-4 rounded-full border border-tinta; }
-  .mapa-numero { @apply flex h-[38px] min-w-[38px] items-center justify-center rounded-full border-2 border-tinta px-1 text-xs font-bold text-tinta shadow; }
+  .mapa-leyenda span { @apply flex h-6 w-6 items-center justify-center rounded-full text-xs text-tinta; }
+  .mapa-numero { @apply flex h-[38px] w-[38px] items-center justify-center whitespace-nowrap rounded-full text-xs font-bold text-tinta shadow; }
   .mapa-geografico .leaflet-popup-content { @apply font-sans text-sm leading-relaxed; }
   .mapa-geografico .leaflet-popup-content a { @apply my-2 block min-h-11 py-2 font-bold underline; }
 }

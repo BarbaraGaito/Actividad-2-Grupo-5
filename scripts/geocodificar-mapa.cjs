@@ -8,7 +8,7 @@ const registro = fs.existsSync(archivo) ? JSON.parse(fs.readFileSync(archivo, 'u
   fuente: 'API USIG - Gobierno de la Ciudad de Buenos Aires',
   documentacion: 'https://usig.buenosaires.gob.ar/apis/', fechaConsulta: '2026-11-02', puntos: {}
 };
-const consultas = datos.recorridos.flatMap(r => r.puntos.filter(p=>r.id!=='arte-urbano'||p.consultaGeocodificacion).map(p => ({ id: p.id, consulta: p.consultaGeocodificacion || p.direccion.split(',')[0], referencia: r.id==='arte-urbano' })));
+const consultas = datos.recorridos.flatMap(r => r.puntos.filter(p => r.id !== 'arte-urbano' || p.consultaGeocodificacion).map(p => ({ id: p.id, consulta: p.consultaGeocodificacion || p.direccion.split(',')[0], referencia: r.id === 'arte-urbano' })));
 const cache = new Map(Object.values(registro.puntos).map(p => [p.consulta, p]));
 (async function () {
   for (const consulta of consultas) {

@@ -6,9 +6,9 @@ Fecha de entrega: 03/11/2026. Este control distingue implementación de comproba
 | --- | --- |
 | HTML5, Tailwind, JavaScript | HTML semántico, CLI de Tailwind y `js/sitio.js`, sin frameworks frontend. |
 | Inicio | Identidad, cinco temáticas, propuesta, mapa y recomendaciones. |
-| Puntos de interés | 23 fichas individuales; cada integrante tiene su página temática. |
-| Arte urbano original | Once fotos y textos de Lara. Fotografías y descripciones conservadas, con ubicaciones actualizadas en esta revisión. |
-| Mapa | 23 ubicaciones, marcadores con filtros y selección de fichas; itinerarios por temática. |
+| Puntos de interés | 17 fichas individuales; cada integrante tiene su página temática. |
+| Arte urbano original | Cinco fotos y textos de Lara, elegidas entre las once de su Actividad 1. Fotografías y descripciones conservadas sin cambios. |
+| Mapa | 17 ubicaciones, marcadores con el color y el número de cada temática, filtros y selección de fichas; itinerarios por temática. |
 | Contacto | Cuatro campos, errores asociados, validación y confirmación simulada. |
 | Reserva | Cinco precios, 1-20 personas, fecha válida, adicional, total ARS, resumen, edición y confirmación simulada. |
 | Conversión | No aplica: precios expresados en ARS. |
@@ -16,11 +16,11 @@ Fecha de entrega: 03/11/2026. Este control distingue implementación de comproba
 | UX y Gestalt | Justificación en Documento 1 y decisiones técnicas en Documento 2. |
 | Accesibilidad | Etiquetas, alt, foco, teclado, errores y estados implementados; revisión manual pendiente. |
 | Responsive | Estilos Mobile First implementados. Prueba visual en cuatro anchos y capturas reales pendientes. |
-| Documentos | Dos PDF generables con contenido, fuentes, lógica y evidencia automatizada. El Documento 2 debe completarse con capturas reales antes de la entrega. |
-| Repositorio público | Existente y verificado. Cambios de esta revisión todavía locales. |
+| Documentos | Dos PDF generables con contenido, fuentes y lógica. El Documento 2 debe completarse con capturas reales antes de la entrega. |
+| Repositorio público | Existente. Cambios de esta revisión todavía locales. |
 | Colaboración | Responsabilidades confirmadas. Cada integrante debe realizar aportes verificables con su cuenta. |
 | Sitio desplegado | Existe URL de GitHub Pages. Falta subir esta revisión aprobada y comprobarla públicamente. |
-| Figma | Acceso verificado al archivo original. Los PDF explican las extensiones respecto de la Actividad 2; no se modificó ese archivo. |
+| Figma | Los PDF explican las extensiones respecto de la Actividad 2; no se modificó el archivo original. |
 
 ## Recorrido de prueba manual
 
@@ -31,7 +31,7 @@ Fecha de entrega: 03/11/2026. Este control distingue implementación de comproba
 5. Enviar contacto vacío; corregir nombre, correo, motivo y mensaje. Confirmar que los errores se entiendan y el resultado diga que el envío es simulado.
 6. Probar las cinco opciones de reserva. Ejemplo: fútbol, dos personas y guía impresa = ARS $ 30.000. Probar cantidades 0, 21, decimales y fecha pasada. Editar el resumen y comprobar que sea necesario revisarlo de nuevo.
 7. Buscar `futbol` en FAQ, luego una palabra inexistente y limpiar la búsqueda. Abrir el chat, preguntar por precios y ubicaciones, usar preguntas sugeridas, limpiar la conversación y cerrarla con Escape. Comprobar el foco de regreso y que el presupuesto se conserve al abrir la reserva.
-8. Elegir ubicaciones en el mapa, filtrar por temática y abrir las fichas e itinerarios. Revisar las once fotografías de arte urbano y sus ubicaciones.
+8. Elegir ubicaciones en el mapa, filtrar por temática y abrir las fichas e itinerarios. Revisar las cinco fotografías de arte urbano y sus ubicaciones, y que la navegación marque la sección actual.
 9. Probar sin JavaScript: contenido, enlaces y desplegables siguen disponibles, mientras que los botones de simulación se deshabilitan.
 10. Guardar capturas PNG reales en `docs/capturas/`: `inicio-390.png`, `inicio-1440.png`, `arte-390.png`, `arte-1440.png`, `reserva-390.png`, `reserva-768.png`, `reserva-1440.png`, `contacto-error-390.png`, `mapa-768.png`. Registrar navegador, tamaño, fecha y resultado.
 11. Volver a generar los PDF con `py scripts/generar-documentos.py`; si existen capturas, se incorporan al Documento 2. No se deben usar capturas de Figma como evidencia de la web funcionando.

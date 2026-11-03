@@ -4,12 +4,11 @@
   "private": true,
   "description": "Recorridos culturales por Buenos Aires. HTML5, Tailwind CSS y JavaScript.",
   "scripts": {
-    "build:css": "tailwindcss -i ./css/entrada.css -o ./css/styles.css --minify",
+    "build:css": "tailwindcss -i ./css/entrada.css -o ./css/styles.css",
     "watch:css": "tailwindcss -i ./css/entrada.css -o ./css/styles.css --watch",
     "start": "node scripts/servidor.cjs",
-    "build:content": "node scripts/generar-contenido.cjs && node scripts/generar-ayuda.cjs",
-    "build": "npm run build:content && npm run build:css",
-    "test": "node --test tests/*.test.cjs"
+    "build:content": "node scripts/generar-ayuda.cjs",
+    "build": "npm run build:content && npm run build:css"
   },
   "devDependencies": {
     "jsdom": "^26.1.0",

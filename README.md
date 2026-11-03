@@ -21,20 +21,20 @@ Para verla en esta computadora:
 npm start
 ```
 
-Abrir <http://localhost:8000>. Solo requiere Node.js para el servidor local; no hace falta instalar dependencias para visualizar los archivos ya compilados. También se puede abrir `index.html` directamente. Google Maps y las fuentes de consulta externas requieren internet. Los datos de formularios permanecen únicamente en memoria durante su uso.
+Abrir <http://localhost:8000>. Solo requiere Node.js para el servidor local; no hace falta instalar dependencias para visualizar los archivos ya compilados. Google Maps y las fuentes de consulta externas requieren internet. Los datos de formularios permanecen únicamente en memoria durante su uso.
 
 ## Funcionalidades
 
 - Inicio con propuesta, logo, acceso a cinco temáticas, mapa general y recomendaciones.
-- Cinco recorridos con tres paradas cada uno (arte urbano conserva su galería de once obras) y tres guías de arquitectura por comunas, una parada por comuna.
-- 23 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes y navegación entre fichas. Todas tienen acceso a su ubicación.
+- Cinco recorridos con tres paradas cada uno (arte urbano reúne cinco obras de su galería) y tres guías de arquitectura por comunas, una parada por comuna.
+- 17 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes de consulta (en arte urbano y gastronomía, el crédito de la foto) y navegación entre fichas. Todas tienen acceso a su ubicación.
 - Gastronomía: tres cafeterías de la galería Cafeterías en CABA, de la [Tarea 1 de Bárbara Gaito](https://github.com/BarbaraGaito/Tarea-1-Gaito), con sus fotografías originales (`img/gastronomia/Gastronomia-1.jpeg` a `Gastronomia-3.jpeg`).
-- Arte urbano: las once fotografías propias, descripciones y ubicaciones/contextos originales de Lara Trinidad Alonso, tomadas de [Paredes que Hablan, Actividad 1](https://github.com/Larialonso/Disenoydesarrolloweb/tree/main/Paredes-que-hablan). Cada fotografía se puede ver completa en su ficha. Se conservan las once fotos y sus descripciones, con las ubicaciones actualizadas durante la revisión del grupo.
-- Mapa general con marcadores de las 23 fichas, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Se inicia en Buenos Aires y la opción Todos los puntos incluye Santa Clara del Mar. Plaza del Congreso corresponde a las fotos de Ni Una Menos y Luche como una abuela; Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps.
+- Arte urbano: cinco fotografías propias, descripciones y ubicaciones/contextos originales de Lara Trinidad Alonso, tomadas de [Paredes que Hablan, Actividad 1](https://github.com/Larialonso/Disenoydesarrolloweb/tree/main/Paredes-que-hablan). Cada fotografía se puede ver completa en su ficha. Se eligieron las cinco obras con dirección concreta en la Ciudad de Buenos Aires; sus descripciones se conservan sin cambios. La portada de la página usa otra fotografía de Lara (Expresión colectiva).
+- Mapa general con marcadores de las 17 fichas con el color y el número de cada temática, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps.
 - Contacto simulado con nombre, correo, motivo y mensaje; validación HTML y JavaScript, errores asociados a los campos y confirmación.
 - Planificación simulada con cinco opciones, nombre, correo, fecha, entre 1 y 20 personas, guía impresa opcional, cálculo automático, resumen, edición, limpieza y confirmación.
-- Chat de preguntas frecuentes en las 38 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
-- Menú móvil con Escape y foco de regreso, salto al contenido, foco visible, estados anunciados e impresión de guías con fichas desplegadas.
+- Chat de preguntas frecuentes en las 32 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
+- Navegación que marca la sección actual, menú móvil con Escape y foco de regreso, salto al contenido, foco visible, estados anunciados e impresión de guías con fichas desplegadas.
 
 Las reservas y el contacto son simulaciones explícitas. No se envían mensajes, no se guardan datos personales, no se cobran importes ni se reservan lugares reales. La planificación no incluye entradas, traslados ni consumos. No se implementa una pasarela de pago.
 
@@ -54,7 +54,7 @@ Ejemplo: fútbol, 2 personas y guía impresa: `(12.000 + 3.000) × 2 = ARS $ 30.
 
 ## Tecnologías
 
-HTML5 semántico, Tailwind CSS 3.4.17 y JavaScript del navegador. No se utilizan React, Angular, Vue, Bootstrap, backend ni base de datos. Tailwind se compila con su CLI; el CSS generado está incluido. Node.js se utiliza para desarrollo, generación estática y pruebas. jsdom es una dependencia de pruebas y no se carga en el sitio.
+HTML5 semántico, Tailwind CSS 3.4.17 y JavaScript del navegador. Los íconos son SVG propios de trazo simple (flechas, menú y cierre) incrustados en el HTML y estilizados con Tailwind; no se usa Bootstrap ni ninguna biblioteca de íconos. No se utilizan React, Angular, Vue, backend ni base de datos. Tailwind se compila con su CLI; el CSS generado está incluido. Node.js se utiliza para desarrollo y para generar los datos del chat y del mapa. jsdom lee las preguntas frecuentes durante esa generación y no se carga en el sitio.
 
 ## Organización
 
@@ -62,9 +62,9 @@ HTML5 semántico, Tailwind CSS 3.4.17 y JavaScript del navegador. No se utilizan
 index.html                         Inicio
 pantallas/
   futbol/, gastronomia/, cine/      Recorridos temáticos
-  arte-urbano/                      Galería original de once obras
+  arte-urbano/                      Galería de cinco obras originales
   arquitectura/                    Índice y comunas 1, 2 y 3
-  puntos/                          23 fichas individuales
+  puntos/                          17 fichas individuales
   mapa/, contacto/, reserva/       Ubicaciones y formularios
   preguntas-frecuentes/             Ayuda funcional con búsqueda
   sobre-la-guia/, design-system/    Equipo y reglas visuales
@@ -75,28 +75,27 @@ js/sitio.js                        Validaciones y comportamiento
 js/chat.js                         Chat local de preguntas frecuentes
 js/mapa.js                         Marcadores y filtros del mapa
 vendor/leaflet/                    Biblioteca de mapas y licencia BSD
+scripts/iconos.cjs                  Íconos SVG propios que usan el chat y el mapa
 datos/recorridos.json              Contenido y fuentes de todas las fichas
 datos/arte-actividad-1.json         Registro fiel de la galería de Lara
-img/                              Fotografías, identidad y fuentes
-scripts/generar-contenido.cjs       Generación de HTML estático
+img/                              Imágenes por sección, nombradas {Seccion}-{numero} (por ejemplo, Futbol-1.jpeg), y fuentes
+scripts/generar-ayuda.cjs           Datos del chat y del mapa (js/contenido-*.js)
 scripts/servidor.cjs                Servidor local
 scripts/generar-documentos.py       Generación de los dos PDF
-tests/                            Pruebas de contenido, interacciones, chat, mapa y contraste
 docs/                             Fuentes, entrega y pruebas
 output/pdf/                        Documentos de entrega
 ```
 
 Las páginas se entregan completas en HTML y usan rutas relativas, compatibles con el subdirectorio de GitHub Pages. El navegador no necesita un router ni descargar JSON para mostrar el contenido. Sin JavaScript se conservan las guías, imágenes, enlaces al mapa y desplegables nativos; las simulaciones solicitan activarlo.
 
-Para editar las fichas comunes, modificar `datos/recorridos.json`. Para corregir arte urbano, modificar el registro original en `datos/arte-actividad-1.json`: el generador sincroniza esos once registros con el archivo general. No editar manualmente las fichas generadas porque se reemplazan al recompilar. Las descripciones originales de arte urbano tienen una prueba de fidelidad.
+Las fichas y las demás páginas se editan directamente en su HTML. `datos/recorridos.json` alimenta el chat y el mapa: si se modifica, ejecutar `npm run build:content` para actualizar `js/contenido-ayuda.js` y `js/contenido-mapa.js`. Un cambio de contenido en una ficha debe hacerse en los dos lugares.
 
 ```sh
 npm ci
 npm run build
-npm test
 ```
 
-`npm run watch:css` recompila estilos durante la edición. `npm run build:content` regenera las fichas, mapa, comunas 2/3 y Design System. Las vistas principales conservan la composición heredada de la Actividad 2.
+`npm run watch:css` recompila estilos durante la edición. `npm run build:content` regenera los datos del chat y del mapa a partir de `datos/` y de las preguntas frecuentes. Las vistas principales conservan la composición heredada de la Actividad 2.
 
 Para regenerar los PDF después de añadir las capturas reales:
 
@@ -107,23 +106,21 @@ py scripts/generar-documentos.py
 
 ## Servicios externos, accesibilidad y recursos
 
-Leaflet 1.9.4 dibuja los marcadores y permite filtrar las ubicaciones sobre cartografía de OpenStreetMap con atribución visible. Se sirve desde vendor/leaflet con su licencia BSD; sus estilos se limitan al mapa y no reemplazan Tailwind. Las coordenadas se guardan en datos/ubicaciones.json, con sus fuentes: API USIG, Georef y mapa institucional de FADU. Google Maps se conserva para itinerarios, fichas y como respaldo. El chat funciona localmente, sin credenciales, costes ni transmisión de consultas.
+Leaflet 1.9.4 dibuja los marcadores y permite filtrar las ubicaciones sobre cartografía de OpenStreetMap con atribución visible. Se sirve desde vendor/leaflet con su licencia BSD; sus estilos se limitan al mapa y no reemplazan Tailwind. Las coordenadas se guardan en datos/ubicaciones.json, con su fuente: API USIG. Google Maps se conserva para itinerarios, fichas y como respaldo. El chat funciona localmente, sin credenciales, costes ni transmisión de consultas.
 
-Fotografías propias del grupo. Las once fotos de arte urbano son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. Las tres fotos de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1. El resto proviene de los recursos ya incluidos en el prototipo grupal.
+Fotografías propias del grupo. Las cinco fotos de arte urbano y la portada de su página son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. Las tres fotos de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1. El resto proviene de los recursos ya incluidos en el prototipo grupal.
 
 ## Integrantes y responsabilidades
 | Integrante | Legajo | Responsabilidad temática |
 | --- | --- | --- |
 | Aldana Nicolas | 1217752 | Cine: contenido y página temática. |
-| Alonso Lara Trinidad | 1155144 | Arte urbano: galería, once fotografías y textos de Paredes que Hablan. |
+| Alonso Lara Trinidad | 1155144 | Arte urbano: galería, fotografías y textos de Paredes que Hablan. |
 | Gaito Bárbara Denise | 1155822 | Gastronomía: contenido y página temática. |
 | Gonzalez Homero Ivan | 1153714 | Arquitectura: guía por comunas y fichas. |
 | Martinez Pilar | 1203885 | Fútbol: contenido y página temática. |
 
 
 ## Verificación y entrega
-
-Las 25 pruebas automatizadas comprueban los archivos HTML, enlaces/anclas, imágenes, etiquetas, tres paradas por temática con las fotos de gastronomía, once obras originales, validación y recuperación de errores, cinco tarifas con límites y adicionales, resumen, edición, limpieza, FAQ, menú, chat, mapa real de Leaflet en DOM, contraste matemático e impresión. `jsdom` valida el DOM y la lógica; no reproduce el diseño visual ni la carga real de Google Maps.
 
 **Pendiente antes de entregar:** comprobación visual en navegador a 320, 390, 768 y 1440 px, capturas reales de esa revisión, comprobación de iframes/servicios externos, revisión de cada integrante y publicación de los cambios aprobados. El acceso al navegador de pruebas no estuvo disponible en la sesión de preparación. No se presentan como realizadas esas pruebas. Ver [control de entrega](docs/ENTREGA.md).
 
