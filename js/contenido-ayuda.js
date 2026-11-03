@@ -25,15 +25,15 @@ window.PORTEÑA_AYUDA = {
           "fuente": "https://www.bocajuniors.com.ar/"
         },
         {
-          "id": "duco",
-          "nombre": "Estadio Tomás A. Ducó",
-          "direccion": "Av. Amancio Alcorta 2570, Parque Patricios",
-          "descripcion": "La sede futbolística de Huracán aporta una escala monumental al paisaje de Parque Patricios. Mirá sus accesos y su fachada como parte del patrimonio deportivo del barrio.",
-          "actividad": "Observación arquitectónica y paseo exterior.",
-          "duracion": "30 minutos estimados",
-          "acceso": "Exterior libre. Las visitas interiores dependen del club.",
-          "horario": "De día; consultar eventos y restricciones del club.",
-          "fuente": "https://cahuracan.com/"
+          "id": "monumental",
+          "nombre": "Estadio Monumental",
+          "direccion": "Av. Figueroa Alcorta 7597, Núñez",
+          "descripcion": "El estadio de River Plate es uno de los más grandes de Sudamérica. Su fachada y su entorno en Núñez invitan a recorrer un espacio que trasciende lo deportivo y forma parte del paisaje urbano.",
+          "actividad": "Recorrido exterior, fotografías y observación de la explanada.",
+          "duracion": "40 minutos en el exterior",
+          "acceso": "Exterior libre. Ingreso al museo y visitas guiadas con entrada; consultá disponibilidad.",
+          "horario": "Recorrido exterior de día. Consultá al club para visitas guiadas.",
+          "fuente": "https://www.cariverplate.com.ar/"
         },
         {
           "id": "banderin",
@@ -42,7 +42,7 @@ window.PORTEÑA_AYUDA = {
           "descripcion": "Este café reúne banderines de distintos equipos. La colección invita a reconocer al fútbol como una cultura compartida que también se conversa alrededor de una mesa.",
           "actividad": "Pausa gastronómica y observación de la colección.",
           "duracion": "45 minutos estimados",
-          "acceso": "Consumo a cargo del visitante. Se llega en transporte desde Parque Patricios.",
+          "acceso": "Consumo a cargo del visitante. Se llega en transporte público desde Núñez.",
           "horario": "Consultar atención antes de viajar; no se garantiza transmisión de partidos.",
           "fuente": "https://turismo.buenosaires.gob.ar/es/gastronomico/caf%C3%A9-el-bander%C3%ADn"
         }

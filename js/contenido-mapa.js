@@ -25,18 +25,18 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "duco",
-          "nombre": "Estadio Tomás A. Ducó",
-          "direccion": "Av. Amancio Alcorta 2570, Parque Patricios",
+          "id": "monumental",
+          "nombre": "Estadio Monumental",
+          "direccion": "Av. Figueroa Alcorta 7597, Núñez",
           "numero": 2,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Av. Amancio Alcorta 2570",
-            "direccionNormalizada": "ALCORTA, AMANCIO AV. 2570, CABA",
-            "lat": -34.642945,
-            "lon": -58.396867,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Amancio%20Alcorta%202570&geocodificar=TRUE",
+            "consulta": "Av. Figueroa Alcorta 7597",
+            "direccionNormalizada": "FIGUEROA ALCORTA AV. 7597, CABA",
+            "lat": -34.545278,
+            "lon": -58.449722,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Figueroa%20Alcorta%207597&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         },

@@ -78,7 +78,7 @@ vendor/leaflet/                    Biblioteca de mapas y licencia BSD
 scripts/iconos.cjs                  Íconos SVG propios que usan el chat y el mapa
 datos/recorridos.json              Contenido y fuentes de todas las fichas
 datos/arte-actividad-1.json         Registro fiel de la galería de Lara
-img/                              Imágenes por sección, nombradas {Seccion}-{numero} (por ejemplo, Futbol-1.jpeg), y fuentes
+img/                              Imágenes por sección, nombradas {Seccion}-{numero} (por ejemplo, Cine-1.jpeg), y fuentes
 scripts/generar-ayuda.cjs           Datos del chat y del mapa (js/contenido-*.js)
 scripts/servidor.cjs                Servidor local
 scripts/generar-documentos.py       Generación de los dos PDF

@@ -34,8 +34,14 @@ Las otras imágenes ya pertenecían al proyecto y al prototipo grupal. No se asi
 | `img/compartidas/Compartidas-1.png` | Recurso del prototipo grupal de Porteña. |
 | `img/compartidas/Compartidas-2.png` | Recurso del prototipo grupal de Porteña. |
 | `img/compartidas/Compartidas-3.svg` | Recurso del prototipo grupal de Porteña. |
-| `img/futbol/Futbol-1.jpeg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-1.jpg` | Recurso del prototipo grupal de Porteña. |
 | `img/futbol/Futbol-2.jpeg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-3.jpeg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-4.jpg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-5.jpg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-6.jpeg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-7.jpeg` | Recurso del prototipo grupal de Porteña. |
+| `img/futbol/Futbol-8.jpg` | Recurso del prototipo grupal de Porteña. |
 | `img/gastronomia/Gastronomia-4.jpeg` | Recurso del prototipo grupal de Porteña. |
 | `img/gastronomia/Gastronomia-5.jpeg` | Recurso del prototipo grupal de Porteña. |
 | `img/inicio/Inicio-2.jpeg` | Recurso del prototipo grupal de Porteña. |
@@ -55,7 +61,7 @@ Las descripciones de arte urbano reproducen los textos de la autora. Las demás 
 | Temática | Punto | Fuente |
 | --- | --- | --- |
 | Fútbol | La Bombonera | [Consultar](https://www.bocajuniors.com.ar/) |
-| Fútbol | Estadio Tomás A. Ducó | [Consultar](https://cahuracan.com/) |
+| Fútbol | Estadio Monumental | [Consultar](https://www.cariverplate.com.ar/) |
 | Fútbol | Café El Banderín | [Consultar](https://turismo.buenosaires.gob.ar/es/gastronomico/caf%C3%A9-el-bander%C3%ADn) |
 | Arquitectura | Palacio Barolo | [Consultar](https://palaciobarolotours.com.ar/informacion-relevante-para-los-visitantes/) |
 | Arquitectura | Cementerio de la Recoleta | [Consultar](https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta) |
