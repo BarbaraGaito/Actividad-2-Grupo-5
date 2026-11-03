@@ -16,6 +16,11 @@ consigna/
 !docs/capturas/*.png
 tmp/
 .openai/
+documentacion/
+
+# Herramientas auxiliares locales (no necesarias para ejecutar ni compilar el sitio)
+/scripts/generar-documentos.py
+/scripts/requirements-documentos.txt
 
 # Archivos temporales de LaTeX
 *.aux

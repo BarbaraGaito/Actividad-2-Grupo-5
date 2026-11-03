@@ -26,14 +26,15 @@ Abrir <http://localhost:8000>. Solo requiere Node.js para el servidor local; no 
 ## Funcionalidades
 
 - Inicio con propuesta, logo, acceso a cinco temáticas, mapa general y recomendaciones.
-- Cinco recorridos con tres paradas cada uno (arte urbano reúne cinco obras de su galería) y tres guías de arquitectura por comunas, una parada por comuna.
-- 17 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes de consulta (en arte urbano y gastronomía, el crédito de la foto) y navegación entre fichas. Todas tienen acceso a su ubicación.
+- Cinco recorridos: Fútbol, Gastronomía y Cine reúnen tres paradas cada uno; Arte urbano presenta cinco obras y Arquitectura nueve lugares, ocho de ellos con fotografías en las comunas 1 y 13.
+- 23 fichas individuales con descripción, actividades, duración orientativa, acceso, horarios, imágenes, fuentes de consulta (en arte urbano y gastronomía, el crédito de la foto) y navegación entre fichas. Todas tienen acceso a su ubicación.
 - Gastronomía: tres cafeterías de la galería Cafeterías en CABA, de la [Tarea 1 de Bárbara Gaito](https://github.com/BarbaraGaito/Tarea-1-Gaito), con sus fotografías originales (`img/gastronomia/Gastronomia-1.jpeg` a `Gastronomia-3.jpeg`).
+- Arquitectura: ocho fotos convertidas de HEIC a JPEG. Comuna 1 reúne las fotografías de Casa Rosada, Solar de French, Galerías Pacífico, Gran Rex, Luna Park, Obelisco y Puente de la Mujer; Comuna 13 presenta el Monumental. La ficha del Palacio Barolo se conserva como información complementaria sin imagen. Las comunas 2 y 3 se retiraron por no contar con fotos. Los nuevos JPEG están en `img/arquitectura/comuna-1/` y `img/arquitectura/comuna-13/`.
 - Arte urbano: cinco fotografías propias, descripciones y ubicaciones/contextos originales de Lara Trinidad Alonso, tomadas de [Paredes que Hablan, Actividad 1](https://github.com/Larialonso/Disenoydesarrolloweb/tree/main/Paredes-que-hablan). Cada fotografía se puede ver completa en su ficha. Se eligieron las cinco obras con dirección concreta en la Ciudad de Buenos Aires; sus descripciones se conservan sin cambios. La portada de la página usa otra fotografía de Lara (Expresión colectiva).
-- Mapa general con marcadores de las 17 fichas con el color y el número de cada temática, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps.
+- Mapa general con marcadores de las 23 fichas con el color y el número de cada temática, filtros por temática, selección desde el listado y ventanas con acceso a cada ficha. Hospitales corresponde a Realidades poco frecuentes. Los itinerarios de las demás temáticas se abren en Google Maps.
 - Contacto simulado con nombre, correo, motivo y mensaje; validación HTML y JavaScript, errores asociados a los campos y confirmación.
 - Planificación simulada con cinco opciones, nombre, correo, fecha, entre 1 y 20 personas, guía impresa opcional, cálculo automático, resumen, edición, limpieza y confirmación.
-- Chat de preguntas frecuentes en las 32 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
+- Chat de preguntas frecuentes en las 37 páginas: permite escribir consultas, elegir preguntas sugeridas, conocer ubicaciones, calcular precios y pasar a la reserva conservando recorrido, personas y adicional. Incluye cierre con Escape, foco de regreso, limpieza de conversación y respuesta para consultas desconocidas. Usa respuestas preparadas y reglas locales; no es IA generativa. También hay diez FAQ con búsqueda sin distinción de tildes o mayúsculas. Cubre el punto 3.6 de la consigna.
 - Navegación que marca la sección actual, menú móvil con Escape y foco de regreso, salto al contenido, foco visible, estados anunciados e impresión de guías con fichas desplegadas.
 
 Las reservas y el contacto son simulaciones explícitas. No se envían mensajes, no se guardan datos personales, no se cobran importes ni se reservan lugares reales. La planificación no incluye entradas, traslados ni consumos. No se implementa una pasarela de pago.
@@ -63,8 +64,8 @@ index.html                         Inicio
 pantallas/
   futbol/, gastronomia/, cine/      Recorridos temáticos
   arte-urbano/                      Galería de cinco obras originales
-  arquitectura/                    Índice y comunas 1, 2 y 3
-  puntos/                          17 fichas individuales
+  arquitectura/                    Índice y comunas 1 y 13
+  puntos/                          23 fichas individuales
   mapa/, contacto/, reserva/       Ubicaciones y formularios
   preguntas-frecuentes/             Ayuda funcional con búsqueda
   sobre-la-guia/, design-system/    Equipo y reglas visuales
@@ -78,10 +79,10 @@ vendor/leaflet/                    Biblioteca de mapas y licencia BSD
 scripts/iconos.cjs                  Íconos SVG propios que usan el chat y el mapa
 datos/recorridos.json              Contenido y fuentes de todas las fichas
 datos/arte-actividad-1.json         Registro fiel de la galería de Lara
-img/                              Imágenes por sección, nombradas {Seccion}-{numero} (por ejemplo, Cine-1.jpeg), y fuentes
+img/                              Imágenes por sección y fuentes; Arquitectura agrupa las fotos nuevas por comuna
 scripts/generar-ayuda.cjs           Datos del chat y del mapa (js/contenido-*.js)
+scripts/geocodificar-mapa.cjs       Obtención de coordenadas para las fichas nuevas
 scripts/servidor.cjs                Servidor local
-scripts/generar-documentos.py       Generación de los dos PDF
 docs/                             Fuentes, entrega y pruebas
 output/pdf/                        Documentos de entrega
 ```
@@ -97,18 +98,15 @@ npm run build
 
 `npm run watch:css` recompila estilos durante la edición. `npm run build:content` regenera los datos del chat y del mapa a partir de `datos/` y de las preguntas frecuentes. Las vistas principales conservan la composición heredada de la Actividad 2.
 
-Para regenerar los PDF después de añadir las capturas reales:
+Para obtener coordenadas de fichas nuevas, ejecutar `node scripts/geocodificar-mapa.cjs` y luego `npm run build:content`. La consulta requiere internet; las coordenadas existentes se conservan en `datos/ubicaciones.json`.
 
-```sh
-py -m pip install -r scripts/requirements-documentos.txt
-py scripts/generar-documentos.py
-```
+Las herramientas auxiliares para generar documentos se conservan localmente y están excluidas de Git. No se incluyen al clonar el repositorio ni son necesarias para ejecutar o compilar el sitio.
 
 ## Servicios externos, accesibilidad y recursos
 
 Leaflet 1.9.4 dibuja los marcadores y permite filtrar las ubicaciones sobre cartografía de OpenStreetMap con atribución visible. Se sirve desde vendor/leaflet con su licencia BSD; sus estilos se limitan al mapa y no reemplazan Tailwind. Las coordenadas se guardan en datos/ubicaciones.json, con su fuente: API USIG. Google Maps se conserva para itinerarios, fichas y como respaldo. El chat funciona localmente, sin credenciales, costes ni transmisión de consultas.
 
-Fotografías propias del grupo. Las cinco fotos de arte urbano y la portada de su página son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. Las tres fotos de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1. El resto proviene de los recursos ya incluidos en el prototipo grupal.
+Fotografías propias del grupo. Las cinco fotos de arte urbano y la portada de su página son de Lara Trinidad Alonso y conservan el origen de su Actividad 1. Las tres fotos de las paradas de gastronomía son de Bárbara Gaito y provienen de su Tarea 1. Las ocho fotos nuevas de Arquitectura fueron aportadas por Homero para esta revisión. El resto proviene de los recursos ya incluidos en el prototipo grupal.
 
 ## Integrantes y responsabilidades
 | Integrante | Legajo | Responsabilidad temática |

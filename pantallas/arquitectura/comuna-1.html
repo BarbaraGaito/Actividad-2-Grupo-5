@@ -1,189 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Del centro histórico al Dique 3: palacios, galerías, teatros y espacios públicos para descubrir en ocho fotografías."
+    />
+    <meta name="theme-color" content="#171714" />
+    <title>Comuna 1 · Arquitectura · Porteña</title>
+    <link rel="icon" href="../../img/compartidas/Compartidas-1.png" type="image/png" />
+    <link rel="stylesheet" href="../../css/fuentes.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <script src="../../js/sitio.js" defer=""></script>
+    <script src="../../js/contenido-ayuda.js" defer=""></script>
+    <script src="../../js/chat.js" defer=""></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Comuna 1 · Arquitectura. Porteña: cinco maneras de descubrir la cultura de Buenos Aires, a pie y con tiempo.">
-  <meta name="theme-color" content="#171714">
-  <title>Comuna 1 · Arquitectura · Porteña</title>
-  <link rel="icon" href="../../img/compartidas/Compartidas-1.png" type="image/png">
-  <link rel="stylesheet" href="../../css/fuentes.css">
-  <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../js/sitio.js" defer></script>
-  <script src="../../js/contenido-ayuda.js" defer></script>
-  <script src="../../js/chat.js" defer></script>
-</head>
-
-<body class="comuna-1">
-  <a href="#contenido" class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only">Saltar
-    al contenido</a>
-  <header class="border-b border-borde bg-papel">
-    <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
-      <a href="../../index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"><img
-          src="../../img/compartidas/Compartidas-2.png" alt="" class="marca-logo" fetchpriority="high"
-          decoding="async"><span class="font-serif text-2xl font-bold">PORTEÑA</span></a>
-      <nav aria-label="Navegación principal"
-        class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10">
-        <a href="../../index.html#recorridos" aria-current="page" class="py-3 hover:underline">Recorridos</a><a
-          href="../mapa/index.html" class="py-3 hover:underline">Puntos de interés</a><a
-          href="../sobre-la-guia/index.html" class="py-3 hover:underline">Sobre la guía</a>
-      </nav>
-      <button id="boton-menu"
-        class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden"
-        aria-expanded="true" aria-controls="menu" hidden>Menú <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg></button>
-      <nav id="menu" aria-label="Secciones"
-        class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden">
-        <a href="../../index.html">Inicio</a><a href="../../index.html#recorridos" aria-current="page">Recorridos</a><a
-          href="../mapa/index.html">Mapa y puntos de interés</a><a href="../reserva/index.html">Planificá tu
-          visita</a><a href="../contacto/index.html">Contacto</a><a href="../preguntas-frecuentes/index.html">Preguntas
-          frecuentes</a><a href="../sobre-la-guia/index.html">Sobre la guía</a>
-      </nav>
-    </div>
-  </header>
-  <main id="contenido">
-    <div style="--acento:#5ba7ff">
-      <section class="hero">
-        <div class="contenedor hero-interior">
-          <div class="hero-texto">
-            <p class="etiqueta" style="color: #5ba7ff">GUÍA POR COMUNA · BUENOS AIRES</p>
-            <h1>Comuna 1</h1>
-            <p class="max-w-xl text-base md:text-lg text-[#d2d0c7]">Retiro · San Nicolás · Puerto Madero · San Telmo ·
-              Monserrat · Constitución. Seis barrios donde conviven arquitectura histórica y nuevas formas de habitar.
-            </p><a href="#paradas" class="boton boton-acento mt-2">Empezar a recorrer</a>
-          </div><img src="../../img/arquitectura/Arquitectura-2.jpeg"
-            alt="Palacio Barolo y su cúpula sobre la Avenida de Mayo al atardecer" class="foto-hero"
-            fetchpriority="high" decoding="async">
-        </div>
-      </section>
-      <div class="barra-datos ">
-        <div class="contenedor datos">
-          <p class="dato"><strong>06</strong><span>Barrios de la Comuna 1</span></p>
-          <p class="dato"><strong>01</strong><span>Edificio en esta guía</span></p>
-          <p class="dato"><strong>2005</strong><span>Ley orgánica de comunas</span></p>
-        </div>
+  <body class="arquitectura comuna-1">
+    <a
+      href="#contenido"
+      class="sr-only fixed left-4 top-4 z-50 rounded bg-lima p-4 text-tinta focus:not-sr-only"
+      >Saltar al contenido</a
+    >
+    <header class="border-b border-borde bg-papel">
+      <div class="contenedor flex min-h-[96px] flex-wrap items-center justify-between gap-4 py-4 md:py-6">
+        <a href="../../index.html" class="flex items-center gap-3" aria-label="Porteña, inicio"
+          ><img
+            src="../../img/compartidas/Compartidas-2.png"
+            alt=""
+            class="marca-logo"
+            fetchpriority="high"
+            decoding="async"
+          /><span class="font-serif text-2xl font-bold">PORTEÑA</span></a
+        >
+        <nav
+          aria-label="Navegación principal"
+          class="hidden items-center gap-8 text-xs font-bold uppercase md:flex xl:gap-10"
+        >
+          <a href="../../index.html#recorridos" aria-current="page" class="py-3 hover:underline">Recorridos</a
+          ><a href="../mapa/index.html" class="py-3 hover:underline">Puntos de interés</a
+          ><a href="../sobre-la-guia/index.html" class="py-3 hover:underline">Sobre la guía</a>
+        </nav>
+        <button
+          id="boton-menu"
+          class="min-h-12 rounded-full border border-borde px-5 text-xs font-bold uppercase md:hidden"
+          aria-expanded="true"
+          aria-controls="menu"
+          hidden=""
+        >
+          Menú
+          <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M2 4h12M2 8h12M2 12h12"></path>
+          </svg>
+        </button>
+        <nav
+          id="menu"
+          aria-label="Secciones"
+          class="flex w-full flex-col gap-2 border-t border-borde py-4 text-sm md:hidden"
+        >
+          <a href="../../index.html">Inicio</a
+          ><a href="../../index.html#recorridos" aria-current="page">Recorridos</a
+          ><a href="../mapa/index.html">Mapa y puntos de interés</a
+          ><a href="../reserva/index.html">Planificá tu visita</a><a href="../contacto/index.html">Contacto</a
+          ><a href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a
+          ><a href="../sobre-la-guia/index.html">Sobre la guía</a>
+        </nav>
       </div>
-      <section class="contenedor seccion" id="paradas">
-        <div class="mx-auto max-w-[1120px]">
-          <p class="etiqueta mb-5">Arquitectura · Monserrat</p>
-          <h2 class="mb-4 text-[42px] lg:text-[50px]">Palacio Barolo</h2>
-          <p class="mb-10 text-lg text-[#59574e]">Una mirada a su cúpula y al edificio inspirado en la Divina Comedia.
-          </p><img src="../../img/arquitectura/Arquitectura-2.jpeg"
-            alt="Fachada y faro del Palacio Barolo, visto desde la Avenida de Mayo"
-            class="h-[280px] w-full rounded-2xl object-cover md:h-[500px]" loading="lazy" decoding="async">
-          <div class="tarjeta mt-8 grid gap-8 md:grid-cols-[2fr_1fr]">
-            <div>
-              <p class="etiqueta mb-4">Palacio Barolo · Ficha 01/01</p>
-              <h3 class="mb-5 text-[29px]">Arquitectura e historia</h3>
-              <p>Ubicación: Avenida de Mayo, Monserrat. Inaugurado en 1923. Su composición y sus símbolos hacen
-                referencia a la Divina Comedia; el remate superior funciona como un faro en el perfil urbano.</p>
-              <p class="mt-4 text-sm">Para ingresar es necesario contratar una visita guiada. Consultá horarios y
-                disponibilidad en <a class="enlace"
-                  href="https://palaciobarolotours.com.ar/informacion-relevante-para-los-visitantes/" target="_blank"
-                  rel="noopener noreferrer">Palacio Barolo Tours <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>.</p>
+    </header>
+    <main id="contenido">
+      <div style="--acento: #5ba7ff">
+        <section class="hero">
+          <div class="contenedor hero-interior">
+            <div class="hero-texto">
+              <p class="etiqueta text-arquitectura">ARQUITECTURA · FOTOGRAFÍAS DEL GRUPO</p>
+              <h1>Comuna 1</h1>
+              <p class="max-w-xl text-base text-[#d2d0c7] md:text-lg">
+                Retiro · San Nicolás · Puerto Madero · San Telmo · Monserrat · Constitución. Del centro
+                histórico al Dique 3: palacios, galerías, teatros y espacios públicos para descubrir en ocho
+                fotografías.
+              </p>
+              <a class="boton boton-acento" href="#paradas"
+                >Ver fotografías
+                <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+              ></a>
             </div>
-            <div>
-              <h3 class="etiqueta mb-5 font-sans">Registro fotográfico</h3>
-              <p class="text-sm">Fotografía propia del grupo, utilizada en el prototipo de la Actividad 2 y conservada
-                en esta implementación.</p><a class="enlace mt-5 inline-block text-sm"
-                href="../mapa/index.html#arquitectura">Ver ubicación <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
-            </div>
+            <img
+              src="../../img/arquitectura/comuna-1/casa-rosada.jpg"
+              alt="Vista de la Casa Rosada desde el espacio público, con su fachada rosada y el jardín en primer plano"
+              class="foto-hero object-[center_60%]"
+              fetchpriority="high"
+              decoding="async"
+            />
           </div>
-          <nav class="my-8 flex flex-wrap justify-between gap-4" aria-label="Fichas de arquitectura"><a class="boton"
-              href="index.html"><svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M14 8H2M7 3 2 8l5 5"/></svg> Volver a comunas</a><a class="boton boton-acento" href="comuna-2.html">Comuna 2 <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></nav>
-          <section class="mt-10">
-            <h2 class="mb-6">Información práctica de la parada</h2>
-            <ol class="paradas-lista space-y-4">
-              <li>
-                <details class="parada" id="parada-1">
-                  <summary>
-                    <div class="flex items-center gap-4 pr-6"><span class="numero-parada">1</span>
-                      <div>
-                        <h3 class="text-xl md:text-2xl">Palacio Barolo</h3>
-                        <p class="mt-1 text-sm text-[#59574e]">Av. de Mayo 1370, Monserrat</p>
-                      </div>
-                    </div>
-                    <p class="mt-4 text-sm">Su torre y su faro invitan a mirar el perfil de la Avenida de Mayo. La
-                      visita interior permite explorar la interpretación arquitectónica de la Divina Comedia.</p>
-                  </summary>
-                  <div class="space-y-3 border-t border-borde p-6">
-                    <p><strong>Experiencia:</strong> Observación de fachada o visita guiada contratada al operador.</p>
-                    <p><strong>Duración:</strong> 20 minutos exterior; duración interior según visita</p>
-                    <p><strong>Horarios:</strong> Consultar turnos y requisitos en Barolo Tours.</p>
-                    <p><strong>Acceso:</strong> Exterior libre. Interior con reserva y entrada del operador.</p>
-                    <div class="flex flex-wrap gap-6"><a class="enlace" href="../puntos/barolo.html">Ver ficha de
-                        Palacio Barolo <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a><a class="enlace"
-                        href="https://www.google.com/maps/search/?api=1&amp;query=Palacio%20Barolo%2C%20Av.%20de%20Mayo%201370%2C%20Monserrat%2C%20Buenos%20Aires%2C%20Argentina"
-                        target="_blank" rel="noopener noreferrer">Abrir ubicación <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a></div>
-                  </div>
-                </details>
-              </li>
-            </ol>
-          </section>
+        </section>
+        <div class="barra-datos">
+          <div class="contenedor datos">
+            <p class="dato"><strong>07</strong><span>Lugares fotografiados</span></p>
+            <p class="dato"><strong>01</strong><span>Comuna de Buenos Aires</span></p>
+            <p class="dato"><strong>01</strong><span>Mirada arquitectónica</span></p>
+          </div>
         </div>
-      </section>
-      <section class="contenedor seccion">
-        <h2 class="mb-10">Cómo explorar estas fichas</h2>
-        <div class="grid gap-5 md:grid-cols-3 xl:gap-8">
-          <article class="consejo">
-            <h3>Tu fotografía</h3>
-            <p class="text-[15px] text-[#59574e]">Las fotografías del grupo acompañan la lectura de los edificios y
-              conservan la identidad del prototipo.</p>
-          </article>
-          <article class="consejo">
-            <h3>El edificio</h3>
-            <p class="text-[15px] text-[#59574e]">Cada ficha resume el barrio, la época, el estilo y los detalles
-              arquitectónicos que vale la pena observar.</p>
-          </article>
-          <article class="consejo">
-            <h3>Tu mirada</h3>
-            <p class="text-[15px] text-[#59574e]">Podés sumar una observación personal, un encuadre o un detalle
-              descubierto durante el recorrido.</p>
-          </article>
-        </div>
-      </section>
-      <section class="banda-cierre">
-        <div class="contenedor cierre-interior">
-          <h2 class="max-w-[990px] text-[36px] leading-[1.08] lg:text-[48px]">Seguí descubriendo la arquitectura de
-            Buenos Aires.</h2><a href="index.html" class="boton shrink-0">Volver a comunas <svg class="icono" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
-        </div>
-      </section>
-    </div>
-  </main>
-  <footer class="bg-tinta text-papel">
-    <div class="contenedor seccion">
-      <div class="grid gap-10 pb-12 md:grid-cols-2">
-        <div class="max-w-[400px]"><a href="../../index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a>
-          <p class="mt-5 text-base text-[#c7c5bd]">Guía cultural independiente para caminar, escuchar y entender Buenos
-            Aires. Diseñada para locales y viajeros curiosos.</p>
-        </div>
-        <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16">
-          <nav aria-label="Explorar">
-            <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2>
-            <ul class="space-y-4 text-sm">
-              <li><a class="hover:underline" href="../../index.html#recorridos">Todos los recorridos</a></li>
-              <li><a class="hover:underline" href="../mapa/index.html">Mapa de la ciudad</a></li>
-              <li><a class="hover:underline" href="../reserva/index.html">Planificá tu visita</a></li>
-            </ul>
+        <section class="contenedor seccion" id="paradas">
+          <nav class="mb-8 text-sm" aria-label="Ruta de navegación">
+            <a class="enlace" href="index.html">Arquitectura</a> / Comuna 1
           </nav>
-          <nav aria-label="Proyecto">
-            <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2>
-            <ul class="space-y-4 text-sm">
-              <li><a class="hover:underline" href="../sobre-la-guia/index.html">Sobre nosotros</a></li>
-              <li><a class="hover:underline" href="../contacto/index.html">Contacto</a></li>
-              <li><a class="hover:underline" href="../preguntas-frecuentes/index.html">Preguntas frecuentes</a></li>
-            </ul>
+          <h2 class="mb-4">Las capas del centro porteño</h2>
+          <p class="mb-8 text-[#59574e]">
+            Abrí la ficha de cada lugar para ver la fotografía completa, su ubicación y la información
+            práctica.
+          </p>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="overflow-hidden rounded-2xl bg-arena" id="casa-rosada">
+              <a
+                class="block"
+                href="../puntos/casa-rosada.html"
+                aria-label="Ver fotografía y ficha de Casa Rosada"
+                ><img
+                  src="../../img/arquitectura/comuna-1/casa-rosada.jpg"
+                  alt="Vista de la Casa Rosada desde el espacio público, con su fachada rosada y el jardín en primer plano"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">01 · Monserrat</p>
+                <h3 class="mb-4">Casa Rosada</h3>
+                <p class="mb-4 text-sm">
+                  La sede del Poder Ejecutivo se reconoce por su fachada rosada. Su volumen y sus galerías
+                  permiten observar la relación entre la arquitectura institucional y el centro histórico.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Balcarce 50, Monserrat</p>
+                <a class="enlace inline-flex min-h-11 items-center gap-2" href="../puntos/casa-rosada.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="solar-de-french">
+              <a
+                class="block"
+                href="../puntos/solar-de-french.html"
+                aria-label="Ver fotografía y ficha de Galería Solar de French"
+                ><img
+                  src="../../img/arquitectura/comuna-1/galeria-solar-de-french.jpg"
+                  alt="Pasaje de la Galería Solar de French con sus patios y detalles de la arquitectura de San Telmo"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">02 · San Telmo</p>
+                <h3 class="mb-4">Galería Solar de French</h3>
+                <p class="mb-4 text-sm">
+                  Una galería comercial instalada en el antiguo solar de Domingo French. El recorrido por sus
+                  patios invita a mirar los pasajes y la escala de la arquitectura de San Telmo.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Defensa 1066, San Telmo</p>
+                <a
+                  class="enlace inline-flex min-h-11 items-center gap-2"
+                  href="../puntos/solar-de-french.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="galerias-pacifico">
+              <a
+                class="block"
+                href="../puntos/galerias-pacifico.html"
+                aria-label="Ver fotografía y ficha de Galerías Pacífico"
+                ><img
+                  src="../../img/arquitectura/comuna-1/galerias-pacifico.jpg"
+                  alt="Registro de Galerías Pacífico y los detalles de su arquitectura comercial"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">03 · San Nicolás</p>
+                <h3 class="mb-4">Galerías Pacífico</h3>
+                <p class="mb-4 text-sm">
+                  El edificio combina arquitectura comercial y arte. La cúpula central y los pasajes
+                  interiores permiten observar cómo un espacio de circulación también se convierte en lugar de
+                  encuentro.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Florida 753, San Nicolás</p>
+                <a
+                  class="enlace inline-flex min-h-11 items-center gap-2"
+                  href="../puntos/galerias-pacifico.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="gran-rex">
+              <a
+                class="block"
+                href="../puntos/gran-rex.html"
+                aria-label="Ver fotografía y ficha de Teatro Gran Rex"
+                ><img
+                  src="../../img/arquitectura/comuna-1/gran-rex.jpg"
+                  alt="Fachada y marquesina del Teatro Gran Rex sobre la Avenida Corrientes"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">04 · San Nicolás</p>
+                <h3 class="mb-4">Teatro Gran Rex</h3>
+                <p class="mb-4 text-sm">
+                  Proyectado por Alberto Prebisch y Adolfo Moret e inaugurado en 1937, el Gran Rex es una
+                  referencia de la arquitectura moderna sobre Corrientes.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Av. Corrientes 857, San Nicolás</p>
+                <a class="enlace inline-flex min-h-11 items-center gap-2" href="../puntos/gran-rex.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="luna-park">
+              <a
+                class="block"
+                href="../puntos/luna-park.html"
+                aria-label="Ver fotografía y ficha de Luna Park"
+                ><img
+                  src="../../img/arquitectura/comuna-1/luna-park.jpg"
+                  alt="Fachada del estadio Luna Park registrada desde la calle"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">05 · San Nicolás</p>
+                <h3 class="mb-4">Luna Park</h3>
+                <p class="mb-4 text-sm">
+                  La fachada del Luna Park forma parte del paisaje del Bajo porteño. Su escala permite leer el
+                  vínculo entre los grandes espacios de espectáculos y la trama urbana.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Av. Eduardo Madero 420, San Nicolás</p>
+                <a class="enlace inline-flex min-h-11 items-center gap-2" href="../puntos/luna-park.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="obelisco">
+              <a class="block" href="../puntos/obelisco.html" aria-label="Ver fotografía y ficha de Obelisco"
+                ><img
+                  src="../../img/arquitectura/comuna-1/obelisco.jpg"
+                  alt="El Obelisco de Buenos Aires y su entorno en la Plaza de la República"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">06 · San Nicolás</p>
+                <h3 class="mb-4">Obelisco</h3>
+                <p class="mb-4 text-sm">
+                  Diseñado por Alberto Prebisch e inaugurado en 1936, el Obelisco organiza una de las vistas
+                  más reconocibles de Buenos Aires. Su forma vertical contrasta con la amplitud de las
+                  avenidas.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Av. Corrientes y Av. 9 de Julio, San Nicolás</p>
+                <a class="enlace inline-flex min-h-11 items-center gap-2" href="../puntos/obelisco.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+            <article class="overflow-hidden rounded-2xl bg-arena" id="puente-de-la-mujer">
+              <a
+                class="block"
+                href="../puntos/puente-de-la-mujer.html"
+                aria-label="Ver fotografía y ficha de Puente de la Mujer"
+                ><img
+                  src="../../img/arquitectura/comuna-1/puente-de-la-mujer.jpg"
+                  alt="Silueta del Puente de la Mujer sobre el agua del Dique 3 de Puerto Madero"
+                  class="aspect-[4/3] w-full object-cover object-[center_60%]"
+                  loading="lazy"
+                  decoding="async"
+              /></a>
+              <div class="p-6">
+                <p class="etiqueta mb-3">07 · Puerto Madero</p>
+                <h3 class="mb-4">Puente de la Mujer</h3>
+                <p class="mb-4 text-sm">
+                  El puente peatonal diseñado por Santiago Calatrava conecta las orillas del Dique 3. Su
+                  mástil inclinado y los cables construyen una silueta que se destaca sobre el agua.
+                </p>
+                <p class="mb-5 text-sm text-[#59574e]">Dique 3, Puerto Madero</p>
+                <a
+                  class="enlace inline-flex min-h-11 items-center gap-2"
+                  href="../puntos/puente-de-la-mujer.html"
+                  >Ver fotografía y ficha
+                  <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M2 8h12M9 3l5 5-5 5"></path></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <aside class="tarjeta mt-8">
+            <h2 class="mb-3 text-2xl">Más arquitectura de la comuna</h2>
+            <p class="mb-4">
+              También podés consultar la historia y la información práctica del Palacio Barolo.
+            </p>
+            <a class="enlace inline-block min-h-11 py-2" href="../puntos/barolo.html"
+              >Leer la ficha del Palacio Barolo</a
+            >
+          </aside>
+          <nav class="mt-10 flex flex-wrap gap-4" aria-label="Explorar arquitectura">
+            <a class="boton" href="index.html"
+              >Volver a comunas
+              <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M2 8h12M9 3l5 5-5 5"></path></svg></a
+            ><a class="boton boton-acento" href="comuna-13.html"
+              >Explorar Comuna 13
+              <svg class="icono" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M2 8h12M9 3l5 5-5 5"></path></svg></a
+            ><a class="enlace min-h-12 py-3" href="../mapa/index.html#arquitectura">Ver lugares en el mapa</a>
           </nav>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-tinta text-papel">
+      <div class="contenedor seccion">
+        <div class="grid gap-10 pb-12 md:grid-cols-2">
+          <div class="max-w-[400px]">
+            <a href="../../index.html" class="font-serif text-[32px] font-bold">PORTEÑA</a>
+            <p class="mt-5 text-base text-[#c7c5bd]">
+              Guía cultural independiente para caminar, escuchar y entender Buenos Aires. Diseñada para
+              locales y viajeros curiosos.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 md:justify-self-end md:gap-16">
+            <nav aria-label="Explorar">
+              <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Explorar</h2>
+              <ul class="space-y-4 text-sm">
+                <li>
+                  <a class="hover:underline" href="../../index.html#recorridos">Todos los recorridos</a>
+                </li>
+                <li><a class="hover:underline" href="../mapa/index.html">Mapa de la ciudad</a></li>
+                <li><a class="hover:underline" href="../reserva/index.html">Planificá tu visita</a></li>
+              </ul>
+            </nav>
+            <nav aria-label="Proyecto">
+              <h2 class="etiqueta mb-5 font-sans text-[#aaa89f]">Proyecto</h2>
+              <ul class="space-y-4 text-sm">
+                <li><a class="hover:underline" href="../sobre-la-guia/index.html">Sobre nosotros</a></li>
+                <li><a class="hover:underline" href="../contacto/index.html">Contacto</a></li>
+                <li>
+                  <a class="hover:underline" href="../preguntas-frecuentes/index.html"
+                    >Preguntas frecuentes</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="linea-pie" aria-hidden="true">
+          <img src="../../img/compartidas/Compartidas-3.svg" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row">
+          <p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p>
         </div>
       </div>
-      <div class="linea-pie" aria-hidden="true"><img src="../../img/compartidas/Compartidas-3.svg" alt=""
-          loading="lazy" decoding="async"></div>
-      <div class="mt-10 flex flex-col justify-between gap-4 text-xs text-[#aaa89f] md:flex-row">
-        <p>© 2026 PORTEÑA · Grupo 5 · Guía Cultural BA.</p>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

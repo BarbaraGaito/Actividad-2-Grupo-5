@@ -149,7 +149,7 @@
     }
     if (/mapa|ubicacion|recorrido|paradas|itinerario/.test(consulta)) {
       return {
-        texto: 'Porteña reúne cinco temáticas y 17 fichas con ubicación. ' +
+        texto: 'Porteña reúne cinco temáticas y ' + puntos.length + ' fichas con ubicación. ' +
           'El mapa incluye filtros, marcadores numerados y acceso a cada lugar. ' +
           'Podés ver todos los puntos o seleccionar una temática.',
         enlaces: [mapa, enlace('Elegir un recorrido', 'index.html#recorridos')]

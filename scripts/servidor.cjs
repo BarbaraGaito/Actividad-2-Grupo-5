@@ -3,7 +3,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const raiz = path.resolve(__dirname, '..');
-const tipos = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.json': 'application/json' };
+const tipos = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.ttf': 'font/ttf', '.pdf': 'application/pdf', '.json': 'application/json' };
 http.createServer((req, res) => {
   let relativo;
   try { relativo = decodeURIComponent(new URL(req.url, 'http://localhost').pathname); }

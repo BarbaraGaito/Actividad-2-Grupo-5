@@ -80,34 +80,130 @@ window.PORTEÑA_MAPA = {
           }
         },
         {
-          "id": "recoleta",
-          "nombre": "Cementerio de la Recoleta",
-          "direccion": "Junín 1760, Recoleta",
+          "id": "casa-rosada",
+          "nombre": "Casa Rosada",
+          "direccion": "Balcarce 50, Monserrat",
           "numero": 2,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Junín 1760",
-            "direccionNormalizada": "JUNIN 1760, CABA",
-            "lat": -34.588138,
-            "lon": -58.392385,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Jun%C3%ADn%201760&geocodificar=TRUE",
+            "consulta": "Balcarce 50",
+            "direccionNormalizada": "BALCARCE 50, CABA",
+            "lat": -34.608107,
+            "lon": -58.370769,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Balcarce%2050&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         },
         {
-          "id": "aguas",
-          "nombre": "Palacio de Aguas Corrientes",
-          "direccion": "Av. Córdoba 1950, Balvanera",
+          "id": "solar-de-french",
+          "nombre": "Galería Solar de French",
+          "direccion": "Defensa 1066, San Telmo",
           "numero": 3,
           "referencia": false,
           "nota": "",
           "posicion": {
-            "consulta": "Av. Córdoba 1950",
-            "direccionNormalizada": "CORDOBA AV. 1950, CABA",
-            "lat": -34.599765,
-            "lon": -58.395029,
-            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20C%C3%B3rdoba%201950&geocodificar=TRUE",
+            "consulta": "Defensa 1066",
+            "direccionNormalizada": "DEFENSA 1066, CABA",
+            "lat": -34.620233,
+            "lon": -58.371422,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Defensa%201066&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "galerias-pacifico",
+          "nombre": "Galerías Pacífico",
+          "direccion": "Florida 753, San Nicolás",
+          "numero": 4,
+          "referencia": false,
+          "nota": "",
+          "posicion": {
+            "consulta": "Florida 753",
+            "direccionNormalizada": "FLORIDA 753, CABA",
+            "lat": -34.599259,
+            "lon": -58.375365,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Florida%20753&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "gran-rex",
+          "nombre": "Teatro Gran Rex",
+          "direccion": "Av. Corrientes 857, San Nicolás",
+          "numero": 5,
+          "referencia": false,
+          "nota": "",
+          "posicion": {
+            "consulta": "Av. Corrientes 857",
+            "direccionNormalizada": "CORRIENTES AV. 857, CABA",
+            "lat": -34.603454,
+            "lon": -58.378882,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Corrientes%20857&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "luna-park",
+          "nombre": "Luna Park",
+          "direccion": "Av. Eduardo Madero 420, San Nicolás",
+          "numero": 6,
+          "referencia": false,
+          "nota": "",
+          "posicion": {
+            "consulta": "Av. Eduardo Madero 420",
+            "direccionNormalizada": "MADERO, EDUARDO AV. 420, CABA",
+            "lat": -34.602294,
+            "lon": -58.368366,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Eduardo%20Madero%20420&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "obelisco",
+          "nombre": "Obelisco",
+          "direccion": "Av. Corrientes y Av. 9 de Julio, San Nicolás",
+          "numero": 7,
+          "referencia": false,
+          "nota": "",
+          "posicion": {
+            "consulta": "Corrientes y 9 de Julio",
+            "direccionNormalizada": "CORRIENTES AV. y 9 DE JULIO AV., CABA",
+            "lat": -34.604035,
+            "lon": -58.380964,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Corrientes%20y%209%20de%20Julio&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "puente-de-la-mujer",
+          "nombre": "Puente de la Mujer",
+          "direccion": "Dique 3, Puerto Madero",
+          "numero": 8,
+          "referencia": true,
+          "nota": "La marca corresponde al acceso por el paseo del Dique 3; el puente se reconoce por su mástil blanco.",
+          "posicion": {
+            "consulta": "Pierina Dealessi 800",
+            "direccionNormalizada": "DEALESSI, PIERINA 800, CABA",
+            "lat": -34.606511,
+            "lon": -58.364274,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Pierina%20Dealessi%20800&geocodificar=TRUE",
+            "tipo": "dirección de la ficha"
+          }
+        },
+        {
+          "id": "monumental-arquitectura",
+          "nombre": "Estadio Monumental",
+          "direccion": "Av. Figueroa Alcorta 7597, Belgrano",
+          "numero": 9,
+          "referencia": false,
+          "nota": "",
+          "posicion": {
+            "consulta": "Av. Figueroa Alcorta 7597",
+            "direccionNormalizada": "FIGUEROA ALCORTA AV. 7597, CABA",
+            "lat": -34.545278,
+            "lon": -58.449722,
+            "urlFuente": "https://servicios.usig.buenosaires.gob.ar/normalizar/?direccion=Av.%20Figueroa%20Alcorta%207597&geocodificar=TRUE",
             "tipo": "dirección de la ficha"
           }
         }
