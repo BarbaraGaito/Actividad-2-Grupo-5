@@ -87,7 +87,7 @@
     if (/datos|privacidad|almacena|guardan|guardar|historial/.test(consulta)) {
       return {
         texto: 'El contacto y la reserva no envían ni guardan datos. Esta conversación se mantiene solo mientras ' +
-          'estás en la página y podés borrarla con Limpiar conversación. Los mapas sí conectan con Google al cargarse.',
+          'estás en la página y podés borrarla con Limpiar conversación. Al cargarse, los mapas se conectan con OpenStreetMap y Google Maps.',
         enlaces: [faq]
       };
     }
@@ -109,7 +109,7 @@
     }
     const palabrasGenericas = new Set([
       'palacio','teatro','museo','cafe','estadio','mercado','nacional','pasaje','calle','buenos','aires','sobre',
-      'retrato','mural','lineas','reserva'
+      'retrato','mural','lineas','reserva','cine','futbol','arte','urbano','gastronomia','arquitectura'
     ]);
     const puntos = datos.recorridos.flatMap(r => r.puntos);
     const punto = puntos.find(p => consulta.includes(normalizar(p.nombre))) ||
@@ -117,11 +117,12 @@
         token.length >= 4 && !palabrasGenericas.has(token) && consulta.split(' ').includes(token)));
     if (punto) {
       const datosVisita = /horario|abiert|hora|cuando/.test(consulta) ? punto.horario
-        : /duracion|tiempo|tarda/.test(consulta) ? punto.duracion : punto.descripcion;
+        : /duracion|dura|demora|tiempo|tarda/.test(consulta) ? 'Duración orientativa: ' + punto.duracion + '.'
+          : punto.descripcion;
       return {
         texto: punto.nombre + '. ' + datosVisita + ' Ubicación: ' + punto.direccion + '.',
         enlaces: [
-          enlace('Ver fotografía e información de ' + punto.nombre, 'pantallas/puntos/' + punto.id + '.html'),
+          enlace('Ver la ficha de ' + punto.nombre, 'pantallas/puntos/' + punto.id + '.html'),
           mapa
         ]
       };
@@ -136,7 +137,7 @@
     }
     if (recorrido) {
       return {
-        texto: recorrido.nombre + ': ' + recorrido.duracion + '. Podés explorar ' + recorrido.puntos.length +
+        texto: recorrido.nombre + ': ' + recorrido.duracion.replace(/\.$/, '') + '. Podés explorar ' + recorrido.puntos.length +
           ' fichas: ' + recorrido.puntos.map(p => p.nombre).join(', ') + '. ' +
           (recorrido.id === 'arte-urbano'
             ? 'Se incluyen cinco fotografías y descripciones de Lara, con acceso al mapa de cada obra.'
@@ -174,7 +175,7 @@
   contenedor.className = 'chat-portena no-imprimir';
   contenedor.innerHTML =
     '<button id="abrir-chat" class="chat-lanzador" type="button" aria-expanded="false" aria-controls="panel-chat">' +
-      'Chat de Porteña ' + datos.iconos.externo +
+      '<span>Chat<span class="max-sm:sr-only"> de Porteña</span></span> ' + datos.iconos.externo +
     '</button>' +
     '<aside id="panel-chat" class="chat-panel" role="dialog" aria-modal="false" aria-labelledby="titulo-chat" hidden>' +
       '<div class="chat-cabecera">' +

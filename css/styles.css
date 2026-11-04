@@ -1474,7 +1474,7 @@ header nav a[aria-current="page"] {
 }
 
 .mapa-controles > div {
-  min-width: 0px;
+  min-width: 13rem;
   flex: 1 1 0%;
 }
 
@@ -1707,6 +1707,10 @@ header nav a[aria-current="page"] {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-4 {
@@ -2315,6 +2319,20 @@ header nav a[aria-current="page"] {
   }
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2332,6 +2350,10 @@ header nav a[aria-current="page"] {
 
   .md\:mb-5 {
     margin-bottom: 1.25rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {

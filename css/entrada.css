@@ -101,7 +101,7 @@
   .chat-pie a, .chat-pie button { @apply min-h-11 py-3 underline underline-offset-4; }
   .mapa-vista { @apply min-w-0; }
   .mapa-controles { @apply mb-4 flex flex-wrap items-end gap-3; }
-  .mapa-controles > div { @apply min-w-0 flex-1; }
+  .mapa-controles > div { @apply min-w-[13rem] flex-1; }
   .mapa-controles label { @apply mb-2 block text-sm font-bold; }
   .mapa-controles select { @apply min-h-12 w-full rounded-xl border border-[#8d897e] bg-papel px-3 py-2 text-base; }
   .mapa-controles button { @apply min-h-12 rounded-full bg-tinta px-4 py-3 text-sm font-bold text-papel; }

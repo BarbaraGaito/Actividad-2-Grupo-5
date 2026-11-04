@@ -374,7 +374,7 @@ window.PORTEÑA_AYUDA = {
           "direccion": "Av. Corrientes 1436, San Nicolás",
           "descripcion": "Una pausa entre libros para buscar textos sobre cine, guion y cultura. El paseo invita a relacionar las historias escritas con las historias proyectadas.",
           "actividad": "Exploración de catálogo y compra opcional de libros.",
-          "duracion": "40 minutos en el exterior",
+          "duracion": "30 minutos estimados",
           "acceso": "Consultar apertura; compras a cargo del visitante.",
           "horario": "Horario comercial a confirmar en la librería.",
           "fuente": "https://www.libreriahernandez.com/"
@@ -401,7 +401,7 @@ window.PORTEÑA_AYUDA = {
     },
     {
       "pregunta": "¿Cómo consulto el mapa y el orden de las paradas?",
-      "respuesta": "En Mapa de la ciudad elegí una parada numerada. Su ubicación se abre en el mapa incrustado. También hay un enlace para abrirla en otra pestaña. El orden es sugerido; también podés abrir el itinerario completo de una temática en Google Maps."
+      "respuesta": "En Mapa de la ciudad se ven los 23 puntos con su número. Podés filtrar por temática y elegir un marcador o una parada del listado para abrir su ficha. El orden es sugerido; también podés abrir el itinerario completo de una temática en Google Maps."
     },
     {
       "pregunta": "¿Los recorridos son accesibles para todas las personas?",
@@ -417,11 +417,11 @@ window.PORTEÑA_AYUDA = {
     },
     {
       "pregunta": "¿Cuántas paradas puedo visitar y cómo elijo?",
-      "respuesta": "Hay 23 fichas: 18 paradas culturales y cinco obras de arte urbano. Arquitectura reúne nueve lugares fotografiados en las comunas 1 y 13. Podés organizar las visitas según tus tiempos y combinar caminatas y transporte."
+      "respuesta": "Hay 23 fichas: 18 paradas culturales y cinco obras de arte urbano. Arquitectura reúne nueve lugares en las comunas 1 y 13, ocho de ellos con fotografía. Podés organizar las visitas según tus tiempos y combinar caminatas y transporte."
     },
     {
       "pregunta": "¿Necesito conexión a internet?",
-      "respuesta": "Las páginas, los estilos, las imágenes y las interacciones están guardados en el proyecto. El mapa incrustado y los enlaces externos necesitan internet. Las tipografías también están guardadas localmente, con Georgia y Arial como alternativas."
+      "respuesta": "Las páginas, los estilos, las imágenes y las interacciones están guardados en el proyecto. El fondo del mapa (OpenStreetMap), los mapas de Google Maps de cada ficha y los enlaces externos necesitan internet. Las tipografías también están guardadas localmente, con Georgia y Arial como alternativas."
     }
   ]
 };
