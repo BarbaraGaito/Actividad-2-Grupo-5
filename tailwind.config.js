@@ -1,4 +1,3 @@
-/** Colores compartidos con el diseño de Porteña en Figma. */
 module.exports = {
   content: ['./index.html', './pantallas/**/*.html', './js/*.js'],
   theme: {

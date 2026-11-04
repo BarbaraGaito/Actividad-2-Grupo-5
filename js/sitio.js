@@ -1,5 +1,3 @@
-/* Porteña · HTML5, Tailwind CSS y JavaScript sin frameworks.
-   Los formularios son simulaciones: no transmiten ni almacenan datos. */
 'use strict';
 
 const botonMenu = document.querySelector('#boton-menu');
@@ -20,8 +18,6 @@ if (botonMenu && menu) {
 }
 document.querySelectorAll('[data-requiere-js]').forEach(boton => { boton.disabled = false; });
 
-/* HTML conserva required/type/min/max. JS añade errores asociados a cada campo,
-   valida el texto sin espacios y dirige el foco al primer error. */
 function prepararValidacion(formulario) {
   formulario.noValidate = true;
   const campos = Array.from(formulario.querySelectorAll('input:not([type="checkbox"]), select, textarea'));
@@ -102,7 +98,6 @@ if (reserva) {
   const validar = prepararValidacion(reserva);
   const tarifas = { futbol: 12000, arquitectura: 10000, gastronomia: 15000, 'arte-urbano': 9000, cine: 11000 };
   let totalRevisado = null;
-  // La fecha mínima usa Buenos Aires aunque el dispositivo esté en otro huso.
   function actualizarFechaMinima() {
     const partes = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Argentina/Buenos_Aires', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
     const parte = tipo => partes.find(p => p.type === tipo).value;

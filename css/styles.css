@@ -1000,8 +1000,6 @@ button, summary {
   }
 }
 
-/* SVG propios de trazo: toman el tamaño de la letra y el color del texto. */
-
 .icono {
   display: inline-block;
   height: 1em;
@@ -1028,8 +1026,6 @@ button, summary {
   --tw-text-opacity: 1;
   color: rgb(23 23 20 / var(--tw-text-opacity, 1));
 }
-
-/* Sección actual en la navegación: subrayado fijo, además de aria-current. */
 
 header nav a[aria-current="page"] {
   font-weight: 700;
@@ -2238,10 +2234,6 @@ header nav a[aria-current="page"] {
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
-/* Componentes compartidos: las utilidades de Tailwind siguen en el HTML. */
-
-/* La portada móvil tiene la composición oscura del frame 14:614. */
 
 @media (max-width: 767px) {
   .inicio .hero-inicio {

@@ -1,6 +1,3 @@
-/* Chat de preguntas frecuentes de Porteña.
-   Responde con reglas y contenido del proyecto. No usa IA generativa, servicios
-   externos ni almacenamiento. Solo consulta la información incluida en el sitio. */
 (function () {
   'use strict';
   const datos = window.PORTEÑA_AYUDA;
@@ -227,7 +224,7 @@
       const a = document.createElement('a');
       a.href = destino.href;
       a.textContent = destino.texto + ' ';
-      a.insertAdjacentHTML('beforeend', datos.iconos.flecha); // SVG generado en la compilación, no texto del visitante.
+      a.insertAdjacentHTML('beforeend', datos.iconos.flecha);
       bloque.append(a);
     });
     log.append(bloque);

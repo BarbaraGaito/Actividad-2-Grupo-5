@@ -1,5 +1,3 @@
-/* Íconos propios: trazos simples sobre una cuadrícula de 16 × 16, sin bibliotecas externas.
-   El tamaño, el color y el grosor se definen con Tailwind en la clase .icono. */
 const trazos = {
   'arrow-right': 'M2 8h12M9 3l5 5-5 5',
   'arrow-left': 'M14 8H2M7 3 2 8l5 5',

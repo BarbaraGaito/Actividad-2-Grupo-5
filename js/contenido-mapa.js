@@ -1,4 +1,3 @@
-/* Coordenadas de direcciones públicas: API USIG. Ver datos/ubicaciones.json. */
 window.PORTEÑA_MAPA = {
   "teselas": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "flecha": "<svg class=\"icono\" viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M2 8h12M9 3l5 5-5 5\"/></svg>",

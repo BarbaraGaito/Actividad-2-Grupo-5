@@ -1,5 +1,3 @@
-/* Mapa general con Leaflet. Las coordenadas provienen de direcciones públicas
-   normalizadas por USIG; no se geocodifican consultas de visitantes. */
 (function () {
   'use strict';
   const datos = window.PORTEÑA_MAPA;
@@ -9,7 +7,6 @@
   if (!datos || !L || !respaldo) return;
   const script = document.currentScript || document.querySelector('script[src$="js/mapa.js"]');
   const raiz = new URL('../', script.src);
-  // Los íconos llegan como SVG propio generado en la compilación, no como datos de visitantes.
   const simbolo = svg => {
     const plantilla = document.createElement('template');
     plantilla.innerHTML = svg;
@@ -62,7 +59,6 @@
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(mapa);
-  // OpenStreetMap exige el encabezado Referer, que el navegador no envía al abrir la página como archivo (error 403).
   const ayudaFondo = location.protocol === 'file:'
     ? ' Abierto como archivo, OpenStreetMap rechaza el fondo: ' +
       'usá npm start y abrí http://localhost:8000, o la versión publicada.'
@@ -88,7 +84,6 @@
     grupos.forEach(grupo => {
       const p = grupo[0];
       const numeros = grupo.map(o => String(o.numero).padStart(2,'0')).join('·');
-      // Color de la temática con el número de la guía.
       const icono = document.createElement('span');
       icono.className = 'mapa-numero';
       icono.style.backgroundColor = p.color;
@@ -132,7 +127,7 @@
     enlace.addEventListener('click', function (evento) {
       if (!punto || !punto.posicion) {
         elemento.hidden = true; respaldo.hidden = false;
-        return; // El iframe conserva la búsqueda original de referencia sin inventar coordenadas.
+        return;
       }
       evento.preventDefault();
       seleccion.value = punto.tema; mostrar(punto.tema);

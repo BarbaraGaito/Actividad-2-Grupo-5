@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Componentes compartidos: las utilidades de Tailwind siguen en el HTML. */
 @layer base {
   body { @apply bg-papel font-sans text-tinta; }
   h1, h2, h3 { @apply font-serif font-medium; }
@@ -47,10 +46,8 @@
   .numero-parada { @apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-papel text-xs font-bold; }
   .paradas-lista > li:first-child .numero-parada { background-color: var(--acento); }
   .consejo { @apply flex flex-col items-start gap-3 rounded-2xl bg-arena p-6 md:gap-4 md:p-8; }
-  /* SVG propios de trazo: toman el tamaño de la letra y el color del texto. */
   .icono { @apply inline-block h-[1em] w-[1em] shrink-0 fill-none stroke-current stroke-[1.5] align-[-0.125em]; stroke-linecap: round; stroke-linejoin: round; }
   .icono-circulo { @apply inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg text-tinta; }
-  /* Sección actual en la navegación: subrayado fijo, además de aria-current. */
   header nav a[aria-current="page"] { @apply font-bold underline decoration-2 underline-offset-8; }
   .banda-cierre { background-color: var(--acento); }
   .cierre-interior { @apply flex flex-col items-start gap-6 py-8 md:flex-row md:items-center md:justify-between md:py-12 xl:py-14; }
@@ -118,7 +115,6 @@
   .mapa-geografico .leaflet-popup-content a { @apply my-2 block min-h-11 py-2 font-bold underline; }
 }
 
-/* La portada móvil tiene la composición oscura del frame 14:614. */
 @media (max-width: 767px) {
   .inicio .hero-inicio { margin: 20px 20px 0; border-radius: 20px; @apply bg-tinta text-papel; }
   .inicio .hero-inicio .contenedor { padding: 20px; }

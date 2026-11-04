@@ -1,4 +1,3 @@
-/* Generado desde datos/recorridos.json y las FAQ. No editar a mano. */
 window.PORTEÑA_AYUDA = {
   "adicional": 3000,
   "iconos": {

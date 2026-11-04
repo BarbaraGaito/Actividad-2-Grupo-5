@@ -1,6 +1,3 @@
-/* Herramienta opcional de preparación. No se ejecuta al abrir la web ni al compilar.
-   Solo geocodifica direcciones públicas ya publicadas en las fichas. Conserva
-   respuestas en disco para no consultar la API en cada visita. */
 const fs = require('node:fs');
 const datos = require('../datos/recorridos.json');
 const archivo = 'datos/ubicaciones.json';
